@@ -1,0 +1,405 @@
+/* THÈME LIGHT */
+:root {
+  --bg-app: #f8fafc;
+  --bg-surface: rgba(255, 255, 255, 0.65);
+  --border-surface: rgba(226, 232, 240, 0.8);
+  --text-main: #0f172a;
+  --text-muted: #64748b;
+  --accent: #2563eb;
+  --accent-glow: rgba(37, 99, 235, 0.15);
+  
+  /* Boutons options */
+  --btn-bg: #ffffff;
+  --btn-border: #e2e8f0;
+  --btn-hover: #f1f5f9;
+  
+  /* États de correction */
+  --color-success: #10b981;
+  --color-error: #ef4444;
+  
+  --shadow-futuristic: 0 8px 32px 0 rgba(148, 163, 184, 0.08);
+  --blur-amount: 12px;
+}
+
+/* THÈME DARK */
+[data-theme="dark"] {
+  --bg-app: #030712;
+  --bg-surface: rgba(17, 24, 39, 0.6);
+  --border-surface: rgba(255, 255, 255, 0.05);
+  --text-main: #f9fafb;
+  --text-muted: #9ca3af;
+  --accent: #3b82f6;
+  --accent-glow: rgba(59, 130, 246, 0.25);
+  
+  --btn-bg: rgba(31, 41, 55, 0.5);
+  --btn-border: rgba(255, 255, 255, 0.05);
+  --btn-hover: rgba(55, 65, 81, 0.6);
+  
+  --shadow-futuristic: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+}
+
+/* --- STYLES GENERAUX DE L'APPLICATION --- */
+body {
+  background-color: var(--bg-app);
+  color: var(--text-main);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  transition: background-color 0.4s ease, color 0.4s ease;
+  margin: 0;
+}
+
+/* Conteneur de l'application (Effet de verre flottant) */
+.quiz-container {
+  max-width: 560px;
+  margin: 60px auto;
+  padding: 40px;
+  background: var(--bg-surface);
+  backdrop-filter: blur(var(--blur-amount));
+  -webkit-backdrop-filter: blur(var(--blur-amount));
+  border: 1px solid var(--border-surface);
+  border-radius: 24px;
+  box-shadow: var(--shadow-futuristic);
+  transition: all 0.4s ease;
+}
+
+/* Bouton switch de thème haut de page */
+.theme-toggle-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-surface);
+  color: var(--text-main);
+  padding: 8px 16px;
+  border-radius: 99px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  backdrop-filter: blur(var(--blur-amount));
+  transition: all 0.2s ease;
+}
+.theme-toggle-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-futuristic);
+}
+
+/* Typographie & Headers */
+.quiz-title {
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+.quiz-subtitle {
+  color: var(--text-muted);
+  font-size: 15px;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+/* Zone Image de l'indice */
+.quiz-visual-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 32px 0;
+  padding: 16px;
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 16px;
+}
+.quiz-visual-box img {
+  max-height: 160px;
+  object-fit: contain;
+  border-radius: 8px;
+  /* Léger effet de lueur futuriste sous l'image */
+  filter: drop-shadow(0 4px 12px var(--accent-glow)); 
+}
+
+/* Grille des réponses QCM */
+.quiz-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+/* Boutons de choix (Design Néo-Minimaliste) */
+.quiz-btn-option {
+  background: var(--btn-bg);
+  border: 1px solid var(--btn-border);
+  color: var(--text-main);
+  padding: 18px 24px;
+  border-radius: 14px;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.quiz-btn-option:hover:not(:disabled) {
+  background: var(--btn-hover);
+  border-color: var(--text-muted);
+  transform: translateX(4px); /* Micro-glissement futuriste au survol */
+}
+
+/* États dynamiques de correction (Success / Error) */
+.quiz-btn-option.correct {
+  background: rgba(16, 185, 129, 0.15) !important;
+  border-color: var(--color-success) !important;
+  color: var(--color-success) !important;
+  font-weight: 600;
+}
+
+.quiz-btn-option.wrong {
+  background: rgba(239, 68, 68, 0.15) !important;
+  border-color: var(--color-error) !important;
+  color: var(--color-error) !important;
+}
+
+/* Inputs & Formulaires de configuration */
+.quiz-form-group {
+  margin-bottom: 20px;
+}
+.quiz-form-group label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: var(--text-muted);
+}
+.quiz-select, .quiz-input {
+  width: 100%;
+  padding: 14px;
+  background: var(--btn-bg);
+  border: 1px solid var(--btn-border);
+  color: var(--text-main);
+  border-radius: 12px;
+  font-size: 15px;
+  box-sizing: border-box;
+  outline: none;
+  transition: border-color 0.2s;
+}
+.quiz-select:focus, .quiz-input:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-glow);
+}
+
+/* Bouton principal d'action */
+.quiz-btn-primary {
+  width: 100%;
+  padding: 16px;
+  background: var(--accent);
+  color: #ffffff;
+  border: none;
+  border-radius: 14px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: 0 4px 20px var(--accent-glow);
+}
+.quiz-btn-primary:hover {
+  opacity: 0.95;
+  transform: translateY(-1px);
+}
+
+/* --- src/index.css --- */
+
+/* Le conteneur s'adapte toujours aux thèmes */
+.quiz-visual-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 32px 0;
+  padding: 24px;
+  border-radius: 20px;
+  border: 1px solid var(--border-surface);
+  background: radial-gradient(circle, rgba(0, 0, 0, 0.02) 0%, rgba(0, 0, 0, 0) 70%);
+  transition: all 0.3s ease;
+}
+
+[data-theme="dark"] .quiz-visual-box {
+  background: radial-gradient(circle, rgba(37, 99, 235, 0.15) 0%, rgba(3, 7, 18, 0) 75%);
+}
+
+/* 🚀 LA SILHOUETTE EN TANT QUE MASQUE DYNAMIQUE */
+.quiz-shape-mask {
+  width: 160px;
+  height: 160px;
+  
+  /* On utilise l'URL de l'image comme un masque (pochoir) */
+  mask-image: var(--shape-url);
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  -webkit-mask-image: var(--shape-url);
+  -webkit-mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+
+  transition: background-color 0.4s ease, filter 0.4s ease;
+
+  /* ☀️ MODE LIGHT : La silhouette est peinte en gris très foncé/noir */
+  background-color: #2ce679; 
+  filter: drop-shadow(0 4px 10px rgba(15, 23, 42, 0.15));
+}
+
+/* 🌌 MODE DARK : La silhouette devient blanche et s'illumine */
+[data-theme="dark"] .quiz-shape-mask {
+  background-color: #1c86e9; /* Peint la forme en blanc pur */
+  filter: drop-shadow(0 0 10px rgba(37, 99, 235, 0.8)) 
+          drop-shadow(0 0 20px rgba(37, 99, 235, 0.4));
+}
+
+
+
+/* Le conteneur du bouton segmenté */
+.difficulty-segmented-control {
+  display: flex;
+  background: rgba(0, 0, 0, 0.04);
+  border: 1px solid var(--btn-border);
+  border-radius: 12px;
+  padding: 4px;
+  gap: 4px;
+}
+
+[data-theme="dark"] .difficulty-segmented-control {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+/* Les boutons de segments */
+.difficulty-btn {
+  flex: 1;
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  padding: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 9px;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* L'état actif avec un effet de relief ou d'illumination */
+.difficulty-btn.active {
+  background: var(--btn-bg);
+  color: var(--text-main);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+[data-theme="dark"] .difficulty-btn.active {
+  background: rgba(55, 65, 81, 0.5);
+  color: var(--accent);
+  box-shadow: 0 0 10px var(--accent-glow);
+}
+
+/* Petit badge de rappel pendant qu'on joue */
+.difficulty-badge {
+  background: var(--accent-glow);
+  color: var(--accent);
+  padding: 2px 8px;
+  border-radius: 6px;
+  font-size: 11px;
+  letter-spacing: 0.5px;
+}
+
+/* --- src/index.css --- */
+
+.quiz-input-wrapper {
+  margin-top: 40px;
+  position: relative;
+}
+
+/* Le champ de saisie réinventé */
+.quiz-autocomplete-input {
+  width: 100%;
+  padding: 20px 0px; /* On enlève le padding latéral pour l'aligner sur les bords */
+  background: transparent !important; /* Plus de bloc de couleur lourd */
+  border: none;
+  border-bottom: 2px solid var(--border-surface); /* Juste une ligne épurée en bas */
+  color: var(--text-main);
+  font-size: 20px; /* Plus grand pour imposer le style */
+  font-weight: 300; /* Plus fin, ultra-élégant */
+  letter-spacing: 1px;
+  box-sizing: border-box;
+  outline: none;
+  border-radius: 0; /* On oublie les arrondis de boîte de conserve */
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* 🚀 L'EFFET DE FOCUS : La ligne s'illumine et s'épaissit subtilement */
+.quiz-autocomplete-input:focus {
+  border-bottom-color: var(--accent);
+  letter-spacing: 2px; /* Léger écartement futuriste des lettres quand on tape */
+  /* Petit effet de halo sous la ligne */
+  filter: drop-shadow(0 2px 4px var(--accent-glow)); 
+}
+
+/* Placeholder discret et chic */
+.quiz-autocomplete-input::placeholder {
+  color: var(--text-muted);
+  font-weight: 300;
+  opacity: 0.5;
+  letter-spacing: 0px;
+  transition: transform 0.3s ease;
+}
+.quiz-autocomplete-input:focus::placeholder {
+  transform: translateX(8px); /* Le placeholder s'efface élégamment */
+  opacity: 0.2;
+}
+
+/* ÉTAT SUCCÈS : Vert holographique */
+.quiz-autocomplete-input.correct {
+  border-bottom-color: var(--color-success) !important;
+  color: var(--color-success) !important;
+  font-weight: 500;
+  filter: drop-shadow(0 4px 8px rgba(16, 185, 129, 0.3));
+}
+
+/* ÉTAT ERREUR : Rouge glitch/radar */
+.quiz-autocomplete-input.wrong {
+  border-bottom-color: var(--color-error) !important;
+  color: var(--color-error) !important;
+  font-weight: 500;
+  filter: drop-shadow(0 4px 8px rgba(239, 68, 68, 0.3));
+}
+
+/* 🌌 AJUSTEMENT DU PANNEAU DE SUGGESTIONS (Pour matcher l'input en ligne) */
+.quiz-suggestions-list {
+  position: absolute;
+  top: 100%; /* Colle parfaitement sous la ligne */
+  left: 0;
+  width: 100%;
+  max-height: 200px;
+  overflow-y: auto;
+  margin: 4px 0 0 0;
+  padding: 8px;
+  list-style: none;
+  /* Effet givré flottant */
+  background: var(--bg-surface);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--border-surface);
+  border-radius: 0 0 16px 16px; /* Arrondi uniquement en bas */
+  box-shadow: var(--shadow-futuristic);
+  z-index: 10;
+  box-sizing: border-box;
+}
+
+.quiz-suggestion-item {
+  padding: 14px 16px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--text-main);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.quiz-suggestion-item:hover {
+  background: var(--btn-hover);
+  padding-left: 22px; /* Effet de décalage fluide */
+  color: var(--accent);
+}
