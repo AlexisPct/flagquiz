@@ -10,7 +10,7 @@ const filesToMerge = [
   'oceania.json'
 ];
 
-const dataDir = path.join(__dirname, 'src', 'data');
+const dataDir = path.join(__dirname, 'data');
 const outputFilePath = path.join(dataDir, 'countries_all.json');
 
 let allMergedCountries = [];
@@ -46,7 +46,10 @@ filesToMerge.forEach((fileName) => {
           item.capitals &&
           item.capitals.length > 0 &&
           item.flag?.url_png &&
-          item.codes?.alpha_2
+          item.codes?.alpha_2 &&
+          item.codes?.ccn3 && 
+          item.population && 
+          item.area.kilometers
         );
       })
       .map((item) => {
@@ -57,6 +60,9 @@ filesToMerge.forEach((fileName) => {
           capital: mainCapital.name,
           flagUrl: item.flag.url_png,
           codeAlpha2: item.codes.alpha_2,
+          codeCCN3: item.codes.ccn3,
+          population: item.population,
+          area: item.area.kilometers,
           continent: item.region || 'Inconnu'           
         };
       });

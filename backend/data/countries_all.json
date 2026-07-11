@@ -4,6 +4,9 @@
     "capital": "Tirana",
     "flagUrl": "https://flags.restcountries.com/v5/w640/al.png",
     "codeAlpha2": "AL",
+    "codeCCN3": "008",
+    "population": 2402113,
+    "area": 28748,
     "continent": "Europe"
   },
   {
@@ -11,6 +14,9 @@
     "capital": "Andorra la Vella",
     "flagUrl": "https://flags.restcountries.com/v5/w640/ad.png",
     "codeAlpha2": "AD",
+    "codeCCN3": "020",
+    "population": 89368,
+    "area": 468,
     "continent": "Europe"
   },
   {
@@ -18,6 +24,9 @@
     "capital": "Vienna",
     "flagUrl": "https://flags.restcountries.com/v5/w640/at.png",
     "codeAlpha2": "AT",
+    "codeCCN3": "040",
+    "population": 9219113,
+    "area": 83871,
     "continent": "Europe"
   },
   {
@@ -25,6 +34,9 @@
     "capital": "Minsk",
     "flagUrl": "https://flags.restcountries.com/v5/w640/by.png",
     "codeAlpha2": "BY",
+    "codeCCN3": "112",
+    "population": 9109280,
+    "area": 207600,
     "continent": "Europe"
   },
   {
@@ -32,6 +44,9 @@
     "capital": "Brussels",
     "flagUrl": "https://flags.restcountries.com/v5/w640/be.png",
     "codeAlpha2": "BE",
+    "codeCCN3": "056",
+    "population": 11867634,
+    "area": 30528,
     "continent": "Europe"
   },
   {
@@ -39,6 +54,9 @@
     "capital": "Sarajevo",
     "flagUrl": "https://flags.restcountries.com/v5/w640/ba.png",
     "codeAlpha2": "BA",
+    "codeCCN3": "070",
+    "population": 3412000,
+    "area": 51209,
     "continent": "Europe"
   },
   {
@@ -46,6 +64,9 @@
     "capital": "Sofia",
     "flagUrl": "https://flags.restcountries.com/v5/w640/bg.png",
     "codeAlpha2": "BG",
+    "codeCCN3": "100",
+    "population": 6423207,
+    "area": 110879,
     "continent": "Europe"
   },
   {
@@ -53,6 +74,9 @@
     "capital": "Zagreb",
     "flagUrl": "https://flags.restcountries.com/v5/w640/hr.png",
     "codeAlpha2": "HR",
+    "codeCCN3": "191",
+    "population": 3866233,
+    "area": 56594,
     "continent": "Europe"
   },
   {
@@ -60,6 +84,9 @@
     "capital": "Nicosia",
     "flagUrl": "https://flags.restcountries.com/v5/w640/cy.png",
     "codeAlpha2": "CY",
+    "codeCCN3": "196",
+    "population": 923272,
+    "area": 9251,
     "continent": "Europe"
   },
   {
@@ -67,6 +94,9 @@
     "capital": "Prague",
     "flagUrl": "https://flags.restcountries.com/v5/w640/cz.png",
     "codeAlpha2": "CZ",
+    "codeCCN3": "203",
+    "population": 10915839,
+    "area": 78865,
     "continent": "Europe"
   },
   {
@@ -74,6 +104,9 @@
     "capital": "Copenhagen",
     "flagUrl": "https://flags.restcountries.com/v5/w640/dk.png",
     "codeAlpha2": "DK",
+    "codeCCN3": "208",
+    "population": 6001008,
+    "area": 43094,
     "continent": "Europe"
   },
   {
@@ -81,6 +114,9 @@
     "capital": "Tallinn",
     "flagUrl": "https://flags.restcountries.com/v5/w640/ee.png",
     "codeAlpha2": "EE",
+    "codeCCN3": "233",
+    "population": 1362954,
+    "area": 45227,
     "continent": "Europe"
   },
   {
@@ -88,6 +124,9 @@
     "capital": "Tórshavn",
     "flagUrl": "https://flags.restcountries.com/v5/w640/fo.png",
     "codeAlpha2": "FO",
+    "codeCCN3": "234",
+    "population": 56210,
+    "area": 1393,
     "continent": "Europe"
   },
   {
@@ -95,6 +134,9 @@
     "capital": "Helsinki",
     "flagUrl": "https://flags.restcountries.com/v5/w640/fi.png",
     "codeAlpha2": "FI",
+    "codeCCN3": "246",
+    "population": 5652881,
+    "area": 338424,
     "continent": "Europe"
   },
   {
@@ -102,6 +144,9 @@
     "capital": "Paris",
     "flagUrl": "https://flags.restcountries.com/v5/w640/fr.png",
     "codeAlpha2": "FR",
+    "codeCCN3": "250",
+    "population": 69081996,
+    "area": 551695,
     "continent": "Europe"
   },
   {
@@ -109,6 +154,9 @@
     "capital": "Berlin",
     "flagUrl": "https://flags.restcountries.com/v5/w640/de.png",
     "codeAlpha2": "DE",
+    "codeCCN3": "276",
+    "population": 83497147,
+    "area": 357114,
     "continent": "Europe"
   },
   {
@@ -116,6 +164,9 @@
     "capital": "Gibraltar",
     "flagUrl": "https://flags.restcountries.com/v5/w640/gi.png",
     "codeAlpha2": "GI",
+    "codeCCN3": "292",
+    "population": 37936,
+    "area": 6,
     "continent": "Europe"
   },
   {
@@ -123,6 +174,9 @@
     "capital": "Athens",
     "flagUrl": "https://flags.restcountries.com/v5/w640/gr.png",
     "codeAlpha2": "GR",
+    "codeCCN3": "300",
+    "population": 10718565,
+    "area": 131990,
     "continent": "Europe"
   },
   {
@@ -130,6 +184,9 @@
     "capital": "St. Peter Port",
     "flagUrl": "https://flags.restcountries.com/v5/w640/gg.png",
     "codeAlpha2": "GG",
+    "codeCCN3": "831",
+    "population": 63950,
+    "area": 78,
     "continent": "Europe"
   },
   {
@@ -137,6 +194,9 @@
     "capital": "Budapest",
     "flagUrl": "https://flags.restcountries.com/v5/w640/hu.png",
     "codeAlpha2": "HU",
+    "codeCCN3": "348",
+    "population": 9489000,
+    "area": 93028,
     "continent": "Europe"
   },
   {
@@ -144,6 +204,9 @@
     "capital": "Reykjavik",
     "flagUrl": "https://flags.restcountries.com/v5/w640/is.png",
     "codeAlpha2": "IS",
+    "codeCCN3": "352",
+    "population": 394324,
+    "area": 103000,
     "continent": "Europe"
   },
   {
@@ -151,6 +214,9 @@
     "capital": "Dublin",
     "flagUrl": "https://flags.restcountries.com/v5/w640/ie.png",
     "codeAlpha2": "IE",
+    "codeCCN3": "372",
+    "population": 7185600,
+    "area": 70273,
     "continent": "Europe"
   },
   {
@@ -158,6 +224,9 @@
     "capital": "Douglas",
     "flagUrl": "https://flags.restcountries.com/v5/w640/im.png",
     "codeAlpha2": "IM",
+    "codeCCN3": "833",
+    "population": 84523,
+    "area": 572,
     "continent": "Europe"
   },
   {
@@ -165,6 +234,9 @@
     "capital": "Rome",
     "flagUrl": "https://flags.restcountries.com/v5/w640/it.png",
     "codeAlpha2": "IT",
+    "codeCCN3": "380",
+    "population": 58915561,
+    "area": 301336,
     "continent": "Europe"
   },
   {
@@ -172,13 +244,9 @@
     "capital": "Saint Helier",
     "flagUrl": "https://flags.restcountries.com/v5/w640/je.png",
     "codeAlpha2": "JE",
-    "continent": "Europe"
-  },
-  {
-    "name": "Kosovo",
-    "capital": "Pristina",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/xk.png",
-    "codeAlpha2": "XK",
+    "codeCCN3": "832",
+    "population": 104540,
+    "area": 116,
     "continent": "Europe"
   },
   {
@@ -186,6 +254,9 @@
     "capital": "Riga",
     "flagUrl": "https://flags.restcountries.com/v5/w640/lv.png",
     "codeAlpha2": "LV",
+    "codeCCN3": "428",
+    "population": 1842226,
+    "area": 64559,
     "continent": "Europe"
   },
   {
@@ -193,6 +264,9 @@
     "capital": "Vaduz",
     "flagUrl": "https://flags.restcountries.com/v5/w640/li.png",
     "codeAlpha2": "LI",
+    "codeCCN3": "438",
+    "population": 41237,
+    "area": 160,
     "continent": "Europe"
   },
   {
@@ -200,6 +274,9 @@
     "capital": "Vilnius",
     "flagUrl": "https://flags.restcountries.com/v5/w640/lt.png",
     "codeAlpha2": "LT",
+    "codeCCN3": "440",
+    "population": 2897430,
+    "area": 65300,
     "continent": "Europe"
   },
   {
@@ -207,6 +284,9 @@
     "capital": "Luxembourg",
     "flagUrl": "https://flags.restcountries.com/v5/w640/lu.png",
     "codeAlpha2": "LU",
+    "codeCCN3": "442",
+    "population": 692402,
+    "area": 2586,
     "continent": "Europe"
   },
   {
@@ -214,6 +294,9 @@
     "capital": "Valletta",
     "flagUrl": "https://flags.restcountries.com/v5/w640/mt.png",
     "codeAlpha2": "MT",
+    "codeCCN3": "470",
+    "population": 519562,
+    "area": 316,
     "continent": "Europe"
   },
   {
@@ -221,6 +304,9 @@
     "capital": "Chișinău",
     "flagUrl": "https://flags.restcountries.com/v5/w640/md.png",
     "codeAlpha2": "MD",
+    "codeCCN3": "498",
+    "population": 2365645,
+    "area": 33846,
     "continent": "Europe"
   },
   {
@@ -228,6 +314,9 @@
     "capital": "Monaco",
     "flagUrl": "https://flags.restcountries.com/v5/w640/mc.png",
     "codeAlpha2": "MC",
+    "codeCCN3": "492",
+    "population": 38857,
+    "area": 2.02,
     "continent": "Europe"
   },
   {
@@ -235,6 +324,9 @@
     "capital": "Podgorica",
     "flagUrl": "https://flags.restcountries.com/v5/w640/me.png",
     "codeAlpha2": "ME",
+    "codeCCN3": "499",
+    "population": 622902,
+    "area": 13812,
     "continent": "Europe"
   },
   {
@@ -242,6 +334,9 @@
     "capital": "Amsterdam",
     "flagUrl": "https://flags.restcountries.com/v5/w640/nl.png",
     "codeAlpha2": "NL",
+    "codeCCN3": "528",
+    "population": 18044027,
+    "area": 41850,
     "continent": "Europe"
   },
   {
@@ -249,6 +344,9 @@
     "capital": "Skopje",
     "flagUrl": "https://flags.restcountries.com/v5/w640/mk.png",
     "codeAlpha2": "MK",
+    "codeCCN3": "807",
+    "population": 1836713,
+    "area": 25713,
     "continent": "Europe"
   },
   {
@@ -256,6 +354,9 @@
     "capital": "Oslo",
     "flagUrl": "https://flags.restcountries.com/v5/w640/no.png",
     "codeAlpha2": "NO",
+    "codeCCN3": "578",
+    "population": 5627400,
+    "area": 323802,
     "continent": "Europe"
   },
   {
@@ -263,6 +364,9 @@
     "capital": "Warsaw",
     "flagUrl": "https://flags.restcountries.com/v5/w640/pl.png",
     "codeAlpha2": "PL",
+    "codeCCN3": "616",
+    "population": 37314000,
+    "area": 312679,
     "continent": "Europe"
   },
   {
@@ -270,6 +374,9 @@
     "capital": "Lisbon",
     "flagUrl": "https://flags.restcountries.com/v5/w640/pt.png",
     "codeAlpha2": "PT",
+    "codeCCN3": "620",
+    "population": 11424031,
+    "area": 92090,
     "continent": "Europe"
   },
   {
@@ -277,6 +384,9 @@
     "capital": "Bucharest",
     "flagUrl": "https://flags.restcountries.com/v5/w640/ro.png",
     "codeAlpha2": "RO",
+    "codeCCN3": "642",
+    "population": 19043151,
+    "area": 238391,
     "continent": "Europe"
   },
   {
@@ -284,6 +394,9 @@
     "capital": "Moscow",
     "flagUrl": "https://flags.restcountries.com/v5/w640/ru.png",
     "codeAlpha2": "RU",
+    "codeCCN3": "643",
+    "population": 146028325,
+    "area": 17098242,
     "continent": "Europe"
   },
   {
@@ -291,6 +404,9 @@
     "capital": "City of San Marino",
     "flagUrl": "https://flags.restcountries.com/v5/w640/sm.png",
     "codeAlpha2": "SM",
+    "codeCCN3": "674",
+    "population": 34172,
+    "area": 61,
     "continent": "Europe"
   },
   {
@@ -298,6 +414,9 @@
     "capital": "Belgrade",
     "flagUrl": "https://flags.restcountries.com/v5/w640/rs.png",
     "codeAlpha2": "RS",
+    "codeCCN3": "688",
+    "population": 6532019,
+    "area": 88361,
     "continent": "Europe"
   },
   {
@@ -305,6 +424,9 @@
     "capital": "Bratislava",
     "flagUrl": "https://flags.restcountries.com/v5/w640/sk.png",
     "codeAlpha2": "SK",
+    "codeCCN3": "703",
+    "population": 5405368,
+    "area": 49037,
     "continent": "Europe"
   },
   {
@@ -312,6 +434,9 @@
     "capital": "Ljubljana",
     "flagUrl": "https://flags.restcountries.com/v5/w640/si.png",
     "codeAlpha2": "SI",
+    "codeCCN3": "705",
+    "population": 2135107,
+    "area": 20273,
     "continent": "Europe"
   },
   {
@@ -319,6 +444,9 @@
     "capital": "Madrid",
     "flagUrl": "https://flags.restcountries.com/v5/w640/es.png",
     "codeAlpha2": "ES",
+    "codeCCN3": "724",
+    "population": 49687120,
+    "area": 505992,
     "continent": "Europe"
   },
   {
@@ -326,6 +454,9 @@
     "capital": "Longyearbyen",
     "flagUrl": "https://flags.restcountries.com/v5/w640/sj.png",
     "codeAlpha2": "SJ",
+    "codeCCN3": "744",
+    "population": 2562,
+    "area": 61399,
     "continent": "Europe"
   },
   {
@@ -333,6 +464,9 @@
     "capital": "Stockholm",
     "flagUrl": "https://flags.restcountries.com/v5/w640/se.png",
     "codeAlpha2": "SE",
+    "codeCCN3": "752",
+    "population": 10610485,
+    "area": 450295,
     "continent": "Europe"
   },
   {
@@ -340,6 +474,9 @@
     "capital": "Bern",
     "flagUrl": "https://flags.restcountries.com/v5/w640/ch.png",
     "codeAlpha2": "CH",
+    "codeCCN3": "756",
+    "population": 9154242,
+    "area": 41284,
     "continent": "Europe"
   },
   {
@@ -347,6 +484,9 @@
     "capital": "Kyiv",
     "flagUrl": "https://flags.restcountries.com/v5/w640/ua.png",
     "codeAlpha2": "UA",
+    "codeCCN3": "804",
+    "population": 32283000,
+    "area": 603500,
     "continent": "Europe"
   },
   {
@@ -354,6 +494,9 @@
     "capital": "London",
     "flagUrl": "https://flags.restcountries.com/v5/w640/gb.png",
     "codeAlpha2": "GB",
+    "codeCCN3": "826",
+    "population": 66912637,
+    "area": 242900,
     "continent": "Europe"
   },
   {
@@ -361,6 +504,9 @@
     "capital": "Vatican City",
     "flagUrl": "https://flags.restcountries.com/v5/w640/va.png",
     "codeAlpha2": "VA",
+    "codeCCN3": "336",
+    "population": 882,
+    "area": 0.44,
     "continent": "Europe"
   },
   {
@@ -368,6 +514,9 @@
     "capital": "Mariehamn",
     "flagUrl": "https://flags.restcountries.com/v5/w640/ax.png",
     "codeAlpha2": "AX",
+    "codeCCN3": "248",
+    "population": 30654,
+    "area": 1580,
     "continent": "Europe"
   },
   {
@@ -375,6 +524,9 @@
     "capital": "Algiers",
     "flagUrl": "https://flags.restcountries.com/v5/w640/dz.png",
     "codeAlpha2": "DZ",
+    "codeCCN3": "012",
+    "population": 47400000,
+    "area": 2381741,
     "continent": "Africa"
   },
   {
@@ -382,6 +534,9 @@
     "capital": "Luanda",
     "flagUrl": "https://flags.restcountries.com/v5/w640/ao.png",
     "codeAlpha2": "AO",
+    "codeCCN3": "024",
+    "population": 36604681,
+    "area": 1246700,
     "continent": "Africa"
   },
   {
@@ -389,6 +544,9 @@
     "capital": "Porto-Novo",
     "flagUrl": "https://flags.restcountries.com/v5/w640/bj.png",
     "codeAlpha2": "BJ",
+    "codeCCN3": "204",
+    "population": 13754688,
+    "area": 112622,
     "continent": "Africa"
   },
   {
@@ -396,6 +554,9 @@
     "capital": "Gaborone",
     "flagUrl": "https://flags.restcountries.com/v5/w640/bw.png",
     "codeAlpha2": "BW",
+    "codeCCN3": "072",
+    "population": 2359609,
+    "area": 582000,
     "continent": "Africa"
   },
   {
@@ -403,6 +564,9 @@
     "capital": "Diego Garcia",
     "flagUrl": "https://flags.restcountries.com/v5/w640/io.png",
     "codeAlpha2": "IO",
+    "codeCCN3": "086",
+    "population": 2000,
+    "area": 60,
     "continent": "Africa"
   },
   {
@@ -410,6 +574,9 @@
     "capital": "Ouagadougou",
     "flagUrl": "https://flags.restcountries.com/v5/w640/bf.png",
     "codeAlpha2": "BF",
+    "codeCCN3": "854",
+    "population": 22489126,
+    "area": 272967,
     "continent": "Africa"
   },
   {
@@ -417,6 +584,9 @@
     "capital": "Gitega",
     "flagUrl": "https://flags.restcountries.com/v5/w640/bi.png",
     "codeAlpha2": "BI",
+    "codeCCN3": "108",
+    "population": 14151540,
+    "area": 27834,
     "continent": "Africa"
   },
   {
@@ -424,6 +594,9 @@
     "capital": "Praia",
     "flagUrl": "https://flags.restcountries.com/v5/w640/cv.png",
     "codeAlpha2": "CV",
+    "codeCCN3": "132",
+    "population": 491233,
+    "area": 4033,
     "continent": "Africa"
   },
   {
@@ -431,6 +604,9 @@
     "capital": "Yaoundé",
     "flagUrl": "https://flags.restcountries.com/v5/w640/cm.png",
     "codeAlpha2": "CM",
+    "codeCCN3": "120",
+    "population": 30987821,
+    "area": 475442,
     "continent": "Africa"
   },
   {
@@ -438,6 +614,9 @@
     "capital": "Bangui",
     "flagUrl": "https://flags.restcountries.com/v5/w640/cf.png",
     "codeAlpha2": "CF",
+    "codeCCN3": "140",
+    "population": 5513282,
+    "area": 622984,
     "continent": "Africa"
   },
   {
@@ -445,6 +624,9 @@
     "capital": "N'Djamena",
     "flagUrl": "https://flags.restcountries.com/v5/w640/td.png",
     "codeAlpha2": "TD",
+    "codeCCN3": "148",
+    "population": 19093595,
+    "area": 1284000,
     "continent": "Africa"
   },
   {
@@ -452,6 +634,9 @@
     "capital": "Moroni",
     "flagUrl": "https://flags.restcountries.com/v5/w640/km.png",
     "codeAlpha2": "KM",
+    "codeCCN3": "174",
+    "population": 944388,
+    "area": 1862,
     "continent": "Africa"
   },
   {
@@ -459,6 +644,9 @@
     "capital": "Brazzaville",
     "flagUrl": "https://flags.restcountries.com/v5/w640/cg.png",
     "codeAlpha2": "CG",
+    "codeCCN3": "178",
+    "population": 6228784,
+    "area": 342000,
     "continent": "Africa"
   },
   {
@@ -466,6 +654,9 @@
     "capital": "Kinshasa",
     "flagUrl": "https://flags.restcountries.com/v5/w640/cd.png",
     "codeAlpha2": "CD",
+    "codeCCN3": "180",
+    "population": 124388160,
+    "area": 2344858,
     "continent": "Africa"
   },
   {
@@ -473,6 +664,9 @@
     "capital": "Djibouti",
     "flagUrl": "https://flags.restcountries.com/v5/w640/dj.png",
     "codeAlpha2": "DJ",
+    "codeCCN3": "262",
+    "population": 1066809,
+    "area": 23200,
     "continent": "Africa"
   },
   {
@@ -480,6 +674,9 @@
     "capital": "Cairo",
     "flagUrl": "https://flags.restcountries.com/v5/w640/eg.png",
     "codeAlpha2": "EG",
+    "codeCCN3": "818",
+    "population": 107868296,
+    "area": 1002450,
     "continent": "Africa"
   },
   {
@@ -487,6 +684,9 @@
     "capital": "Malabo",
     "flagUrl": "https://flags.restcountries.com/v5/w640/gq.png",
     "codeAlpha2": "GQ",
+    "codeCCN3": "226",
+    "population": 1795834,
+    "area": 28051,
     "continent": "Africa"
   },
   {
@@ -494,6 +694,9 @@
     "capital": "Asmara",
     "flagUrl": "https://flags.restcountries.com/v5/w640/er.png",
     "codeAlpha2": "ER",
+    "codeCCN3": "232",
+    "population": 3500000,
+    "area": 117600,
     "continent": "Africa"
   },
   {
@@ -501,6 +704,9 @@
     "capital": "Mbabane",
     "flagUrl": "https://flags.restcountries.com/v5/w640/sz.png",
     "codeAlpha2": "SZ",
+    "codeCCN3": "748",
+    "population": 1236126,
+    "area": 17364,
     "continent": "Africa"
   },
   {
@@ -508,6 +714,9 @@
     "capital": "Addis Ababa",
     "flagUrl": "https://flags.restcountries.com/v5/w640/et.png",
     "codeAlpha2": "ET",
+    "codeCCN3": "231",
+    "population": 138902185,
+    "area": 1104300,
     "continent": "Africa"
   },
   {
@@ -515,6 +724,9 @@
     "capital": "Libreville",
     "flagUrl": "https://flags.restcountries.com/v5/w640/ga.png",
     "codeAlpha2": "GA",
+    "codeCCN3": "266",
+    "population": 2397368,
+    "area": 267668,
     "continent": "Africa"
   },
   {
@@ -522,6 +734,9 @@
     "capital": "Banjul",
     "flagUrl": "https://flags.restcountries.com/v5/w640/gm.png",
     "codeAlpha2": "GM",
+    "codeCCN3": "270",
+    "population": 2422712,
+    "area": 10689,
     "continent": "Africa"
   },
   {
@@ -529,6 +744,9 @@
     "capital": "Accra",
     "flagUrl": "https://flags.restcountries.com/v5/w640/gh.png",
     "codeAlpha2": "GH",
+    "codeCCN3": "288",
+    "population": 35039451,
+    "area": 238533,
     "continent": "Africa"
   },
   {
@@ -536,6 +754,9 @@
     "capital": "Conakry",
     "flagUrl": "https://flags.restcountries.com/v5/w640/gn.png",
     "codeAlpha2": "GN",
+    "codeCCN3": "324",
+    "population": 17521167,
+    "area": 245857,
     "continent": "Africa"
   },
   {
@@ -543,6 +764,9 @@
     "capital": "Bissau",
     "flagUrl": "https://flags.restcountries.com/v5/w640/gw.png",
     "codeAlpha2": "GW",
+    "codeCCN3": "624",
+    "population": 2080000,
+    "area": 36125,
     "continent": "Africa"
   },
   {
@@ -550,6 +774,9 @@
     "capital": "Yamoussoukro",
     "flagUrl": "https://flags.restcountries.com/v5/w640/ci.png",
     "codeAlpha2": "CI",
+    "codeCCN3": "384",
+    "population": 31500000,
+    "area": 322463,
     "continent": "Africa"
   },
   {
@@ -557,6 +784,9 @@
     "capital": "Nairobi",
     "flagUrl": "https://flags.restcountries.com/v5/w640/ke.png",
     "codeAlpha2": "KE",
+    "codeCCN3": "404",
+    "population": 53330978,
+    "area": 580367,
     "continent": "Africa"
   },
   {
@@ -564,6 +794,9 @@
     "capital": "Maseru",
     "flagUrl": "https://flags.restcountries.com/v5/w640/ls.png",
     "codeAlpha2": "LS",
+    "codeCCN3": "426",
+    "population": 2116427,
+    "area": 30355,
     "continent": "Africa"
   },
   {
@@ -571,6 +804,9 @@
     "capital": "Monrovia",
     "flagUrl": "https://flags.restcountries.com/v5/w640/lr.png",
     "codeAlpha2": "LR",
+    "codeCCN3": "430",
+    "population": 5437249,
+    "area": 111369,
     "continent": "Africa"
   },
   {
@@ -578,6 +814,9 @@
     "capital": "Tripoli",
     "flagUrl": "https://flags.restcountries.com/v5/w640/ly.png",
     "codeAlpha2": "LY",
+    "codeCCN3": "434",
+    "population": 7361263,
+    "area": 1759540,
     "continent": "Africa"
   },
   {
@@ -585,6 +824,9 @@
     "capital": "Antananarivo",
     "flagUrl": "https://flags.restcountries.com/v5/w640/mg.png",
     "codeAlpha2": "MG",
+    "codeCCN3": "450",
+    "population": 31964956,
+    "area": 587041,
     "continent": "Africa"
   },
   {
@@ -592,6 +834,9 @@
     "capital": "Lilongwe",
     "flagUrl": "https://flags.restcountries.com/v5/w640/mw.png",
     "codeAlpha2": "MW",
+    "codeCCN3": "454",
+    "population": 21240689,
+    "area": 118484,
     "continent": "Africa"
   },
   {
@@ -599,6 +844,9 @@
     "capital": "Bamako",
     "flagUrl": "https://flags.restcountries.com/v5/w640/ml.png",
     "codeAlpha2": "ML",
+    "codeCCN3": "466",
+    "population": 25200000,
+    "area": 1240192,
     "continent": "Africa"
   },
   {
@@ -606,6 +854,9 @@
     "capital": "Nouakchott",
     "flagUrl": "https://flags.restcountries.com/v5/w640/mr.png",
     "codeAlpha2": "MR",
+    "codeCCN3": "478",
+    "population": 5461319,
+    "area": 1030700,
     "continent": "Africa"
   },
   {
@@ -613,6 +864,9 @@
     "capital": "Port Louis",
     "flagUrl": "https://flags.restcountries.com/v5/w640/mu.png",
     "codeAlpha2": "MU",
+    "codeCCN3": "480",
+    "population": 1235260,
+    "area": 2040,
     "continent": "Africa"
   },
   {
@@ -620,6 +874,9 @@
     "capital": "Mamoudzou",
     "flagUrl": "https://flags.restcountries.com/v5/w640/yt.png",
     "codeAlpha2": "YT",
+    "codeCCN3": "175",
+    "population": 226915,
+    "area": 374,
     "continent": "Africa"
   },
   {
@@ -627,6 +884,9 @@
     "capital": "Rabat",
     "flagUrl": "https://flags.restcountries.com/v5/w640/ma.png",
     "codeAlpha2": "MA",
+    "codeCCN3": "504",
+    "population": 36828330,
+    "area": 446550,
     "continent": "Africa"
   },
   {
@@ -634,6 +894,9 @@
     "capital": "Maputo",
     "flagUrl": "https://flags.restcountries.com/v5/w640/mz.png",
     "codeAlpha2": "MZ",
+    "codeCCN3": "508",
+    "population": 34881007,
+    "area": 801590,
     "continent": "Africa"
   },
   {
@@ -641,6 +904,9 @@
     "capital": "Windhoek",
     "flagUrl": "https://flags.restcountries.com/v5/w640/na.png",
     "codeAlpha2": "NA",
+    "codeCCN3": "516",
+    "population": 3022401,
+    "area": 825615,
     "continent": "Africa"
   },
   {
@@ -648,6 +914,9 @@
     "capital": "Niamey",
     "flagUrl": "https://flags.restcountries.com/v5/w640/ne.png",
     "codeAlpha2": "NE",
+    "codeCCN3": "562",
+    "population": 26342784,
+    "area": 1267000,
     "continent": "Africa"
   },
   {
@@ -655,6 +924,9 @@
     "capital": "Abuja",
     "flagUrl": "https://flags.restcountries.com/v5/w640/ng.png",
     "codeAlpha2": "NG",
+    "codeCCN3": "566",
+    "population": 242747130,
+    "area": 923768,
     "continent": "Africa"
   },
   {
@@ -662,6 +934,9 @@
     "capital": "Kigali",
     "flagUrl": "https://flags.restcountries.com/v5/w640/rw.png",
     "codeAlpha2": "RW",
+    "codeCCN3": "646",
+    "population": 14104969,
+    "area": 26338,
     "continent": "Africa"
   },
   {
@@ -669,6 +944,9 @@
     "capital": "Saint-Denis",
     "flagUrl": "https://flags.restcountries.com/v5/w640/re.png",
     "codeAlpha2": "RE",
+    "codeCCN3": "638",
+    "population": 840974,
+    "area": 2511,
     "continent": "Africa"
   },
   {
@@ -676,6 +954,9 @@
     "capital": "Jamestown",
     "flagUrl": "https://flags.restcountries.com/v5/w640/sh.png",
     "codeAlpha2": "SH",
+    "codeCCN3": "654",
+    "population": 53192,
+    "area": 394,
     "continent": "Africa"
   },
   {
@@ -683,6 +964,9 @@
     "capital": "Dakar",
     "flagUrl": "https://flags.restcountries.com/v5/w640/sn.png",
     "codeAlpha2": "SN",
+    "codeCCN3": "686",
+    "population": 18847519,
+    "area": 196722,
     "continent": "Africa"
   },
   {
@@ -690,6 +974,9 @@
     "capital": "Victoria",
     "flagUrl": "https://flags.restcountries.com/v5/w640/sc.png",
     "codeAlpha2": "SC",
+    "codeCCN3": "690",
+    "population": 121355,
+    "area": 452,
     "continent": "Africa"
   },
   {
@@ -697,6 +984,9 @@
     "capital": "Freetown",
     "flagUrl": "https://flags.restcountries.com/v5/w640/sl.png",
     "codeAlpha2": "SL",
+    "codeCCN3": "694",
+    "population": 8460512,
+    "area": 71740,
     "continent": "Africa"
   },
   {
@@ -704,6 +994,9 @@
     "capital": "Mogadishu",
     "flagUrl": "https://flags.restcountries.com/v5/w640/so.png",
     "codeAlpha2": "SO",
+    "codeCCN3": "706",
+    "population": 19280850,
+    "area": 637657,
     "continent": "Africa"
   },
   {
@@ -711,6 +1004,9 @@
     "capital": "Pretoria",
     "flagUrl": "https://flags.restcountries.com/v5/w640/za.png",
     "codeAlpha2": "ZA",
+    "codeCCN3": "710",
+    "population": 63015904,
+    "area": 1221037,
     "continent": "Africa"
   },
   {
@@ -718,6 +1014,9 @@
     "capital": "Juba",
     "flagUrl": "https://flags.restcountries.com/v5/w640/ss.png",
     "codeAlpha2": "SS",
+    "codeCCN3": "728",
+    "population": 12703714,
+    "area": 619745,
     "continent": "Africa"
   },
   {
@@ -725,6 +1024,9 @@
     "capital": "Khartoum",
     "flagUrl": "https://flags.restcountries.com/v5/w640/sd.png",
     "codeAlpha2": "SD",
+    "codeCCN3": "729",
+    "population": 51767437,
+    "area": 1886068,
     "continent": "Africa"
   },
   {
@@ -732,6 +1034,9 @@
     "capital": "São Tomé",
     "flagUrl": "https://flags.restcountries.com/v5/w640/st.png",
     "codeAlpha2": "ST",
+    "codeCCN3": "678",
+    "population": 220372,
+    "area": 964,
     "continent": "Africa"
   },
   {
@@ -739,6 +1044,9 @@
     "capital": "Dodoma",
     "flagUrl": "https://flags.restcountries.com/v5/w640/tz.png",
     "codeAlpha2": "TZ",
+    "codeCCN3": "834",
+    "population": 67462121,
+    "area": 945087,
     "continent": "Africa"
   },
   {
@@ -746,6 +1054,9 @@
     "capital": "Lomé",
     "flagUrl": "https://flags.restcountries.com/v5/w640/tg.png",
     "codeAlpha2": "TG",
+    "codeCCN3": "768",
+    "population": 9583381,
+    "area": 56785,
     "continent": "Africa"
   },
   {
@@ -753,6 +1064,9 @@
     "capital": "Tunis",
     "flagUrl": "https://flags.restcountries.com/v5/w640/tn.png",
     "codeAlpha2": "TN",
+    "codeCCN3": "788",
+    "population": 11972169,
+    "area": 163610,
     "continent": "Africa"
   },
   {
@@ -760,6 +1074,9 @@
     "capital": "Kampala",
     "flagUrl": "https://flags.restcountries.com/v5/w640/ug.png",
     "codeAlpha2": "UG",
+    "codeCCN3": "800",
+    "population": 45905417,
+    "area": 241550,
     "continent": "Africa"
   },
   {
@@ -767,6 +1084,9 @@
     "capital": "El Aaiún",
     "flagUrl": "https://flags.restcountries.com/v5/w640/eh.png",
     "codeAlpha2": "EH",
+    "codeCCN3": "732",
+    "population": 510713,
+    "area": 266000,
     "continent": "Africa"
   },
   {
@@ -774,6 +1094,9 @@
     "capital": "Lusaka",
     "flagUrl": "https://flags.restcountries.com/v5/w640/zm.png",
     "codeAlpha2": "ZM",
+    "codeCCN3": "894",
+    "population": 20216029,
+    "area": 752612,
     "continent": "Africa"
   },
   {
@@ -781,6 +1104,9 @@
     "capital": "Harare",
     "flagUrl": "https://flags.restcountries.com/v5/w640/zw.png",
     "codeAlpha2": "ZW",
+    "codeCCN3": "716",
+    "population": 17166852,
+    "area": 390757,
     "continent": "Africa"
   },
   {
@@ -788,6 +1114,9 @@
     "capital": "Kabul",
     "flagUrl": "https://flags.restcountries.com/v5/w640/af.png",
     "codeAlpha2": "AF",
+    "codeCCN3": "004",
+    "population": 35000000,
+    "area": 652230,
     "continent": "Asia"
   },
   {
@@ -795,6 +1124,9 @@
     "capital": "Yerevan",
     "flagUrl": "https://flags.restcountries.com/v5/w640/am.png",
     "codeAlpha2": "AM",
+    "codeCCN3": "051",
+    "population": 3100100,
+    "area": 29743,
     "continent": "Asia"
   },
   {
@@ -802,6 +1134,9 @@
     "capital": "Baku",
     "flagUrl": "https://flags.restcountries.com/v5/w640/az.png",
     "codeAlpha2": "AZ",
+    "codeCCN3": "031",
+    "population": 10353296,
+    "area": 86600,
     "continent": "Asia"
   },
   {
@@ -809,6 +1144,9 @@
     "capital": "Manama",
     "flagUrl": "https://flags.restcountries.com/v5/w640/bh.png",
     "codeAlpha2": "BH",
+    "codeCCN3": "048",
+    "population": 1501635,
+    "area": 765,
     "continent": "Asia"
   },
   {
@@ -816,6 +1154,9 @@
     "capital": "Dhaka",
     "flagUrl": "https://flags.restcountries.com/v5/w640/bd.png",
     "codeAlpha2": "BD",
+    "codeCCN3": "050",
+    "population": 175423000,
+    "area": 147570,
     "continent": "Asia"
   },
   {
@@ -823,6 +1164,9 @@
     "capital": "Thimphu",
     "flagUrl": "https://flags.restcountries.com/v5/w640/bt.png",
     "codeAlpha2": "BT",
+    "codeCCN3": "064",
+    "population": 727145,
+    "area": 38394,
     "continent": "Asia"
   },
   {
@@ -830,6 +1174,9 @@
     "capital": "Bandar Seri Begawan",
     "flagUrl": "https://flags.restcountries.com/v5/w640/bn.png",
     "codeAlpha2": "BN",
+    "codeCCN3": "096",
+    "population": 458600,
+    "area": 5765,
     "continent": "Asia"
   },
   {
@@ -837,6 +1184,9 @@
     "capital": "Phnom Penh",
     "flagUrl": "https://flags.restcountries.com/v5/w640/kh.png",
     "codeAlpha2": "KH",
+    "codeCCN3": "116",
+    "population": 17638801,
+    "area": 181035,
     "continent": "Asia"
   },
   {
@@ -844,6 +1194,9 @@
     "capital": "Beijing",
     "flagUrl": "https://flags.restcountries.com/v5/w640/cn.png",
     "codeAlpha2": "CN",
+    "codeCCN3": "156",
+    "population": 1404890000,
+    "area": 9706961,
     "continent": "Asia"
   },
   {
@@ -851,6 +1204,9 @@
     "capital": "Tbilisi",
     "flagUrl": "https://flags.restcountries.com/v5/w640/ge.png",
     "codeAlpha2": "GE",
+    "codeCCN3": "268",
+    "population": 3657000,
+    "area": 69700,
     "continent": "Asia"
   },
   {
@@ -858,6 +1214,9 @@
     "capital": "City of Victoria",
     "flagUrl": "https://flags.restcountries.com/v5/w640/hk.png",
     "codeAlpha2": "HK",
+    "codeCCN3": "344",
+    "population": 7498100,
+    "area": 1104,
     "continent": "Asia"
   },
   {
@@ -865,6 +1224,9 @@
     "capital": "New Delhi",
     "flagUrl": "https://flags.restcountries.com/v5/w640/in.png",
     "codeAlpha2": "IN",
+    "codeCCN3": "356",
+    "population": 1380004385,
+    "area": 3287590,
     "continent": "Asia"
   },
   {
@@ -872,6 +1234,9 @@
     "capital": "Jakarta",
     "flagUrl": "https://flags.restcountries.com/v5/w640/id.png",
     "codeAlpha2": "ID",
+    "codeCCN3": "360",
+    "population": 288315089,
+    "area": 1904569,
     "continent": "Asia"
   },
   {
@@ -879,6 +1244,9 @@
     "capital": "Tehran",
     "flagUrl": "https://flags.restcountries.com/v5/w640/ir.png",
     "codeAlpha2": "IR",
+    "codeCCN3": "364",
+    "population": 92417681,
+    "area": 1648195,
     "continent": "Asia"
   },
   {
@@ -886,6 +1254,9 @@
     "capital": "Baghdad",
     "flagUrl": "https://flags.restcountries.com/v5/w640/iq.png",
     "codeAlpha2": "IQ",
+    "codeCCN3": "368",
+    "population": 46118793,
+    "area": 438317,
     "continent": "Asia"
   },
   {
@@ -893,6 +1264,9 @@
     "capital": "Jerusalem",
     "flagUrl": "https://flags.restcountries.com/v5/w640/il.png",
     "codeAlpha2": "IL",
+    "codeCCN3": "376",
+    "population": 10147200,
+    "area": 20770,
     "continent": "Asia"
   },
   {
@@ -900,6 +1274,9 @@
     "capital": "Tokyo",
     "flagUrl": "https://flags.restcountries.com/v5/w640/jp.png",
     "codeAlpha2": "JP",
+    "codeCCN3": "392",
+    "population": 122950000,
+    "area": 377930,
     "continent": "Asia"
   },
   {
@@ -907,6 +1284,9 @@
     "capital": "Amman",
     "flagUrl": "https://flags.restcountries.com/v5/w640/jo.png",
     "codeAlpha2": "JO",
+    "codeCCN3": "400",
+    "population": 11484805,
+    "area": 89342,
     "continent": "Asia"
   },
   {
@@ -914,6 +1294,9 @@
     "capital": "Astana",
     "flagUrl": "https://flags.restcountries.com/v5/w640/kz.png",
     "codeAlpha2": "KZ",
+    "codeCCN3": "398",
+    "population": 20547909,
+    "area": 2724900,
     "continent": "Asia"
   },
   {
@@ -921,6 +1304,9 @@
     "capital": "Kuwait City",
     "flagUrl": "https://flags.restcountries.com/v5/w640/kw.png",
     "codeAlpha2": "KW",
+    "codeCCN3": "414",
+    "population": 5118445,
+    "area": 17818,
     "continent": "Asia"
   },
   {
@@ -928,6 +1314,9 @@
     "capital": "Bishkek",
     "flagUrl": "https://flags.restcountries.com/v5/w640/kg.png",
     "codeAlpha2": "KG",
+    "codeCCN3": "417",
+    "population": 7400000,
+    "area": 199951,
     "continent": "Asia"
   },
   {
@@ -935,6 +1324,9 @@
     "capital": "Vientiane",
     "flagUrl": "https://flags.restcountries.com/v5/w640/la.png",
     "codeAlpha2": "LA",
+    "codeCCN3": "418",
+    "population": 7545800,
+    "area": 236800,
     "continent": "Asia"
   },
   {
@@ -942,6 +1334,9 @@
     "capital": "Beirut",
     "flagUrl": "https://flags.restcountries.com/v5/w640/lb.png",
     "codeAlpha2": "LB",
+    "codeCCN3": "422",
+    "population": 5364482,
+    "area": 10452,
     "continent": "Asia"
   },
   {
@@ -949,6 +1344,9 @@
     "capital": "Kuala Lumpur",
     "flagUrl": "https://flags.restcountries.com/v5/w640/my.png",
     "codeAlpha2": "MY",
+    "codeCCN3": "458",
+    "population": 36385115,
+    "area": 330803,
     "continent": "Asia"
   },
   {
@@ -956,6 +1354,9 @@
     "capital": "Malé",
     "flagUrl": "https://flags.restcountries.com/v5/w640/mv.png",
     "codeAlpha2": "MV",
+    "codeCCN3": "462",
+    "population": 601269,
+    "area": 300,
     "continent": "Asia"
   },
   {
@@ -963,6 +1364,9 @@
     "capital": "Ulan Bator",
     "flagUrl": "https://flags.restcountries.com/v5/w640/mn.png",
     "codeAlpha2": "MN",
+    "codeCCN3": "496",
+    "population": 3591120,
+    "area": 1564110,
     "continent": "Asia"
   },
   {
@@ -970,6 +1374,9 @@
     "capital": "Naypyidaw",
     "flagUrl": "https://flags.restcountries.com/v5/w640/mm.png",
     "codeAlpha2": "MM",
+    "codeCCN3": "104",
+    "population": 55770232,
+    "area": 676578,
     "continent": "Asia"
   },
   {
@@ -977,6 +1384,9 @@
     "capital": "Kathmandu",
     "flagUrl": "https://flags.restcountries.com/v5/w640/np.png",
     "codeAlpha2": "NP",
+    "codeCCN3": "524",
+    "population": 31122387,
+    "area": 147181,
     "continent": "Asia"
   },
   {
@@ -984,6 +1394,9 @@
     "capital": "Pyongyang",
     "flagUrl": "https://flags.restcountries.com/v5/w640/kp.png",
     "codeAlpha2": "KP",
+    "codeCCN3": "408",
+    "population": 25950000,
+    "area": 120538,
     "continent": "Asia"
   },
   {
@@ -991,6 +1404,9 @@
     "capital": "Muscat",
     "flagUrl": "https://flags.restcountries.com/v5/w640/om.png",
     "codeAlpha2": "OM",
+    "codeCCN3": "512",
+    "population": 5494691,
+    "area": 309500,
     "continent": "Asia"
   },
   {
@@ -998,6 +1414,9 @@
     "capital": "Islamabad",
     "flagUrl": "https://flags.restcountries.com/v5/w640/pk.png",
     "codeAlpha2": "PK",
+    "codeCCN3": "586",
+    "population": 241499431,
+    "area": 881912,
     "continent": "Asia"
   },
   {
@@ -1005,6 +1424,9 @@
     "capital": "Ramallah",
     "flagUrl": "https://flags.restcountries.com/v5/w640/ps.png",
     "codeAlpha2": "PS",
+    "codeCCN3": "275",
+    "population": 5483450,
+    "area": 6220,
     "continent": "Asia"
   },
   {
@@ -1012,6 +1434,9 @@
     "capital": "Manila",
     "flagUrl": "https://flags.restcountries.com/v5/w640/ph.png",
     "codeAlpha2": "PH",
+    "codeCCN3": "608",
+    "population": 112729484,
+    "area": 342353,
     "continent": "Asia"
   },
   {
@@ -1019,6 +1444,9 @@
     "capital": "Doha",
     "flagUrl": "https://flags.restcountries.com/v5/w640/qa.png",
     "codeAlpha2": "QA",
+    "codeCCN3": "634",
+    "population": 3214609,
+    "area": 11586,
     "continent": "Asia"
   },
   {
@@ -1026,6 +1454,9 @@
     "capital": "Riyadh",
     "flagUrl": "https://flags.restcountries.com/v5/w640/sa.png",
     "codeAlpha2": "SA",
+    "codeCCN3": "682",
+    "population": 33702731,
+    "area": 2149690,
     "continent": "Asia"
   },
   {
@@ -1033,6 +1464,9 @@
     "capital": "Singapore",
     "flagUrl": "https://flags.restcountries.com/v5/w640/sg.png",
     "codeAlpha2": "SG",
+    "codeCCN3": "702",
+    "population": 6110200,
+    "area": 710,
     "continent": "Asia"
   },
   {
@@ -1040,6 +1474,9 @@
     "capital": "Seoul",
     "flagUrl": "https://flags.restcountries.com/v5/w640/kr.png",
     "codeAlpha2": "KR",
+    "codeCCN3": "410",
+    "population": 51106229,
+    "area": 100210,
     "continent": "Asia"
   },
   {
@@ -1047,6 +1484,9 @@
     "capital": "Sri Jayawardenepura Kotte",
     "flagUrl": "https://flags.restcountries.com/v5/w640/lk.png",
     "codeAlpha2": "LK",
+    "codeCCN3": "144",
+    "population": 21756000,
+    "area": 65610,
     "continent": "Asia"
   },
   {
@@ -1054,6 +1494,9 @@
     "capital": "Damascus",
     "flagUrl": "https://flags.restcountries.com/v5/w640/sy.png",
     "codeAlpha2": "SY",
+    "codeCCN3": "760",
+    "population": 26019711,
+    "area": 185180,
     "continent": "Asia"
   },
   {
@@ -1061,6 +1504,9 @@
     "capital": "Taipei",
     "flagUrl": "https://flags.restcountries.com/v5/w640/tw.png",
     "codeAlpha2": "TW",
+    "codeCCN3": "158",
+    "population": 23299132,
+    "area": 36193,
     "continent": "Asia"
   },
   {
@@ -1068,6 +1514,9 @@
     "capital": "Dushanbe",
     "flagUrl": "https://flags.restcountries.com/v5/w640/tj.png",
     "codeAlpha2": "TJ",
+    "codeCCN3": "762",
+    "population": 10786734,
+    "area": 143100,
     "continent": "Asia"
   },
   {
@@ -1075,6 +1524,9 @@
     "capital": "Bangkok",
     "flagUrl": "https://flags.restcountries.com/v5/w640/th.png",
     "codeAlpha2": "TH",
+    "codeCCN3": "764",
+    "population": 65975198,
+    "area": 513120,
     "continent": "Asia"
   },
   {
@@ -1082,6 +1534,9 @@
     "capital": "Dili",
     "flagUrl": "https://flags.restcountries.com/v5/w640/tl.png",
     "codeAlpha2": "TL",
+    "codeCCN3": "626",
+    "population": 1434991,
+    "area": 14874,
     "continent": "Asia"
   },
   {
@@ -1089,6 +1544,9 @@
     "capital": "Ankara",
     "flagUrl": "https://flags.restcountries.com/v5/w640/tr.png",
     "codeAlpha2": "TR",
+    "codeCCN3": "792",
+    "population": 86092168,
+    "area": 783562,
     "continent": "Asia"
   },
   {
@@ -1096,6 +1554,9 @@
     "capital": "Ashgabat",
     "flagUrl": "https://flags.restcountries.com/v5/w640/tm.png",
     "codeAlpha2": "TM",
+    "codeCCN3": "795",
+    "population": 7057841,
+    "area": 488100,
     "continent": "Asia"
   },
   {
@@ -1103,6 +1564,9 @@
     "capital": "Abu Dhabi",
     "flagUrl": "https://flags.restcountries.com/v5/w640/ae.png",
     "codeAlpha2": "AE",
+    "codeCCN3": "784",
+    "population": 11027129,
+    "area": 83600,
     "continent": "Asia"
   },
   {
@@ -1110,6 +1574,9 @@
     "capital": "Tashkent",
     "flagUrl": "https://flags.restcountries.com/v5/w640/uz.png",
     "codeAlpha2": "UZ",
+    "codeCCN3": "860",
+    "population": 38236704,
+    "area": 447400,
     "continent": "Asia"
   },
   {
@@ -1117,6 +1584,9 @@
     "capital": "Hanoi",
     "flagUrl": "https://flags.restcountries.com/v5/w640/vn.png",
     "codeAlpha2": "VN",
+    "codeCCN3": "704",
+    "population": 102300000,
+    "area": 331212,
     "continent": "Asia"
   },
   {
@@ -1124,6 +1594,9 @@
     "capital": "Sana'a",
     "flagUrl": "https://flags.restcountries.com/v5/w640/ye.png",
     "codeAlpha2": "YE",
+    "codeCCN3": "887",
+    "population": 32684503,
+    "area": 527968,
     "continent": "Asia"
   },
   {
@@ -1131,6 +1604,9 @@
     "capital": "The Valley",
     "flagUrl": "https://flags.restcountries.com/v5/w640/ai.png",
     "codeAlpha2": "AI",
+    "codeCCN3": "660",
+    "population": 16010,
+    "area": 91,
     "continent": "Americas"
   },
   {
@@ -1138,6 +1614,9 @@
     "capital": "Saint John's",
     "flagUrl": "https://flags.restcountries.com/v5/w640/ag.png",
     "codeAlpha2": "AG",
+    "codeCCN3": "028",
+    "population": 106365,
+    "area": 442,
     "continent": "Americas"
   },
   {
@@ -1145,6 +1624,9 @@
     "capital": "Buenos Aires",
     "flagUrl": "https://flags.restcountries.com/v5/w640/ar.png",
     "codeAlpha2": "AR",
+    "codeCCN3": "032",
+    "population": 46735004,
+    "area": 2780400,
     "continent": "Americas"
   },
   {
@@ -1152,6 +1634,9 @@
     "capital": "Oranjestad",
     "flagUrl": "https://flags.restcountries.com/v5/w640/aw.png",
     "codeAlpha2": "AW",
+    "codeCCN3": "533",
+    "population": 108880,
+    "area": 180,
     "continent": "Americas"
   },
   {
@@ -1159,6 +1644,9 @@
     "capital": "Nassau",
     "flagUrl": "https://flags.restcountries.com/v5/w640/bs.png",
     "codeAlpha2": "BS",
+    "codeCCN3": "044",
+    "population": 398165,
+    "area": 13943,
     "continent": "Americas"
   },
   {
@@ -1166,6 +1654,9 @@
     "capital": "Bridgetown",
     "flagUrl": "https://flags.restcountries.com/v5/w640/bb.png",
     "codeAlpha2": "BB",
+    "codeCCN3": "052",
+    "population": 281998,
+    "area": 430,
     "continent": "Americas"
   },
   {
@@ -1173,6 +1664,9 @@
     "capital": "Belmopan",
     "flagUrl": "https://flags.restcountries.com/v5/w640/bz.png",
     "codeAlpha2": "BZ",
+    "codeCCN3": "084",
+    "population": 397483,
+    "area": 22966,
     "continent": "Americas"
   },
   {
@@ -1180,6 +1674,9 @@
     "capital": "Hamilton",
     "flagUrl": "https://flags.restcountries.com/v5/w640/bm.png",
     "codeAlpha2": "BM",
+    "codeCCN3": "060",
+    "population": 63913,
+    "area": 54,
     "continent": "Americas"
   },
   {
@@ -1187,6 +1684,9 @@
     "capital": "Sucre",
     "flagUrl": "https://flags.restcountries.com/v5/w640/bo.png",
     "codeAlpha2": "BO",
+    "codeCCN3": "068",
+    "population": 11365333,
+    "area": 1098581,
     "continent": "Americas"
   },
   {
@@ -1194,6 +1694,9 @@
     "capital": "Brasília",
     "flagUrl": "https://flags.restcountries.com/v5/w640/br.png",
     "codeAlpha2": "BR",
+    "codeCCN3": "076",
+    "population": 213421037,
+    "area": 8515767,
     "continent": "Americas"
   },
   {
@@ -1201,6 +1704,9 @@
     "capital": "Road Town",
     "flagUrl": "https://flags.restcountries.com/v5/w640/vg.png",
     "codeAlpha2": "VG",
+    "codeCCN3": "092",
+    "population": 38322,
+    "area": 151,
     "continent": "Americas"
   },
   {
@@ -1208,6 +1714,9 @@
     "capital": "Ottawa",
     "flagUrl": "https://flags.restcountries.com/v5/w640/ca.png",
     "codeAlpha2": "CA",
+    "codeCCN3": "124",
+    "population": 41575585,
+    "area": 9984670,
     "continent": "Americas"
   },
   {
@@ -1215,6 +1724,9 @@
     "capital": "Kralendijk",
     "flagUrl": "https://flags.restcountries.com/v5/w640/bq.png",
     "codeAlpha2": "BQ",
+    "codeCCN3": "535",
+    "population": 31980,
+    "area": 328,
     "continent": "Americas"
   },
   {
@@ -1222,6 +1734,9 @@
     "capital": "George Town",
     "flagUrl": "https://flags.restcountries.com/v5/w640/ky.png",
     "codeAlpha2": "KY",
+    "codeCCN3": "136",
+    "population": 90577,
+    "area": 264,
     "continent": "Americas"
   },
   {
@@ -1229,6 +1744,9 @@
     "capital": "Santiago",
     "flagUrl": "https://flags.restcountries.com/v5/w640/cl.png",
     "codeAlpha2": "CL",
+    "codeCCN3": "152",
+    "population": 19629588,
+    "area": 756102,
     "continent": "Americas"
   },
   {
@@ -1236,6 +1754,9 @@
     "capital": "Bogotá",
     "flagUrl": "https://flags.restcountries.com/v5/w640/co.png",
     "codeAlpha2": "CO",
+    "codeCCN3": "170",
+    "population": 52695952,
+    "area": 1141748,
     "continent": "Americas"
   },
   {
@@ -1243,6 +1764,9 @@
     "capital": "San José",
     "flagUrl": "https://flags.restcountries.com/v5/w640/cr.png",
     "codeAlpha2": "CR",
+    "codeCCN3": "188",
+    "population": 5160700,
+    "area": 51100,
     "continent": "Americas"
   },
   {
@@ -1250,6 +1774,9 @@
     "capital": "Havana",
     "flagUrl": "https://flags.restcountries.com/v5/w640/cu.png",
     "codeAlpha2": "CU",
+    "codeCCN3": "192",
+    "population": 9748007,
+    "area": 109884,
     "continent": "Americas"
   },
   {
@@ -1257,6 +1784,9 @@
     "capital": "Willemstad",
     "flagUrl": "https://flags.restcountries.com/v5/w640/cw.png",
     "codeAlpha2": "CW",
+    "codeCCN3": "531",
+    "population": 155826,
+    "area": 444,
     "continent": "Americas"
   },
   {
@@ -1264,6 +1794,9 @@
     "capital": "Roseau",
     "flagUrl": "https://flags.restcountries.com/v5/w640/dm.png",
     "codeAlpha2": "DM",
+    "codeCCN3": "212",
+    "population": 71293,
+    "area": 751,
     "continent": "Americas"
   },
   {
@@ -1271,6 +1804,9 @@
     "capital": "Santo Domingo",
     "flagUrl": "https://flags.restcountries.com/v5/w640/do.png",
     "codeAlpha2": "DO",
+    "codeCCN3": "214",
+    "population": 11532151,
+    "area": 48671,
     "continent": "Americas"
   },
   {
@@ -1278,6 +1814,9 @@
     "capital": "Quito",
     "flagUrl": "https://flags.restcountries.com/v5/w640/ec.png",
     "codeAlpha2": "EC",
+    "codeCCN3": "218",
+    "population": 17483326,
+    "area": 276841,
     "continent": "Americas"
   },
   {
@@ -1285,6 +1824,9 @@
     "capital": "San Salvador",
     "flagUrl": "https://flags.restcountries.com/v5/w640/sv.png",
     "codeAlpha2": "SV",
+    "codeCCN3": "222",
+    "population": 6029976,
+    "area": 21041,
     "continent": "Americas"
   },
   {
@@ -1292,6 +1834,9 @@
     "capital": "Stanley",
     "flagUrl": "https://flags.restcountries.com/v5/w640/fk.png",
     "codeAlpha2": "FK",
+    "codeCCN3": "238",
+    "population": 3662,
+    "area": 12173,
     "continent": "Americas"
   },
   {
@@ -1299,6 +1844,9 @@
     "capital": "Cayenne",
     "flagUrl": "https://flags.restcountries.com/v5/w640/gf.png",
     "codeAlpha2": "GF",
+    "codeCCN3": "254",
+    "population": 254541,
+    "area": 83534,
     "continent": "Americas"
   },
   {
@@ -1306,6 +1854,9 @@
     "capital": "Nuuk",
     "flagUrl": "https://flags.restcountries.com/v5/w640/gl.png",
     "codeAlpha2": "GL",
+    "codeCCN3": "304",
+    "population": 56831,
+    "area": 2166086,
     "continent": "Americas"
   },
   {
@@ -1313,6 +1864,9 @@
     "capital": "St. George's",
     "flagUrl": "https://flags.restcountries.com/v5/w640/gd.png",
     "codeAlpha2": "GD",
+    "codeCCN3": "308",
+    "population": 114621,
+    "area": 344,
     "continent": "Americas"
   },
   {
@@ -1320,6 +1874,9 @@
     "capital": "Basse-Terre",
     "flagUrl": "https://flags.restcountries.com/v5/w640/gp.png",
     "codeAlpha2": "GP",
+    "codeCCN3": "312",
+    "population": 400132,
+    "area": 1628,
     "continent": "Americas"
   },
   {
@@ -1327,6 +1884,9 @@
     "capital": "Guatemala City",
     "flagUrl": "https://flags.restcountries.com/v5/w640/gt.png",
     "codeAlpha2": "GT",
+    "codeCCN3": "320",
+    "population": 18636532,
+    "area": 108889,
     "continent": "Americas"
   },
   {
@@ -1334,6 +1894,9 @@
     "capital": "Georgetown",
     "flagUrl": "https://flags.restcountries.com/v5/w640/gy.png",
     "codeAlpha2": "GY",
+    "codeCCN3": "328",
+    "population": 950986,
+    "area": 214969,
     "continent": "Americas"
   },
   {
@@ -1341,6 +1904,9 @@
     "capital": "Port-au-Prince",
     "flagUrl": "https://flags.restcountries.com/v5/w640/ht.png",
     "codeAlpha2": "HT",
+    "codeCCN3": "332",
+    "population": 11470261,
+    "area": 27750,
     "continent": "Americas"
   },
   {
@@ -1348,6 +1914,9 @@
     "capital": "Tegucigalpa",
     "flagUrl": "https://flags.restcountries.com/v5/w640/hn.png",
     "codeAlpha2": "HN",
+    "codeCCN3": "340",
+    "population": 9571352,
+    "area": 112492,
     "continent": "Americas"
   },
   {
@@ -1355,6 +1924,9 @@
     "capital": "Kingston",
     "flagUrl": "https://flags.restcountries.com/v5/w640/jm.png",
     "codeAlpha2": "JM",
+    "codeCCN3": "388",
+    "population": 2824913,
+    "area": 10991,
     "continent": "Americas"
   },
   {
@@ -1362,6 +1934,9 @@
     "capital": "Fort-de-France",
     "flagUrl": "https://flags.restcountries.com/v5/w640/mq.png",
     "codeAlpha2": "MQ",
+    "codeCCN3": "474",
+    "population": 378243,
+    "area": 1128,
     "continent": "Americas"
   },
   {
@@ -1369,6 +1944,9 @@
     "capital": "Mexico City",
     "flagUrl": "https://flags.restcountries.com/v5/w640/mx.png",
     "codeAlpha2": "MX",
+    "codeCCN3": "484",
+    "population": 134407258,
+    "area": 1964375,
     "continent": "Americas"
   },
   {
@@ -1376,6 +1954,9 @@
     "capital": "Plymouth",
     "flagUrl": "https://flags.restcountries.com/v5/w640/ms.png",
     "codeAlpha2": "MS",
+    "codeCCN3": "500",
+    "population": 4399,
+    "area": 102,
     "continent": "Americas"
   },
   {
@@ -1383,6 +1964,9 @@
     "capital": "Managua",
     "flagUrl": "https://flags.restcountries.com/v5/w640/ni.png",
     "codeAlpha2": "NI",
+    "codeCCN3": "558",
+    "population": 6676948,
+    "area": 130373,
     "continent": "Americas"
   },
   {
@@ -1390,6 +1974,9 @@
     "capital": "Panama City",
     "flagUrl": "https://flags.restcountries.com/v5/w640/pa.png",
     "codeAlpha2": "PA",
+    "codeCCN3": "591",
+    "population": 4337768,
+    "area": 75417,
     "continent": "Americas"
   },
   {
@@ -1397,6 +1984,9 @@
     "capital": "Asunción",
     "flagUrl": "https://flags.restcountries.com/v5/w640/py.png",
     "codeAlpha2": "PY",
+    "codeCCN3": "600",
+    "population": 6460159,
+    "area": 406752,
     "continent": "Americas"
   },
   {
@@ -1404,6 +1994,9 @@
     "capital": "Lima",
     "flagUrl": "https://flags.restcountries.com/v5/w640/pe.png",
     "codeAlpha2": "PE",
+    "codeCCN3": "604",
+    "population": 34352720,
+    "area": 1285216,
     "continent": "Americas"
   },
   {
@@ -1411,6 +2004,9 @@
     "capital": "San Juan",
     "flagUrl": "https://flags.restcountries.com/v5/w640/pr.png",
     "codeAlpha2": "PR",
+    "codeCCN3": "630",
+    "population": 3194034,
+    "area": 8870,
     "continent": "Americas"
   },
   {
@@ -1418,6 +2014,9 @@
     "capital": "Gustavia",
     "flagUrl": "https://flags.restcountries.com/v5/w640/bl.png",
     "codeAlpha2": "BL",
+    "codeCCN3": "652",
+    "population": 4255,
+    "area": 21,
     "continent": "Americas"
   },
   {
@@ -1425,6 +2024,9 @@
     "capital": "Basseterre",
     "flagUrl": "https://flags.restcountries.com/v5/w640/kn.png",
     "codeAlpha2": "KN",
+    "codeCCN3": "659",
+    "population": 54338,
+    "area": 261,
     "continent": "Americas"
   },
   {
@@ -1432,6 +2034,9 @@
     "capital": "Castries",
     "flagUrl": "https://flags.restcountries.com/v5/w640/lc.png",
     "codeAlpha2": "LC",
+    "codeCCN3": "662",
+    "population": 184100,
+    "area": 616,
     "continent": "Americas"
   },
   {
@@ -1439,6 +2044,9 @@
     "capital": "Marigot",
     "flagUrl": "https://flags.restcountries.com/v5/w640/mf.png",
     "codeAlpha2": "MF",
+    "codeCCN3": "663",
+    "population": 38659,
+    "area": 53,
     "continent": "Americas"
   },
   {
@@ -1446,6 +2054,9 @@
     "capital": "Saint-Pierre",
     "flagUrl": "https://flags.restcountries.com/v5/w640/pm.png",
     "codeAlpha2": "PM",
+    "codeCCN3": "666",
+    "population": 5819,
+    "area": 242,
     "continent": "Americas"
   },
   {
@@ -1453,6 +2064,9 @@
     "capital": "Kingstown",
     "flagUrl": "https://flags.restcountries.com/v5/w640/vc.png",
     "codeAlpha2": "VC",
+    "codeCCN3": "670",
+    "population": 110872,
+    "area": 389,
     "continent": "Americas"
   },
   {
@@ -1460,6 +2074,9 @@
     "capital": "Philipsburg",
     "flagUrl": "https://flags.restcountries.com/v5/w640/sx.png",
     "codeAlpha2": "SX",
+    "codeCCN3": "534",
+    "population": 58477,
+    "area": 34,
     "continent": "Americas"
   },
   {
@@ -1467,6 +2084,9 @@
     "capital": "Paramaribo",
     "flagUrl": "https://flags.restcountries.com/v5/w640/sr.png",
     "codeAlpha2": "SR",
+    "codeCCN3": "740",
+    "population": 632638,
+    "area": 163820,
     "continent": "Americas"
   },
   {
@@ -1474,6 +2094,9 @@
     "capital": "Port of Spain",
     "flagUrl": "https://flags.restcountries.com/v5/w640/tt.png",
     "codeAlpha2": "TT",
+    "codeCCN3": "780",
+    "population": 1512779,
+    "area": 5130,
     "continent": "Americas"
   },
   {
@@ -1481,6 +2104,9 @@
     "capital": "Cockburn Town",
     "flagUrl": "https://flags.restcountries.com/v5/w640/tc.png",
     "codeAlpha2": "TC",
+    "codeCCN3": "796",
+    "population": 50828,
+    "area": 948,
     "continent": "Americas"
   },
   {
@@ -1488,6 +2114,9 @@
     "capital": "Washington, D.C.",
     "flagUrl": "https://flags.restcountries.com/v5/w640/us.png",
     "codeAlpha2": "US",
+    "codeCCN3": "840",
+    "population": 341784857,
+    "area": 9372610,
     "continent": "Americas"
   },
   {
@@ -1495,6 +2124,9 @@
     "capital": "Charlotte Amalie",
     "flagUrl": "https://flags.restcountries.com/v5/w640/vi.png",
     "codeAlpha2": "VI",
+    "codeCCN3": "850",
+    "population": 87146,
+    "area": 347,
     "continent": "Americas"
   },
   {
@@ -1502,6 +2134,9 @@
     "capital": "Montevideo",
     "flagUrl": "https://flags.restcountries.com/v5/w640/uy.png",
     "codeAlpha2": "UY",
+    "codeCCN3": "858",
+    "population": 3499451,
+    "area": 181034,
     "continent": "Americas"
   },
   {
@@ -1509,6 +2144,9 @@
     "capital": "Caracas",
     "flagUrl": "https://flags.restcountries.com/v5/w640/ve.png",
     "codeAlpha2": "VE",
+    "codeCCN3": "862",
+    "population": 31800000,
+    "area": 916445,
     "continent": "Americas"
   },
   {
@@ -1516,6 +2154,9 @@
     "capital": "Pago Pago",
     "flagUrl": "https://flags.restcountries.com/v5/w640/as.png",
     "codeAlpha2": "AS",
+    "codeCCN3": "016",
+    "population": 43268,
+    "area": 199,
     "continent": "Oceania"
   },
   {
@@ -1523,6 +2164,9 @@
     "capital": "Canberra",
     "flagUrl": "https://flags.restcountries.com/v5/w640/au.png",
     "codeAlpha2": "AU",
+    "codeCCN3": "036",
+    "population": 27724744,
+    "area": 7692024,
     "continent": "Oceania"
   },
   {
@@ -1530,6 +2174,9 @@
     "capital": "Flying Fish Cove",
     "flagUrl": "https://flags.restcountries.com/v5/w640/cx.png",
     "codeAlpha2": "CX",
+    "codeCCN3": "162",
+    "population": 1692,
+    "area": 135,
     "continent": "Oceania"
   },
   {
@@ -1537,6 +2184,9 @@
     "capital": "West Island",
     "flagUrl": "https://flags.restcountries.com/v5/w640/cc.png",
     "codeAlpha2": "CC",
+    "codeCCN3": "166",
+    "population": 593,
+    "area": 14,
     "continent": "Oceania"
   },
   {
@@ -1544,6 +2194,9 @@
     "capital": "Avarua",
     "flagUrl": "https://flags.restcountries.com/v5/w640/ck.png",
     "codeAlpha2": "CK",
+    "codeCCN3": "184",
+    "population": 15040,
+    "area": 236,
     "continent": "Oceania"
   },
   {
@@ -1551,6 +2204,9 @@
     "capital": "Suva",
     "flagUrl": "https://flags.restcountries.com/v5/w640/fj.png",
     "codeAlpha2": "FJ",
+    "codeCCN3": "242",
+    "population": 926276,
+    "area": 18272,
     "continent": "Oceania"
   },
   {
@@ -1558,6 +2214,9 @@
     "capital": "Papeetē",
     "flagUrl": "https://flags.restcountries.com/v5/w640/pf.png",
     "codeAlpha2": "PF",
+    "codeCCN3": "258",
+    "population": 278786,
+    "area": 4167,
     "continent": "Oceania"
   },
   {
@@ -1565,6 +2224,9 @@
     "capital": "Hagåtña",
     "flagUrl": "https://flags.restcountries.com/v5/w640/gu.png",
     "codeAlpha2": "GU",
+    "codeCCN3": "316",
+    "population": 165180,
+    "area": 549,
     "continent": "Oceania"
   },
   {
@@ -1572,6 +2234,9 @@
     "capital": "South Tarawa",
     "flagUrl": "https://flags.restcountries.com/v5/w640/ki.png",
     "codeAlpha2": "KI",
+    "codeCCN3": "296",
+    "population": 138000,
+    "area": 811,
     "continent": "Oceania"
   },
   {
@@ -1579,6 +2244,9 @@
     "capital": "Majuro",
     "flagUrl": "https://flags.restcountries.com/v5/w640/mh.png",
     "codeAlpha2": "MH",
+    "codeCCN3": "584",
+    "population": 37548,
+    "area": 181,
     "continent": "Oceania"
   },
   {
@@ -1586,6 +2254,9 @@
     "capital": "Palikir",
     "flagUrl": "https://flags.restcountries.com/v5/w640/fm.png",
     "codeAlpha2": "FM",
+    "codeCCN3": "583",
+    "population": 75817,
+    "area": 702,
     "continent": "Oceania"
   },
   {
@@ -1593,6 +2264,9 @@
     "capital": "Yaren",
     "flagUrl": "https://flags.restcountries.com/v5/w640/nr.png",
     "codeAlpha2": "NR",
+    "codeCCN3": "520",
+    "population": 12025,
+    "area": 21,
     "continent": "Oceania"
   },
   {
@@ -1600,6 +2274,9 @@
     "capital": "Nouméa",
     "flagUrl": "https://flags.restcountries.com/v5/w640/nc.png",
     "codeAlpha2": "NC",
+    "codeCCN3": "540",
+    "population": 264596,
+    "area": 18575,
     "continent": "Oceania"
   },
   {
@@ -1607,6 +2284,9 @@
     "capital": "Wellington",
     "flagUrl": "https://flags.restcountries.com/v5/w640/nz.png",
     "codeAlpha2": "NZ",
+    "codeCCN3": "554",
+    "population": 4993923,
+    "area": 270467,
     "continent": "Oceania"
   },
   {
@@ -1614,6 +2294,9 @@
     "capital": "Alofi",
     "flagUrl": "https://flags.restcountries.com/v5/w640/nu.png",
     "codeAlpha2": "NU",
+    "codeCCN3": "570",
+    "population": 1681,
+    "area": 260,
     "continent": "Oceania"
   },
   {
@@ -1621,6 +2304,9 @@
     "capital": "Kingston",
     "flagUrl": "https://flags.restcountries.com/v5/w640/nf.png",
     "codeAlpha2": "NF",
+    "codeCCN3": "574",
+    "population": 2188,
+    "area": 36,
     "continent": "Oceania"
   },
   {
@@ -1628,6 +2314,9 @@
     "capital": "Saipan",
     "flagUrl": "https://flags.restcountries.com/v5/w640/mp.png",
     "codeAlpha2": "MP",
+    "codeCCN3": "580",
+    "population": 46078,
+    "area": 464,
     "continent": "Oceania"
   },
   {
@@ -1635,6 +2324,9 @@
     "capital": "Ngerulmud",
     "flagUrl": "https://flags.restcountries.com/v5/w640/pw.png",
     "codeAlpha2": "PW",
+    "codeCCN3": "585",
+    "population": 17663,
+    "area": 459,
     "continent": "Oceania"
   },
   {
@@ -1642,6 +2334,9 @@
     "capital": "Port Moresby",
     "flagUrl": "https://flags.restcountries.com/v5/w640/pg.png",
     "codeAlpha2": "PG",
+    "codeCCN3": "598",
+    "population": 11781559,
+    "area": 462840,
     "continent": "Oceania"
   },
   {
@@ -1649,6 +2344,9 @@
     "capital": "Adamstown",
     "flagUrl": "https://flags.restcountries.com/v5/w640/pn.png",
     "codeAlpha2": "PN",
+    "codeCCN3": "612",
+    "population": 35,
+    "area": 47,
     "continent": "Oceania"
   },
   {
@@ -1656,6 +2354,9 @@
     "capital": "Apia",
     "flagUrl": "https://flags.restcountries.com/v5/w640/ws.png",
     "codeAlpha2": "WS",
+    "codeCCN3": "882",
+    "population": 205557,
+    "area": 2842,
     "continent": "Oceania"
   },
   {
@@ -1663,6 +2364,9 @@
     "capital": "Honiara",
     "flagUrl": "https://flags.restcountries.com/v5/w640/sb.png",
     "codeAlpha2": "SB",
+    "codeCCN3": "090",
+    "population": 828857,
+    "area": 28896,
     "continent": "Oceania"
   },
   {
@@ -1670,6 +2374,9 @@
     "capital": "Fakaofo",
     "flagUrl": "https://flags.restcountries.com/v5/w640/tk.png",
     "codeAlpha2": "TK",
+    "codeCCN3": "772",
+    "population": 1411,
+    "area": 12,
     "continent": "Oceania"
   },
   {
@@ -1677,6 +2384,9 @@
     "capital": "Nuku'alofa",
     "flagUrl": "https://flags.restcountries.com/v5/w640/to.png",
     "codeAlpha2": "TO",
+    "codeCCN3": "776",
+    "population": 100179,
+    "area": 747,
     "continent": "Oceania"
   },
   {
@@ -1684,6 +2394,9 @@
     "capital": "Funafuti",
     "flagUrl": "https://flags.restcountries.com/v5/w640/tv.png",
     "codeAlpha2": "TV",
+    "codeCCN3": "798",
+    "population": 10643,
+    "area": 26,
     "continent": "Oceania"
   },
   {
@@ -1691,6 +2404,9 @@
     "capital": "Port Vila",
     "flagUrl": "https://flags.restcountries.com/v5/w640/vu.png",
     "codeAlpha2": "VU",
+    "codeCCN3": "548",
+    "population": 335908,
+    "area": 12189,
     "continent": "Oceania"
   },
   {
@@ -1698,6 +2414,9 @@
     "capital": "Mata-Utu",
     "flagUrl": "https://flags.restcountries.com/v5/w640/wf.png",
     "codeAlpha2": "WF",
+    "codeCCN3": "876",
+    "population": 11151,
+    "area": 142,
     "continent": "Oceania"
   }
 ]
