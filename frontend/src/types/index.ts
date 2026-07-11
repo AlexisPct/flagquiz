@@ -2,9 +2,12 @@ export interface Country {
   name: string;
   capital: string;
   flagUrl: string;
-  codeAlpha2: string;
+  codeAlpha2: string; 
+  codeCCN3: string;
+  region: string;
+  population: number;
+  area: number;
   continent: string;
-  currency: string;
 }
 
 export type QuizType = 'capital' | 'flag' | 'shape';

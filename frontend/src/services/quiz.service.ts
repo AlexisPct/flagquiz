@@ -1,3 +1,5 @@
+import type { Country } from "../types";
+
 const BASE_URL = 'http://localhost:5000/api/quiz';
 
 export interface QuizConfigPayload {
@@ -53,6 +55,19 @@ export const quizService = {
 
     if (!response.ok) throw new Error(`Erreur submitAnswer: ${response.status}`);
     return response.json();
+  },
+
+  /**
+   * Récupère la liste de tous les pays
+   */
+  async getCountries(): Promise<Country[]> {
+    const res = await fetch(`${BASE_URL}/countries`);
+    
+    if (!res.ok) {
+      throw new Error(`Impossible de récupérer la liste des pays (Status: ${res.status})`);
+    }
+    
+    return res.json();
   },
 
   /**

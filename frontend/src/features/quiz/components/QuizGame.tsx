@@ -58,10 +58,6 @@ export const QuizGame: React.FC = () => {
         return () => clearTimeout(timer);
     }, [timeLeft, step, feedback, config.hasTimer]);
 
-
-
-
-
     const startQuiz = async () => {
         try {
             const session = await quizService.startSession(config);

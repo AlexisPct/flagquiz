@@ -1,100 +1,87 @@
-.home-container {
-  display: flex;
-  flex-direction: column;
-  margin: auto;
-  width: 60vw;
-  gap: 48px;
-  animation: fadeIn 0.4s ease-out;
-}
-
-/* Zone d'en-tête */
-.home-hero {
-  text-align: center;
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.home-title {
-  font-size: 36px;
-  font-weight: 800;
-  letter-spacing: -0.02em;
-  color: var(--text-main);
-  margin-bottom: 12px;
-}
-
-.home-lead {
-  font-size: 16px;
-  color: var(--text-muted);
-  line-height: 1.6;
-}
-
-/* Grille interactive */
-.home-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 24px;
-}
-
-/* Les grandes tuiles cliquables */
-.home-card {
-  background-color: var(--bg-card);
-  border: 1px solid var(--border-color);
-  padding: 32px;
-  border-radius: 16px;
-  cursor: pointer;
-  display: flex;
-  flex-direction: column;
-  transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), 
-              border-color 0.2s ease, 
-              box-shadow 0.2s ease;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
-}
-
-/* Effets au survol */
-.home-card:hover {
-  transform: translateY(-4px);
-  border-color: var(--accent-color);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.04);
-}
-
-[data-theme="dark"] .home-card {
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
-}
-
-[data-theme="dark"] .home-card:hover {
-  box-shadow: 0 0 20px rgba(96, 165, 250, 0.1); /* Lueur subtile de la couleur accent en dark */
-}
-
-/* Éléments internes de la carte */
-.home-card-icon {
-  font-size: 32px;
-  margin-bottom: 20px;
-}
-
-.home-card-title {
-  font-size: 20px;
-  font-weight: 700;
-  color: var(--text-main);
-  margin: 0 0 10px 0;
-}
-
-.home-card-desc {
-  font-size: 14px;
-  color: var(--text-muted);
-  line-height: 1.5;
-  margin: 0 0 24px 0;
-  flex: 1; /* Pousse l'action vers le bas pour que tout soit aligné */
-}
-
-.home-card-action {
-  font-size: 14px;
-  font-weight: 600;
-  color: var(--accent-color);
-  transition: gap 0.2s ease;
-}
-
-/* Petite animation d'apparition */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(10px); }
   to { opacity: 1; transform: translateY(0); }
+}
+
+.home-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 80vw;
+  height: 90vh;
+  margin: auto;
+}
+
+.hero-visual {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.btn-modern {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 14px 28px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  border: none;
+}
+
+.btn-primary-modern {
+  background-color: #2563eb;
+  color: #ffffff;
+  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.3);
+}
+
+.btn-primary-modern:hover {
+  background-color: #1d4ed8;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(37, 99, 235, 0.4);
+}
+
+.btn-primary-modern:active {
+  transform: translateY(0);
+}
+
+.btn-secondary-modern {
+  background-color: #ffffff;
+  color: #1e293b;
+  border: 2px solid #e2e8f0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+}
+
+.btn-secondary-modern:hover {
+  background-color: #f8fafc;
+  border-color: #cbd5e1;
+  color: #0f172a;
+  transform: translateY(-2px);
+}
+
+[data-theme="dark"] .btn-secondary-modern {
+  background-color: #1e293b;
+  color: #f8fafc;
+  border-color: #334155;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+[data-theme="dark"] .btn-secondary-modern:hover {
+  background-color: #2d3748;
+  border-color: #4a5568;
+}
+
+.btn-icon {
+  font-size: 1.2rem;
 }

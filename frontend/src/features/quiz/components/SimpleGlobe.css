@@ -1,0 +1,38 @@
+.simple-globe-wrapper {
+  width: 100%;
+  max-width: 380px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.simple-svg-globe {
+  filter: drop-shadow(0 15px 35px rgba(59, 130, 246, 0.15));
+}
+
+[data-theme="dark"] .simple-svg-globe {
+  filter: drop-shadow(0 15px 40px rgba(96, 165, 250, 0.3));
+}
+
+.simple-globe-ocean {
+  fill: #dbeafe; 
+  stroke: #93c5fd;
+  stroke-width: 0.8px;
+}
+
+.simple-globe-land {
+  fill: #ffffff; 
+  stroke: #93c5fd;
+  stroke-width: 0.4px;
+}
+
+[data-theme="dark"] .simple-globe-ocean {
+  fill: #0f172a; 
+  stroke: #1e293b;
+}
+
+[data-theme="dark"] .simple-globe-land {
+  fill: #1e293b; 
+  stroke: #334155;
+}
