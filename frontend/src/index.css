@@ -74,7 +74,6 @@ body {
   cursor: pointer;
   font-size: 14px;
   font-weight: 500;
-  backdrop-filter: blur(var(--blur-amount));
   transition: all 0.2s ease;
 }
 .theme-toggle-btn:hover {
@@ -204,8 +203,6 @@ body {
   transform: translateY(-1px);
 }
 
-/* --- src/index.css --- */
-
 /* Le conteneur s'adapte toujours aux thèmes */
 .quiz-visual-box {
   display: flex;
@@ -293,16 +290,6 @@ body {
   background: rgba(55, 65, 81, 0.5);
   color: var(--accent);
   box-shadow: 0 0 10px var(--accent-glow);
-}
-
-/* Petit badge de rappel pendant qu'on joue */
-.difficulty-badge {
-  background: var(--accent-glow);
-  color: var(--accent);
-  padding: 2px 8px;
-  border-radius: 6px;
-  font-size: 11px;
-  letter-spacing: 0.5px;
 }
 
 /* --- src/index.css --- */

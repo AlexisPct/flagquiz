@@ -15,7 +15,6 @@ export const QuizConfig: React.FC<QuizConfigProps> = ({
 }) => {
   return (
     <div className="quiz-config-view">
-      <h2 className="quiz-title">World Quiz</h2>
       <p className="quiz-subtitle">Configure ton défi géographique</p>
       
       <div className="quiz-form-group">

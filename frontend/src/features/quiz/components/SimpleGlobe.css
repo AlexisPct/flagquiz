@@ -22,17 +22,27 @@
 }
 
 .simple-globe-land {
-  fill: #ffffff; 
+  fill: white;
   stroke: #93c5fd;
   stroke-width: 0.4px;
+  cursor: pointer;
 }
 
-[data-theme="dark"] .simple-globe-ocean {
-  fill: #0f172a; 
-  stroke: #1e293b;
+.simple-globe-land.selected-country {
+  fill: #3b82f6 !important;
 }
 
 [data-theme="dark"] .simple-globe-land {
   fill: #1e293b; 
   stroke: #334155;
+}
+
+[data-theme="dark"] .simple-globe-land.selected-country {
+  fill: #60a5fa !important; 
+  filter: drop-shadow(0 0 8px rgba(96, 165, 250, 0.8));
+}
+
+[data-theme="dark"] .simple-globe-ocean {
+  fill: #0f172a; 
+  stroke: #1e293b;
 }
