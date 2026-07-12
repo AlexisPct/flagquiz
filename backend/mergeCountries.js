@@ -58,7 +58,7 @@ filesToMerge.forEach((fileName) => {
         return {
           name: item.names.common,
           capital: mainCapital.name,
-          flagUrl: item.flag.url_png,
+          flagUrl: item.flag.url_svg,
           codeAlpha2: item.codes.alpha_2,
           codeCCN3: item.codes.ccn3,
           population: item.population,

@@ -2,7 +2,7 @@
   {
     "name": "Albania",
     "capital": "Tirana",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/al.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/al.svg",
     "codeAlpha2": "AL",
     "codeCCN3": "008",
     "population": 2402113,
@@ -12,7 +12,7 @@
   {
     "name": "Andorra",
     "capital": "Andorra la Vella",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/ad.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/ad.svg",
     "codeAlpha2": "AD",
     "codeCCN3": "020",
     "population": 89368,
@@ -22,7 +22,7 @@
   {
     "name": "Austria",
     "capital": "Vienna",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/at.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/at.svg",
     "codeAlpha2": "AT",
     "codeCCN3": "040",
     "population": 9219113,
@@ -32,7 +32,7 @@
   {
     "name": "Belarus",
     "capital": "Minsk",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/by.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/by.svg",
     "codeAlpha2": "BY",
     "codeCCN3": "112",
     "population": 9109280,
@@ -42,7 +42,7 @@
   {
     "name": "Belgium",
     "capital": "Brussels",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/be.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/be.svg",
     "codeAlpha2": "BE",
     "codeCCN3": "056",
     "population": 11867634,
@@ -52,7 +52,7 @@
   {
     "name": "Bosnia and Herzegovina",
     "capital": "Sarajevo",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/ba.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/ba.svg",
     "codeAlpha2": "BA",
     "codeCCN3": "070",
     "population": 3412000,
@@ -62,7 +62,7 @@
   {
     "name": "Bulgaria",
     "capital": "Sofia",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/bg.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/bg.svg",
     "codeAlpha2": "BG",
     "codeCCN3": "100",
     "population": 6423207,
@@ -72,7 +72,7 @@
   {
     "name": "Croatia",
     "capital": "Zagreb",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/hr.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/hr.svg",
     "codeAlpha2": "HR",
     "codeCCN3": "191",
     "population": 3866233,
@@ -82,7 +82,7 @@
   {
     "name": "Cyprus",
     "capital": "Nicosia",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/cy.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/cy.svg",
     "codeAlpha2": "CY",
     "codeCCN3": "196",
     "population": 923272,
@@ -92,7 +92,7 @@
   {
     "name": "Czechia",
     "capital": "Prague",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/cz.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/cz.svg",
     "codeAlpha2": "CZ",
     "codeCCN3": "203",
     "population": 10915839,
@@ -102,7 +102,7 @@
   {
     "name": "Denmark",
     "capital": "Copenhagen",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/dk.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/dk.svg",
     "codeAlpha2": "DK",
     "codeCCN3": "208",
     "population": 6001008,
@@ -112,7 +112,7 @@
   {
     "name": "Estonia",
     "capital": "Tallinn",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/ee.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/ee.svg",
     "codeAlpha2": "EE",
     "codeCCN3": "233",
     "population": 1362954,
@@ -122,7 +122,7 @@
   {
     "name": "Faroe Islands",
     "capital": "Tórshavn",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/fo.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/fo.svg",
     "codeAlpha2": "FO",
     "codeCCN3": "234",
     "population": 56210,
@@ -132,7 +132,7 @@
   {
     "name": "Finland",
     "capital": "Helsinki",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/fi.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/fi.svg",
     "codeAlpha2": "FI",
     "codeCCN3": "246",
     "population": 5652881,
@@ -142,7 +142,7 @@
   {
     "name": "France",
     "capital": "Paris",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/fr.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/fr.svg",
     "codeAlpha2": "FR",
     "codeCCN3": "250",
     "population": 69081996,
@@ -152,7 +152,7 @@
   {
     "name": "Germany",
     "capital": "Berlin",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/de.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/de.svg",
     "codeAlpha2": "DE",
     "codeCCN3": "276",
     "population": 83497147,
@@ -162,7 +162,7 @@
   {
     "name": "Gibraltar",
     "capital": "Gibraltar",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/gi.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/gi.svg",
     "codeAlpha2": "GI",
     "codeCCN3": "292",
     "population": 37936,
@@ -172,7 +172,7 @@
   {
     "name": "Greece",
     "capital": "Athens",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/gr.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/gr.svg",
     "codeAlpha2": "GR",
     "codeCCN3": "300",
     "population": 10718565,
@@ -182,7 +182,7 @@
   {
     "name": "Guernsey",
     "capital": "St. Peter Port",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/gg.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/gg.svg",
     "codeAlpha2": "GG",
     "codeCCN3": "831",
     "population": 63950,
@@ -192,7 +192,7 @@
   {
     "name": "Hungary",
     "capital": "Budapest",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/hu.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/hu.svg",
     "codeAlpha2": "HU",
     "codeCCN3": "348",
     "population": 9489000,
@@ -202,7 +202,7 @@
   {
     "name": "Iceland",
     "capital": "Reykjavik",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/is.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/is.svg",
     "codeAlpha2": "IS",
     "codeCCN3": "352",
     "population": 394324,
@@ -212,7 +212,7 @@
   {
     "name": "Ireland",
     "capital": "Dublin",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/ie.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/ie.svg",
     "codeAlpha2": "IE",
     "codeCCN3": "372",
     "population": 7185600,
@@ -222,7 +222,7 @@
   {
     "name": "Isle of Man",
     "capital": "Douglas",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/im.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/im.svg",
     "codeAlpha2": "IM",
     "codeCCN3": "833",
     "population": 84523,
@@ -232,7 +232,7 @@
   {
     "name": "Italy",
     "capital": "Rome",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/it.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/it.svg",
     "codeAlpha2": "IT",
     "codeCCN3": "380",
     "population": 58915561,
@@ -242,7 +242,7 @@
   {
     "name": "Jersey",
     "capital": "Saint Helier",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/je.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/je.svg",
     "codeAlpha2": "JE",
     "codeCCN3": "832",
     "population": 104540,
@@ -252,7 +252,7 @@
   {
     "name": "Latvia",
     "capital": "Riga",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/lv.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/lv.svg",
     "codeAlpha2": "LV",
     "codeCCN3": "428",
     "population": 1842226,
@@ -262,7 +262,7 @@
   {
     "name": "Liechtenstein",
     "capital": "Vaduz",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/li.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/li.svg",
     "codeAlpha2": "LI",
     "codeCCN3": "438",
     "population": 41237,
@@ -272,7 +272,7 @@
   {
     "name": "Lithuania",
     "capital": "Vilnius",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/lt.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/lt.svg",
     "codeAlpha2": "LT",
     "codeCCN3": "440",
     "population": 2897430,
@@ -282,7 +282,7 @@
   {
     "name": "Luxembourg",
     "capital": "Luxembourg",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/lu.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/lu.svg",
     "codeAlpha2": "LU",
     "codeCCN3": "442",
     "population": 692402,
@@ -292,7 +292,7 @@
   {
     "name": "Malta",
     "capital": "Valletta",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/mt.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/mt.svg",
     "codeAlpha2": "MT",
     "codeCCN3": "470",
     "population": 519562,
@@ -302,7 +302,7 @@
   {
     "name": "Moldova",
     "capital": "Chișinău",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/md.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/md.svg",
     "codeAlpha2": "MD",
     "codeCCN3": "498",
     "population": 2365645,
@@ -312,7 +312,7 @@
   {
     "name": "Monaco",
     "capital": "Monaco",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/mc.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/mc.svg",
     "codeAlpha2": "MC",
     "codeCCN3": "492",
     "population": 38857,
@@ -322,7 +322,7 @@
   {
     "name": "Montenegro",
     "capital": "Podgorica",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/me.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/me.svg",
     "codeAlpha2": "ME",
     "codeCCN3": "499",
     "population": 622902,
@@ -332,7 +332,7 @@
   {
     "name": "Netherlands",
     "capital": "Amsterdam",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/nl.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/nl.svg",
     "codeAlpha2": "NL",
     "codeCCN3": "528",
     "population": 18044027,
@@ -342,7 +342,7 @@
   {
     "name": "North Macedonia",
     "capital": "Skopje",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/mk.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/mk.svg",
     "codeAlpha2": "MK",
     "codeCCN3": "807",
     "population": 1836713,
@@ -352,7 +352,7 @@
   {
     "name": "Norway",
     "capital": "Oslo",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/no.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/no.svg",
     "codeAlpha2": "NO",
     "codeCCN3": "578",
     "population": 5627400,
@@ -362,7 +362,7 @@
   {
     "name": "Poland",
     "capital": "Warsaw",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/pl.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/pl.svg",
     "codeAlpha2": "PL",
     "codeCCN3": "616",
     "population": 37314000,
@@ -372,7 +372,7 @@
   {
     "name": "Portugal",
     "capital": "Lisbon",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/pt.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/pt.svg",
     "codeAlpha2": "PT",
     "codeCCN3": "620",
     "population": 11424031,
@@ -382,7 +382,7 @@
   {
     "name": "Romania",
     "capital": "Bucharest",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/ro.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/ro.svg",
     "codeAlpha2": "RO",
     "codeCCN3": "642",
     "population": 19043151,
@@ -392,7 +392,7 @@
   {
     "name": "Russia",
     "capital": "Moscow",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/ru.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/ru.svg",
     "codeAlpha2": "RU",
     "codeCCN3": "643",
     "population": 146028325,
@@ -402,7 +402,7 @@
   {
     "name": "San Marino",
     "capital": "City of San Marino",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/sm.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/sm.svg",
     "codeAlpha2": "SM",
     "codeCCN3": "674",
     "population": 34172,
@@ -412,7 +412,7 @@
   {
     "name": "Serbia",
     "capital": "Belgrade",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/rs.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/rs.svg",
     "codeAlpha2": "RS",
     "codeCCN3": "688",
     "population": 6532019,
@@ -422,7 +422,7 @@
   {
     "name": "Slovakia",
     "capital": "Bratislava",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/sk.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/sk.svg",
     "codeAlpha2": "SK",
     "codeCCN3": "703",
     "population": 5405368,
@@ -432,7 +432,7 @@
   {
     "name": "Slovenia",
     "capital": "Ljubljana",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/si.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/si.svg",
     "codeAlpha2": "SI",
     "codeCCN3": "705",
     "population": 2135107,
@@ -442,7 +442,7 @@
   {
     "name": "Spain",
     "capital": "Madrid",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/es.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/es.svg",
     "codeAlpha2": "ES",
     "codeCCN3": "724",
     "population": 49687120,
@@ -452,7 +452,7 @@
   {
     "name": "Svalbard and Jan Mayen",
     "capital": "Longyearbyen",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/sj.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/sj.svg",
     "codeAlpha2": "SJ",
     "codeCCN3": "744",
     "population": 2562,
@@ -462,7 +462,7 @@
   {
     "name": "Sweden",
     "capital": "Stockholm",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/se.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/se.svg",
     "codeAlpha2": "SE",
     "codeCCN3": "752",
     "population": 10610485,
@@ -472,7 +472,7 @@
   {
     "name": "Switzerland",
     "capital": "Bern",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/ch.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/ch.svg",
     "codeAlpha2": "CH",
     "codeCCN3": "756",
     "population": 9154242,
@@ -482,7 +482,7 @@
   {
     "name": "Ukraine",
     "capital": "Kyiv",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/ua.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/ua.svg",
     "codeAlpha2": "UA",
     "codeCCN3": "804",
     "population": 32283000,
@@ -492,7 +492,7 @@
   {
     "name": "United Kingdom",
     "capital": "London",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/gb.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/gb.svg",
     "codeAlpha2": "GB",
     "codeCCN3": "826",
     "population": 66912637,
@@ -502,7 +502,7 @@
   {
     "name": "Vatican City",
     "capital": "Vatican City",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/va.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/va.svg",
     "codeAlpha2": "VA",
     "codeCCN3": "336",
     "population": 882,
@@ -512,7 +512,7 @@
   {
     "name": "Åland Islands",
     "capital": "Mariehamn",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/ax.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/ax.svg",
     "codeAlpha2": "AX",
     "codeCCN3": "248",
     "population": 30654,
@@ -522,7 +522,7 @@
   {
     "name": "Algeria",
     "capital": "Algiers",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/dz.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/dz.svg",
     "codeAlpha2": "DZ",
     "codeCCN3": "012",
     "population": 47400000,
@@ -532,7 +532,7 @@
   {
     "name": "Angola",
     "capital": "Luanda",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/ao.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/ao.svg",
     "codeAlpha2": "AO",
     "codeCCN3": "024",
     "population": 36604681,
@@ -542,7 +542,7 @@
   {
     "name": "Benin",
     "capital": "Porto-Novo",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/bj.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/bj.svg",
     "codeAlpha2": "BJ",
     "codeCCN3": "204",
     "population": 13754688,
@@ -552,7 +552,7 @@
   {
     "name": "Botswana",
     "capital": "Gaborone",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/bw.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/bw.svg",
     "codeAlpha2": "BW",
     "codeCCN3": "072",
     "population": 2359609,
@@ -562,7 +562,7 @@
   {
     "name": "British Indian Ocean Territory",
     "capital": "Diego Garcia",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/io.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/io.svg",
     "codeAlpha2": "IO",
     "codeCCN3": "086",
     "population": 2000,
@@ -572,7 +572,7 @@
   {
     "name": "Burkina Faso",
     "capital": "Ouagadougou",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/bf.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/bf.svg",
     "codeAlpha2": "BF",
     "codeCCN3": "854",
     "population": 22489126,
@@ -582,7 +582,7 @@
   {
     "name": "Burundi",
     "capital": "Gitega",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/bi.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/bi.svg",
     "codeAlpha2": "BI",
     "codeCCN3": "108",
     "population": 14151540,
@@ -592,7 +592,7 @@
   {
     "name": "Cabo Verde",
     "capital": "Praia",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/cv.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/cv.svg",
     "codeAlpha2": "CV",
     "codeCCN3": "132",
     "population": 491233,
@@ -602,7 +602,7 @@
   {
     "name": "Cameroon",
     "capital": "Yaoundé",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/cm.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/cm.svg",
     "codeAlpha2": "CM",
     "codeCCN3": "120",
     "population": 30987821,
@@ -612,7 +612,7 @@
   {
     "name": "Central African Republic",
     "capital": "Bangui",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/cf.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/cf.svg",
     "codeAlpha2": "CF",
     "codeCCN3": "140",
     "population": 5513282,
@@ -622,7 +622,7 @@
   {
     "name": "Chad",
     "capital": "N'Djamena",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/td.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/td.svg",
     "codeAlpha2": "TD",
     "codeCCN3": "148",
     "population": 19093595,
@@ -632,7 +632,7 @@
   {
     "name": "Comoros",
     "capital": "Moroni",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/km.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/km.svg",
     "codeAlpha2": "KM",
     "codeCCN3": "174",
     "population": 944388,
@@ -642,7 +642,7 @@
   {
     "name": "Congo",
     "capital": "Brazzaville",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/cg.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/cg.svg",
     "codeAlpha2": "CG",
     "codeCCN3": "178",
     "population": 6228784,
@@ -652,7 +652,7 @@
   {
     "name": "DRC",
     "capital": "Kinshasa",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/cd.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/cd.svg",
     "codeAlpha2": "CD",
     "codeCCN3": "180",
     "population": 124388160,
@@ -662,7 +662,7 @@
   {
     "name": "Djibouti",
     "capital": "Djibouti",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/dj.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/dj.svg",
     "codeAlpha2": "DJ",
     "codeCCN3": "262",
     "population": 1066809,
@@ -672,7 +672,7 @@
   {
     "name": "Egypt",
     "capital": "Cairo",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/eg.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/eg.svg",
     "codeAlpha2": "EG",
     "codeCCN3": "818",
     "population": 107868296,
@@ -682,7 +682,7 @@
   {
     "name": "Equatorial Guinea",
     "capital": "Malabo",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/gq.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/gq.svg",
     "codeAlpha2": "GQ",
     "codeCCN3": "226",
     "population": 1795834,
@@ -692,7 +692,7 @@
   {
     "name": "Eritrea",
     "capital": "Asmara",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/er.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/er.svg",
     "codeAlpha2": "ER",
     "codeCCN3": "232",
     "population": 3500000,
@@ -702,7 +702,7 @@
   {
     "name": "Eswatini",
     "capital": "Mbabane",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/sz.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/sz.svg",
     "codeAlpha2": "SZ",
     "codeCCN3": "748",
     "population": 1236126,
@@ -712,7 +712,7 @@
   {
     "name": "Ethiopia",
     "capital": "Addis Ababa",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/et.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/et.svg",
     "codeAlpha2": "ET",
     "codeCCN3": "231",
     "population": 138902185,
@@ -722,7 +722,7 @@
   {
     "name": "Gabon",
     "capital": "Libreville",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/ga.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/ga.svg",
     "codeAlpha2": "GA",
     "codeCCN3": "266",
     "population": 2397368,
@@ -732,7 +732,7 @@
   {
     "name": "Gambia",
     "capital": "Banjul",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/gm.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/gm.svg",
     "codeAlpha2": "GM",
     "codeCCN3": "270",
     "population": 2422712,
@@ -742,7 +742,7 @@
   {
     "name": "Ghana",
     "capital": "Accra",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/gh.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/gh.svg",
     "codeAlpha2": "GH",
     "codeCCN3": "288",
     "population": 35039451,
@@ -752,7 +752,7 @@
   {
     "name": "Guinea",
     "capital": "Conakry",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/gn.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/gn.svg",
     "codeAlpha2": "GN",
     "codeCCN3": "324",
     "population": 17521167,
@@ -762,7 +762,7 @@
   {
     "name": "Guinea-Bissau",
     "capital": "Bissau",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/gw.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/gw.svg",
     "codeAlpha2": "GW",
     "codeCCN3": "624",
     "population": 2080000,
@@ -772,7 +772,7 @@
   {
     "name": "Ivory Coast",
     "capital": "Yamoussoukro",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/ci.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/ci.svg",
     "codeAlpha2": "CI",
     "codeCCN3": "384",
     "population": 31500000,
@@ -782,7 +782,7 @@
   {
     "name": "Kenya",
     "capital": "Nairobi",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/ke.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/ke.svg",
     "codeAlpha2": "KE",
     "codeCCN3": "404",
     "population": 53330978,
@@ -792,7 +792,7 @@
   {
     "name": "Lesotho",
     "capital": "Maseru",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/ls.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/ls.svg",
     "codeAlpha2": "LS",
     "codeCCN3": "426",
     "population": 2116427,
@@ -802,7 +802,7 @@
   {
     "name": "Liberia",
     "capital": "Monrovia",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/lr.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/lr.svg",
     "codeAlpha2": "LR",
     "codeCCN3": "430",
     "population": 5437249,
@@ -812,7 +812,7 @@
   {
     "name": "Libya",
     "capital": "Tripoli",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/ly.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/ly.svg",
     "codeAlpha2": "LY",
     "codeCCN3": "434",
     "population": 7361263,
@@ -822,7 +822,7 @@
   {
     "name": "Madagascar",
     "capital": "Antananarivo",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/mg.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/mg.svg",
     "codeAlpha2": "MG",
     "codeCCN3": "450",
     "population": 31964956,
@@ -832,7 +832,7 @@
   {
     "name": "Malawi",
     "capital": "Lilongwe",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/mw.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/mw.svg",
     "codeAlpha2": "MW",
     "codeCCN3": "454",
     "population": 21240689,
@@ -842,7 +842,7 @@
   {
     "name": "Mali",
     "capital": "Bamako",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/ml.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/ml.svg",
     "codeAlpha2": "ML",
     "codeCCN3": "466",
     "population": 25200000,
@@ -852,7 +852,7 @@
   {
     "name": "Mauritania",
     "capital": "Nouakchott",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/mr.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/mr.svg",
     "codeAlpha2": "MR",
     "codeCCN3": "478",
     "population": 5461319,
@@ -862,7 +862,7 @@
   {
     "name": "Mauritius",
     "capital": "Port Louis",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/mu.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/mu.svg",
     "codeAlpha2": "MU",
     "codeCCN3": "480",
     "population": 1235260,
@@ -872,7 +872,7 @@
   {
     "name": "Mayotte",
     "capital": "Mamoudzou",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/yt.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/yt.svg",
     "codeAlpha2": "YT",
     "codeCCN3": "175",
     "population": 226915,
@@ -882,7 +882,7 @@
   {
     "name": "Morocco",
     "capital": "Rabat",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/ma.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/ma.svg",
     "codeAlpha2": "MA",
     "codeCCN3": "504",
     "population": 36828330,
@@ -892,7 +892,7 @@
   {
     "name": "Mozambique",
     "capital": "Maputo",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/mz.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/mz.svg",
     "codeAlpha2": "MZ",
     "codeCCN3": "508",
     "population": 34881007,
@@ -902,7 +902,7 @@
   {
     "name": "Namibia",
     "capital": "Windhoek",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/na.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/na.svg",
     "codeAlpha2": "NA",
     "codeCCN3": "516",
     "population": 3022401,
@@ -912,7 +912,7 @@
   {
     "name": "Niger",
     "capital": "Niamey",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/ne.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/ne.svg",
     "codeAlpha2": "NE",
     "codeCCN3": "562",
     "population": 26342784,
@@ -922,7 +922,7 @@
   {
     "name": "Nigeria",
     "capital": "Abuja",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/ng.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/ng.svg",
     "codeAlpha2": "NG",
     "codeCCN3": "566",
     "population": 242747130,
@@ -932,7 +932,7 @@
   {
     "name": "Rwanda",
     "capital": "Kigali",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/rw.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/rw.svg",
     "codeAlpha2": "RW",
     "codeCCN3": "646",
     "population": 14104969,
@@ -942,7 +942,7 @@
   {
     "name": "Réunion",
     "capital": "Saint-Denis",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/re.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/re.svg",
     "codeAlpha2": "RE",
     "codeCCN3": "638",
     "population": 840974,
@@ -952,7 +952,7 @@
   {
     "name": "Saint Helena, Ascension and Tristan da Cunha",
     "capital": "Jamestown",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/sh.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/sh.svg",
     "codeAlpha2": "SH",
     "codeCCN3": "654",
     "population": 53192,
@@ -962,7 +962,7 @@
   {
     "name": "Senegal",
     "capital": "Dakar",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/sn.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/sn.svg",
     "codeAlpha2": "SN",
     "codeCCN3": "686",
     "population": 18847519,
@@ -972,7 +972,7 @@
   {
     "name": "Seychelles",
     "capital": "Victoria",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/sc.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/sc.svg",
     "codeAlpha2": "SC",
     "codeCCN3": "690",
     "population": 121355,
@@ -982,7 +982,7 @@
   {
     "name": "Sierra Leone",
     "capital": "Freetown",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/sl.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/sl.svg",
     "codeAlpha2": "SL",
     "codeCCN3": "694",
     "population": 8460512,
@@ -992,7 +992,7 @@
   {
     "name": "Somalia",
     "capital": "Mogadishu",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/so.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/so.svg",
     "codeAlpha2": "SO",
     "codeCCN3": "706",
     "population": 19280850,
@@ -1002,7 +1002,7 @@
   {
     "name": "South Africa",
     "capital": "Pretoria",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/za.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/za.svg",
     "codeAlpha2": "ZA",
     "codeCCN3": "710",
     "population": 63015904,
@@ -1012,7 +1012,7 @@
   {
     "name": "South Sudan",
     "capital": "Juba",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/ss.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/ss.svg",
     "codeAlpha2": "SS",
     "codeCCN3": "728",
     "population": 12703714,
@@ -1022,7 +1022,7 @@
   {
     "name": "Sudan",
     "capital": "Khartoum",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/sd.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/sd.svg",
     "codeAlpha2": "SD",
     "codeCCN3": "729",
     "population": 51767437,
@@ -1032,7 +1032,7 @@
   {
     "name": "São Tomé and Príncipe",
     "capital": "São Tomé",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/st.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/st.svg",
     "codeAlpha2": "ST",
     "codeCCN3": "678",
     "population": 220372,
@@ -1042,7 +1042,7 @@
   {
     "name": "Tanzania",
     "capital": "Dodoma",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/tz.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/tz.svg",
     "codeAlpha2": "TZ",
     "codeCCN3": "834",
     "population": 67462121,
@@ -1052,7 +1052,7 @@
   {
     "name": "Togo",
     "capital": "Lomé",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/tg.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/tg.svg",
     "codeAlpha2": "TG",
     "codeCCN3": "768",
     "population": 9583381,
@@ -1062,7 +1062,7 @@
   {
     "name": "Tunisia",
     "capital": "Tunis",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/tn.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/tn.svg",
     "codeAlpha2": "TN",
     "codeCCN3": "788",
     "population": 11972169,
@@ -1072,7 +1072,7 @@
   {
     "name": "Uganda",
     "capital": "Kampala",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/ug.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/ug.svg",
     "codeAlpha2": "UG",
     "codeCCN3": "800",
     "population": 45905417,
@@ -1082,7 +1082,7 @@
   {
     "name": "Western Sahara",
     "capital": "El Aaiún",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/eh.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/eh.svg",
     "codeAlpha2": "EH",
     "codeCCN3": "732",
     "population": 510713,
@@ -1092,7 +1092,7 @@
   {
     "name": "Zambia",
     "capital": "Lusaka",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/zm.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/zm.svg",
     "codeAlpha2": "ZM",
     "codeCCN3": "894",
     "population": 20216029,
@@ -1102,7 +1102,7 @@
   {
     "name": "Zimbabwe",
     "capital": "Harare",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/zw.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/zw.svg",
     "codeAlpha2": "ZW",
     "codeCCN3": "716",
     "population": 17166852,
@@ -1112,7 +1112,7 @@
   {
     "name": "Afghanistan",
     "capital": "Kabul",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/af.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/af.svg",
     "codeAlpha2": "AF",
     "codeCCN3": "004",
     "population": 35000000,
@@ -1122,7 +1122,7 @@
   {
     "name": "Armenia",
     "capital": "Yerevan",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/am.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/am.svg",
     "codeAlpha2": "AM",
     "codeCCN3": "051",
     "population": 3100100,
@@ -1132,7 +1132,7 @@
   {
     "name": "Azerbaijan",
     "capital": "Baku",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/az.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/az.svg",
     "codeAlpha2": "AZ",
     "codeCCN3": "031",
     "population": 10353296,
@@ -1142,7 +1142,7 @@
   {
     "name": "Bahrain",
     "capital": "Manama",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/bh.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/bh.svg",
     "codeAlpha2": "BH",
     "codeCCN3": "048",
     "population": 1501635,
@@ -1152,7 +1152,7 @@
   {
     "name": "Bangladesh",
     "capital": "Dhaka",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/bd.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/bd.svg",
     "codeAlpha2": "BD",
     "codeCCN3": "050",
     "population": 175423000,
@@ -1162,7 +1162,7 @@
   {
     "name": "Bhutan",
     "capital": "Thimphu",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/bt.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/bt.svg",
     "codeAlpha2": "BT",
     "codeCCN3": "064",
     "population": 727145,
@@ -1172,7 +1172,7 @@
   {
     "name": "Brunei",
     "capital": "Bandar Seri Begawan",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/bn.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/bn.svg",
     "codeAlpha2": "BN",
     "codeCCN3": "096",
     "population": 458600,
@@ -1182,7 +1182,7 @@
   {
     "name": "Cambodia",
     "capital": "Phnom Penh",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/kh.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/kh.svg",
     "codeAlpha2": "KH",
     "codeCCN3": "116",
     "population": 17638801,
@@ -1192,7 +1192,7 @@
   {
     "name": "China",
     "capital": "Beijing",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/cn.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/cn.svg",
     "codeAlpha2": "CN",
     "codeCCN3": "156",
     "population": 1404890000,
@@ -1202,7 +1202,7 @@
   {
     "name": "Georgia",
     "capital": "Tbilisi",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/ge.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/ge.svg",
     "codeAlpha2": "GE",
     "codeCCN3": "268",
     "population": 3657000,
@@ -1212,7 +1212,7 @@
   {
     "name": "Hong Kong",
     "capital": "City of Victoria",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/hk.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/hk.svg",
     "codeAlpha2": "HK",
     "codeCCN3": "344",
     "population": 7498100,
@@ -1222,7 +1222,7 @@
   {
     "name": "India",
     "capital": "New Delhi",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/in.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/in.svg",
     "codeAlpha2": "IN",
     "codeCCN3": "356",
     "population": 1380004385,
@@ -1232,7 +1232,7 @@
   {
     "name": "Indonesia",
     "capital": "Jakarta",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/id.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/id.svg",
     "codeAlpha2": "ID",
     "codeCCN3": "360",
     "population": 288315089,
@@ -1242,7 +1242,7 @@
   {
     "name": "Iran",
     "capital": "Tehran",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/ir.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/ir.svg",
     "codeAlpha2": "IR",
     "codeCCN3": "364",
     "population": 92417681,
@@ -1252,7 +1252,7 @@
   {
     "name": "Iraq",
     "capital": "Baghdad",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/iq.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/iq.svg",
     "codeAlpha2": "IQ",
     "codeCCN3": "368",
     "population": 46118793,
@@ -1262,7 +1262,7 @@
   {
     "name": "Israel",
     "capital": "Jerusalem",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/il.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/il.svg",
     "codeAlpha2": "IL",
     "codeCCN3": "376",
     "population": 10147200,
@@ -1272,7 +1272,7 @@
   {
     "name": "Japan",
     "capital": "Tokyo",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/jp.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/jp.svg",
     "codeAlpha2": "JP",
     "codeCCN3": "392",
     "population": 122950000,
@@ -1282,7 +1282,7 @@
   {
     "name": "Jordan",
     "capital": "Amman",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/jo.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/jo.svg",
     "codeAlpha2": "JO",
     "codeCCN3": "400",
     "population": 11484805,
@@ -1292,7 +1292,7 @@
   {
     "name": "Kazakhstan",
     "capital": "Astana",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/kz.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/kz.svg",
     "codeAlpha2": "KZ",
     "codeCCN3": "398",
     "population": 20547909,
@@ -1302,7 +1302,7 @@
   {
     "name": "Kuwait",
     "capital": "Kuwait City",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/kw.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/kw.svg",
     "codeAlpha2": "KW",
     "codeCCN3": "414",
     "population": 5118445,
@@ -1312,7 +1312,7 @@
   {
     "name": "Kyrgyzstan",
     "capital": "Bishkek",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/kg.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/kg.svg",
     "codeAlpha2": "KG",
     "codeCCN3": "417",
     "population": 7400000,
@@ -1322,7 +1322,7 @@
   {
     "name": "Laos",
     "capital": "Vientiane",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/la.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/la.svg",
     "codeAlpha2": "LA",
     "codeCCN3": "418",
     "population": 7545800,
@@ -1332,7 +1332,7 @@
   {
     "name": "Lebanon",
     "capital": "Beirut",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/lb.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/lb.svg",
     "codeAlpha2": "LB",
     "codeCCN3": "422",
     "population": 5364482,
@@ -1342,7 +1342,7 @@
   {
     "name": "Malaysia",
     "capital": "Kuala Lumpur",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/my.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/my.svg",
     "codeAlpha2": "MY",
     "codeCCN3": "458",
     "population": 36385115,
@@ -1352,7 +1352,7 @@
   {
     "name": "Maldives",
     "capital": "Malé",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/mv.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/mv.svg",
     "codeAlpha2": "MV",
     "codeCCN3": "462",
     "population": 601269,
@@ -1362,7 +1362,7 @@
   {
     "name": "Mongolia",
     "capital": "Ulan Bator",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/mn.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/mn.svg",
     "codeAlpha2": "MN",
     "codeCCN3": "496",
     "population": 3591120,
@@ -1372,7 +1372,7 @@
   {
     "name": "Myanmar",
     "capital": "Naypyidaw",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/mm.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/mm.svg",
     "codeAlpha2": "MM",
     "codeCCN3": "104",
     "population": 55770232,
@@ -1382,7 +1382,7 @@
   {
     "name": "Nepal",
     "capital": "Kathmandu",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/np.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/np.svg",
     "codeAlpha2": "NP",
     "codeCCN3": "524",
     "population": 31122387,
@@ -1392,7 +1392,7 @@
   {
     "name": "North Korea",
     "capital": "Pyongyang",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/kp.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/kp.svg",
     "codeAlpha2": "KP",
     "codeCCN3": "408",
     "population": 25950000,
@@ -1402,7 +1402,7 @@
   {
     "name": "Oman",
     "capital": "Muscat",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/om.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/om.svg",
     "codeAlpha2": "OM",
     "codeCCN3": "512",
     "population": 5494691,
@@ -1412,7 +1412,7 @@
   {
     "name": "Pakistan",
     "capital": "Islamabad",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/pk.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/pk.svg",
     "codeAlpha2": "PK",
     "codeCCN3": "586",
     "population": 241499431,
@@ -1422,7 +1422,7 @@
   {
     "name": "Palestine",
     "capital": "Ramallah",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/ps.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/ps.svg",
     "codeAlpha2": "PS",
     "codeCCN3": "275",
     "population": 5483450,
@@ -1432,7 +1432,7 @@
   {
     "name": "Philippines",
     "capital": "Manila",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/ph.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/ph.svg",
     "codeAlpha2": "PH",
     "codeCCN3": "608",
     "population": 112729484,
@@ -1442,7 +1442,7 @@
   {
     "name": "Qatar",
     "capital": "Doha",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/qa.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/qa.svg",
     "codeAlpha2": "QA",
     "codeCCN3": "634",
     "population": 3214609,
@@ -1452,7 +1452,7 @@
   {
     "name": "Saudi Arabia",
     "capital": "Riyadh",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/sa.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/sa.svg",
     "codeAlpha2": "SA",
     "codeCCN3": "682",
     "population": 33702731,
@@ -1462,7 +1462,7 @@
   {
     "name": "Singapore",
     "capital": "Singapore",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/sg.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/sg.svg",
     "codeAlpha2": "SG",
     "codeCCN3": "702",
     "population": 6110200,
@@ -1472,7 +1472,7 @@
   {
     "name": "South Korea",
     "capital": "Seoul",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/kr.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/kr.svg",
     "codeAlpha2": "KR",
     "codeCCN3": "410",
     "population": 51106229,
@@ -1482,7 +1482,7 @@
   {
     "name": "Sri Lanka",
     "capital": "Sri Jayawardenepura Kotte",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/lk.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/lk.svg",
     "codeAlpha2": "LK",
     "codeCCN3": "144",
     "population": 21756000,
@@ -1492,7 +1492,7 @@
   {
     "name": "Syria",
     "capital": "Damascus",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/sy.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/sy.svg",
     "codeAlpha2": "SY",
     "codeCCN3": "760",
     "population": 26019711,
@@ -1502,7 +1502,7 @@
   {
     "name": "Taiwan",
     "capital": "Taipei",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/tw.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/tw.svg",
     "codeAlpha2": "TW",
     "codeCCN3": "158",
     "population": 23299132,
@@ -1512,7 +1512,7 @@
   {
     "name": "Tajikistan",
     "capital": "Dushanbe",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/tj.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/tj.svg",
     "codeAlpha2": "TJ",
     "codeCCN3": "762",
     "population": 10786734,
@@ -1522,7 +1522,7 @@
   {
     "name": "Thailand",
     "capital": "Bangkok",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/th.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/th.svg",
     "codeAlpha2": "TH",
     "codeCCN3": "764",
     "population": 65975198,
@@ -1532,7 +1532,7 @@
   {
     "name": "Timor-Leste",
     "capital": "Dili",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/tl.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/tl.svg",
     "codeAlpha2": "TL",
     "codeCCN3": "626",
     "population": 1434991,
@@ -1542,7 +1542,7 @@
   {
     "name": "Turkey",
     "capital": "Ankara",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/tr.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/tr.svg",
     "codeAlpha2": "TR",
     "codeCCN3": "792",
     "population": 86092168,
@@ -1552,7 +1552,7 @@
   {
     "name": "Turkmenistan",
     "capital": "Ashgabat",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/tm.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/tm.svg",
     "codeAlpha2": "TM",
     "codeCCN3": "795",
     "population": 7057841,
@@ -1562,7 +1562,7 @@
   {
     "name": "United Arab Emirates",
     "capital": "Abu Dhabi",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/ae.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/ae.svg",
     "codeAlpha2": "AE",
     "codeCCN3": "784",
     "population": 11027129,
@@ -1572,7 +1572,7 @@
   {
     "name": "Uzbekistan",
     "capital": "Tashkent",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/uz.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/uz.svg",
     "codeAlpha2": "UZ",
     "codeCCN3": "860",
     "population": 38236704,
@@ -1582,7 +1582,7 @@
   {
     "name": "Vietnam",
     "capital": "Hanoi",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/vn.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/vn.svg",
     "codeAlpha2": "VN",
     "codeCCN3": "704",
     "population": 102300000,
@@ -1592,7 +1592,7 @@
   {
     "name": "Yemen",
     "capital": "Sana'a",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/ye.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/ye.svg",
     "codeAlpha2": "YE",
     "codeCCN3": "887",
     "population": 32684503,
@@ -1602,7 +1602,7 @@
   {
     "name": "Anguilla",
     "capital": "The Valley",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/ai.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/ai.svg",
     "codeAlpha2": "AI",
     "codeCCN3": "660",
     "population": 16010,
@@ -1612,7 +1612,7 @@
   {
     "name": "Antigua and Barbuda",
     "capital": "Saint John's",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/ag.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/ag.svg",
     "codeAlpha2": "AG",
     "codeCCN3": "028",
     "population": 106365,
@@ -1622,7 +1622,7 @@
   {
     "name": "Argentina",
     "capital": "Buenos Aires",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/ar.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/ar.svg",
     "codeAlpha2": "AR",
     "codeCCN3": "032",
     "population": 46735004,
@@ -1632,7 +1632,7 @@
   {
     "name": "Aruba",
     "capital": "Oranjestad",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/aw.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/aw.svg",
     "codeAlpha2": "AW",
     "codeCCN3": "533",
     "population": 108880,
@@ -1642,7 +1642,7 @@
   {
     "name": "Bahamas",
     "capital": "Nassau",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/bs.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/bs.svg",
     "codeAlpha2": "BS",
     "codeCCN3": "044",
     "population": 398165,
@@ -1652,7 +1652,7 @@
   {
     "name": "Barbados",
     "capital": "Bridgetown",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/bb.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/bb.svg",
     "codeAlpha2": "BB",
     "codeCCN3": "052",
     "population": 281998,
@@ -1662,7 +1662,7 @@
   {
     "name": "Belize",
     "capital": "Belmopan",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/bz.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/bz.svg",
     "codeAlpha2": "BZ",
     "codeCCN3": "084",
     "population": 397483,
@@ -1672,7 +1672,7 @@
   {
     "name": "Bermuda",
     "capital": "Hamilton",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/bm.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/bm.svg",
     "codeAlpha2": "BM",
     "codeCCN3": "060",
     "population": 63913,
@@ -1682,7 +1682,7 @@
   {
     "name": "Bolivia",
     "capital": "Sucre",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/bo.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/bo.svg",
     "codeAlpha2": "BO",
     "codeCCN3": "068",
     "population": 11365333,
@@ -1692,7 +1692,7 @@
   {
     "name": "Brazil",
     "capital": "Brasília",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/br.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/br.svg",
     "codeAlpha2": "BR",
     "codeCCN3": "076",
     "population": 213421037,
@@ -1702,7 +1702,7 @@
   {
     "name": "British Virgin Islands",
     "capital": "Road Town",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/vg.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/vg.svg",
     "codeAlpha2": "VG",
     "codeCCN3": "092",
     "population": 38322,
@@ -1712,7 +1712,7 @@
   {
     "name": "Canada",
     "capital": "Ottawa",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/ca.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/ca.svg",
     "codeAlpha2": "CA",
     "codeCCN3": "124",
     "population": 41575585,
@@ -1722,7 +1722,7 @@
   {
     "name": "Caribbean Netherlands",
     "capital": "Kralendijk",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/bq.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/bq.svg",
     "codeAlpha2": "BQ",
     "codeCCN3": "535",
     "population": 31980,
@@ -1732,7 +1732,7 @@
   {
     "name": "Cayman Islands",
     "capital": "George Town",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/ky.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/ky.svg",
     "codeAlpha2": "KY",
     "codeCCN3": "136",
     "population": 90577,
@@ -1742,7 +1742,7 @@
   {
     "name": "Chile",
     "capital": "Santiago",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/cl.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/cl.svg",
     "codeAlpha2": "CL",
     "codeCCN3": "152",
     "population": 19629588,
@@ -1752,7 +1752,7 @@
   {
     "name": "Colombia",
     "capital": "Bogotá",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/co.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/co.svg",
     "codeAlpha2": "CO",
     "codeCCN3": "170",
     "population": 52695952,
@@ -1762,7 +1762,7 @@
   {
     "name": "Costa Rica",
     "capital": "San José",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/cr.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/cr.svg",
     "codeAlpha2": "CR",
     "codeCCN3": "188",
     "population": 5160700,
@@ -1772,7 +1772,7 @@
   {
     "name": "Cuba",
     "capital": "Havana",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/cu.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/cu.svg",
     "codeAlpha2": "CU",
     "codeCCN3": "192",
     "population": 9748007,
@@ -1782,7 +1782,7 @@
   {
     "name": "Curaçao",
     "capital": "Willemstad",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/cw.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/cw.svg",
     "codeAlpha2": "CW",
     "codeCCN3": "531",
     "population": 155826,
@@ -1792,7 +1792,7 @@
   {
     "name": "Dominica",
     "capital": "Roseau",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/dm.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/dm.svg",
     "codeAlpha2": "DM",
     "codeCCN3": "212",
     "population": 71293,
@@ -1802,7 +1802,7 @@
   {
     "name": "Dominican Republic",
     "capital": "Santo Domingo",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/do.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/do.svg",
     "codeAlpha2": "DO",
     "codeCCN3": "214",
     "population": 11532151,
@@ -1812,7 +1812,7 @@
   {
     "name": "Ecuador",
     "capital": "Quito",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/ec.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/ec.svg",
     "codeAlpha2": "EC",
     "codeCCN3": "218",
     "population": 17483326,
@@ -1822,7 +1822,7 @@
   {
     "name": "El Salvador",
     "capital": "San Salvador",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/sv.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/sv.svg",
     "codeAlpha2": "SV",
     "codeCCN3": "222",
     "population": 6029976,
@@ -1832,7 +1832,7 @@
   {
     "name": "Falkland Islands",
     "capital": "Stanley",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/fk.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/fk.svg",
     "codeAlpha2": "FK",
     "codeCCN3": "238",
     "population": 3662,
@@ -1842,7 +1842,7 @@
   {
     "name": "French Guiana",
     "capital": "Cayenne",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/gf.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/gf.svg",
     "codeAlpha2": "GF",
     "codeCCN3": "254",
     "population": 254541,
@@ -1852,7 +1852,7 @@
   {
     "name": "Greenland",
     "capital": "Nuuk",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/gl.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/gl.svg",
     "codeAlpha2": "GL",
     "codeCCN3": "304",
     "population": 56831,
@@ -1862,7 +1862,7 @@
   {
     "name": "Grenada",
     "capital": "St. George's",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/gd.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/gd.svg",
     "codeAlpha2": "GD",
     "codeCCN3": "308",
     "population": 114621,
@@ -1872,7 +1872,7 @@
   {
     "name": "Guadeloupe",
     "capital": "Basse-Terre",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/gp.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/gp.svg",
     "codeAlpha2": "GP",
     "codeCCN3": "312",
     "population": 400132,
@@ -1882,7 +1882,7 @@
   {
     "name": "Guatemala",
     "capital": "Guatemala City",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/gt.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/gt.svg",
     "codeAlpha2": "GT",
     "codeCCN3": "320",
     "population": 18636532,
@@ -1892,7 +1892,7 @@
   {
     "name": "Guyana",
     "capital": "Georgetown",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/gy.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/gy.svg",
     "codeAlpha2": "GY",
     "codeCCN3": "328",
     "population": 950986,
@@ -1902,7 +1902,7 @@
   {
     "name": "Haiti",
     "capital": "Port-au-Prince",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/ht.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/ht.svg",
     "codeAlpha2": "HT",
     "codeCCN3": "332",
     "population": 11470261,
@@ -1912,7 +1912,7 @@
   {
     "name": "Honduras",
     "capital": "Tegucigalpa",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/hn.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/hn.svg",
     "codeAlpha2": "HN",
     "codeCCN3": "340",
     "population": 9571352,
@@ -1922,7 +1922,7 @@
   {
     "name": "Jamaica",
     "capital": "Kingston",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/jm.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/jm.svg",
     "codeAlpha2": "JM",
     "codeCCN3": "388",
     "population": 2824913,
@@ -1932,7 +1932,7 @@
   {
     "name": "Martinique",
     "capital": "Fort-de-France",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/mq.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/mq.svg",
     "codeAlpha2": "MQ",
     "codeCCN3": "474",
     "population": 378243,
@@ -1942,7 +1942,7 @@
   {
     "name": "Mexico",
     "capital": "Mexico City",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/mx.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/mx.svg",
     "codeAlpha2": "MX",
     "codeCCN3": "484",
     "population": 134407258,
@@ -1952,7 +1952,7 @@
   {
     "name": "Montserrat",
     "capital": "Plymouth",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/ms.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/ms.svg",
     "codeAlpha2": "MS",
     "codeCCN3": "500",
     "population": 4399,
@@ -1962,7 +1962,7 @@
   {
     "name": "Nicaragua",
     "capital": "Managua",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/ni.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/ni.svg",
     "codeAlpha2": "NI",
     "codeCCN3": "558",
     "population": 6676948,
@@ -1972,7 +1972,7 @@
   {
     "name": "Panama",
     "capital": "Panama City",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/pa.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/pa.svg",
     "codeAlpha2": "PA",
     "codeCCN3": "591",
     "population": 4337768,
@@ -1982,7 +1982,7 @@
   {
     "name": "Paraguay",
     "capital": "Asunción",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/py.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/py.svg",
     "codeAlpha2": "PY",
     "codeCCN3": "600",
     "population": 6460159,
@@ -1992,7 +1992,7 @@
   {
     "name": "Peru",
     "capital": "Lima",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/pe.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/pe.svg",
     "codeAlpha2": "PE",
     "codeCCN3": "604",
     "population": 34352720,
@@ -2002,7 +2002,7 @@
   {
     "name": "Puerto Rico",
     "capital": "San Juan",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/pr.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/pr.svg",
     "codeAlpha2": "PR",
     "codeCCN3": "630",
     "population": 3194034,
@@ -2012,7 +2012,7 @@
   {
     "name": "Saint Barthélemy",
     "capital": "Gustavia",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/bl.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/bl.svg",
     "codeAlpha2": "BL",
     "codeCCN3": "652",
     "population": 4255,
@@ -2022,7 +2022,7 @@
   {
     "name": "Saint Kitts and Nevis",
     "capital": "Basseterre",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/kn.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/kn.svg",
     "codeAlpha2": "KN",
     "codeCCN3": "659",
     "population": 54338,
@@ -2032,7 +2032,7 @@
   {
     "name": "Saint Lucia",
     "capital": "Castries",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/lc.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/lc.svg",
     "codeAlpha2": "LC",
     "codeCCN3": "662",
     "population": 184100,
@@ -2042,7 +2042,7 @@
   {
     "name": "Saint Martin",
     "capital": "Marigot",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/mf.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/mf.svg",
     "codeAlpha2": "MF",
     "codeCCN3": "663",
     "population": 38659,
@@ -2052,7 +2052,7 @@
   {
     "name": "Saint Pierre and Miquelon",
     "capital": "Saint-Pierre",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/pm.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/pm.svg",
     "codeAlpha2": "PM",
     "codeCCN3": "666",
     "population": 5819,
@@ -2062,7 +2062,7 @@
   {
     "name": "Saint Vincent and the Grenadines",
     "capital": "Kingstown",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/vc.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/vc.svg",
     "codeAlpha2": "VC",
     "codeCCN3": "670",
     "population": 110872,
@@ -2072,7 +2072,7 @@
   {
     "name": "Sint Maarten",
     "capital": "Philipsburg",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/sx.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/sx.svg",
     "codeAlpha2": "SX",
     "codeCCN3": "534",
     "population": 58477,
@@ -2082,7 +2082,7 @@
   {
     "name": "Suriname",
     "capital": "Paramaribo",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/sr.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/sr.svg",
     "codeAlpha2": "SR",
     "codeCCN3": "740",
     "population": 632638,
@@ -2092,7 +2092,7 @@
   {
     "name": "Trinidad and Tobago",
     "capital": "Port of Spain",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/tt.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/tt.svg",
     "codeAlpha2": "TT",
     "codeCCN3": "780",
     "population": 1512779,
@@ -2102,7 +2102,7 @@
   {
     "name": "Turks and Caicos Islands",
     "capital": "Cockburn Town",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/tc.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/tc.svg",
     "codeAlpha2": "TC",
     "codeCCN3": "796",
     "population": 50828,
@@ -2112,7 +2112,7 @@
   {
     "name": "United States",
     "capital": "Washington, D.C.",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/us.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/us.svg",
     "codeAlpha2": "US",
     "codeCCN3": "840",
     "population": 341784857,
@@ -2122,7 +2122,7 @@
   {
     "name": "United States Virgin Islands",
     "capital": "Charlotte Amalie",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/vi.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/vi.svg",
     "codeAlpha2": "VI",
     "codeCCN3": "850",
     "population": 87146,
@@ -2132,7 +2132,7 @@
   {
     "name": "Uruguay",
     "capital": "Montevideo",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/uy.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/uy.svg",
     "codeAlpha2": "UY",
     "codeCCN3": "858",
     "population": 3499451,
@@ -2142,7 +2142,7 @@
   {
     "name": "Venezuela",
     "capital": "Caracas",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/ve.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/ve.svg",
     "codeAlpha2": "VE",
     "codeCCN3": "862",
     "population": 31800000,
@@ -2152,7 +2152,7 @@
   {
     "name": "American Samoa",
     "capital": "Pago Pago",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/as.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/as.svg",
     "codeAlpha2": "AS",
     "codeCCN3": "016",
     "population": 43268,
@@ -2162,7 +2162,7 @@
   {
     "name": "Australia",
     "capital": "Canberra",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/au.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/au.svg",
     "codeAlpha2": "AU",
     "codeCCN3": "036",
     "population": 27724744,
@@ -2172,7 +2172,7 @@
   {
     "name": "Christmas Island",
     "capital": "Flying Fish Cove",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/cx.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/cx.svg",
     "codeAlpha2": "CX",
     "codeCCN3": "162",
     "population": 1692,
@@ -2182,7 +2182,7 @@
   {
     "name": "Cocos (Keeling) Islands",
     "capital": "West Island",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/cc.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/cc.svg",
     "codeAlpha2": "CC",
     "codeCCN3": "166",
     "population": 593,
@@ -2192,7 +2192,7 @@
   {
     "name": "Cook Islands",
     "capital": "Avarua",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/ck.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/ck.svg",
     "codeAlpha2": "CK",
     "codeCCN3": "184",
     "population": 15040,
@@ -2202,7 +2202,7 @@
   {
     "name": "Fiji",
     "capital": "Suva",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/fj.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/fj.svg",
     "codeAlpha2": "FJ",
     "codeCCN3": "242",
     "population": 926276,
@@ -2212,7 +2212,7 @@
   {
     "name": "French Polynesia",
     "capital": "Papeetē",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/pf.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/pf.svg",
     "codeAlpha2": "PF",
     "codeCCN3": "258",
     "population": 278786,
@@ -2222,7 +2222,7 @@
   {
     "name": "Guam",
     "capital": "Hagåtña",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/gu.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/gu.svg",
     "codeAlpha2": "GU",
     "codeCCN3": "316",
     "population": 165180,
@@ -2232,7 +2232,7 @@
   {
     "name": "Kiribati",
     "capital": "South Tarawa",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/ki.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/ki.svg",
     "codeAlpha2": "KI",
     "codeCCN3": "296",
     "population": 138000,
@@ -2242,7 +2242,7 @@
   {
     "name": "Marshall Islands",
     "capital": "Majuro",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/mh.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/mh.svg",
     "codeAlpha2": "MH",
     "codeCCN3": "584",
     "population": 37548,
@@ -2252,7 +2252,7 @@
   {
     "name": "Micronesia",
     "capital": "Palikir",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/fm.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/fm.svg",
     "codeAlpha2": "FM",
     "codeCCN3": "583",
     "population": 75817,
@@ -2262,7 +2262,7 @@
   {
     "name": "Nauru",
     "capital": "Yaren",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/nr.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/nr.svg",
     "codeAlpha2": "NR",
     "codeCCN3": "520",
     "population": 12025,
@@ -2272,7 +2272,7 @@
   {
     "name": "New Caledonia",
     "capital": "Nouméa",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/nc.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/nc.svg",
     "codeAlpha2": "NC",
     "codeCCN3": "540",
     "population": 264596,
@@ -2282,7 +2282,7 @@
   {
     "name": "New Zealand",
     "capital": "Wellington",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/nz.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/nz.svg",
     "codeAlpha2": "NZ",
     "codeCCN3": "554",
     "population": 4993923,
@@ -2292,7 +2292,7 @@
   {
     "name": "Niue",
     "capital": "Alofi",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/nu.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/nu.svg",
     "codeAlpha2": "NU",
     "codeCCN3": "570",
     "population": 1681,
@@ -2302,7 +2302,7 @@
   {
     "name": "Norfolk Island",
     "capital": "Kingston",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/nf.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/nf.svg",
     "codeAlpha2": "NF",
     "codeCCN3": "574",
     "population": 2188,
@@ -2312,7 +2312,7 @@
   {
     "name": "Northern Mariana Islands",
     "capital": "Saipan",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/mp.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/mp.svg",
     "codeAlpha2": "MP",
     "codeCCN3": "580",
     "population": 46078,
@@ -2322,7 +2322,7 @@
   {
     "name": "Palau",
     "capital": "Ngerulmud",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/pw.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/pw.svg",
     "codeAlpha2": "PW",
     "codeCCN3": "585",
     "population": 17663,
@@ -2332,7 +2332,7 @@
   {
     "name": "Papua New Guinea",
     "capital": "Port Moresby",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/pg.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/pg.svg",
     "codeAlpha2": "PG",
     "codeCCN3": "598",
     "population": 11781559,
@@ -2342,7 +2342,7 @@
   {
     "name": "Pitcairn Islands",
     "capital": "Adamstown",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/pn.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/pn.svg",
     "codeAlpha2": "PN",
     "codeCCN3": "612",
     "population": 35,
@@ -2352,7 +2352,7 @@
   {
     "name": "Samoa",
     "capital": "Apia",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/ws.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/ws.svg",
     "codeAlpha2": "WS",
     "codeCCN3": "882",
     "population": 205557,
@@ -2362,7 +2362,7 @@
   {
     "name": "Solomon Islands",
     "capital": "Honiara",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/sb.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/sb.svg",
     "codeAlpha2": "SB",
     "codeCCN3": "090",
     "population": 828857,
@@ -2372,7 +2372,7 @@
   {
     "name": "Tokelau",
     "capital": "Fakaofo",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/tk.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/tk.svg",
     "codeAlpha2": "TK",
     "codeCCN3": "772",
     "population": 1411,
@@ -2382,7 +2382,7 @@
   {
     "name": "Tonga",
     "capital": "Nuku'alofa",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/to.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/to.svg",
     "codeAlpha2": "TO",
     "codeCCN3": "776",
     "population": 100179,
@@ -2392,7 +2392,7 @@
   {
     "name": "Tuvalu",
     "capital": "Funafuti",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/tv.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/tv.svg",
     "codeAlpha2": "TV",
     "codeCCN3": "798",
     "population": 10643,
@@ -2402,7 +2402,7 @@
   {
     "name": "Vanuatu",
     "capital": "Port Vila",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/vu.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/vu.svg",
     "codeAlpha2": "VU",
     "codeCCN3": "548",
     "population": 335908,
@@ -2412,7 +2412,7 @@
   {
     "name": "Wallis and Futuna",
     "capital": "Mata-Utu",
-    "flagUrl": "https://flags.restcountries.com/v5/w640/wf.png",
+    "flagUrl": "https://flags.restcountries.com/v5/svg/wf.svg",
     "codeAlpha2": "WF",
     "codeCCN3": "876",
     "population": 11151,
