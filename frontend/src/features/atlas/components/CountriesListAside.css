@@ -5,10 +5,17 @@
   display: flex;
   flex-direction: column;
   width: 300px;
-  min-width: 300px;      
-  flex-shrink: 0;        
+  min-width: 300px;
+  flex-shrink: 0;
   height: 100%;
   transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+
+@media (orientation: portrait) {
+  .at-sidebar {
+    height: 30%;
+    width: 100vw;
+  }
 }
 
 .at-search-container {
@@ -23,7 +30,6 @@
   border-radius: 8px;
   font-size: 14px;
   outline: none;
-  
   background-color: var(--bg-secondary, #f8fafc);
   color: var(--text-primary, #1e293b);
   border: 1px solid var(--border-color, #cbd5e1);
@@ -62,7 +68,7 @@
 }
 
 .at-country-item.active {
-  background-color: var(--bg-active, #e0f2fe); 
+  background-color: var(--bg-active, #e0f2fe);
   color: var(--text-active, #0369a1);
   font-weight: 600;
 }
@@ -83,16 +89,16 @@
 }
 
 [data-theme="dark"] .at-sidebar {
-  --bg-primary: #0f172a;    /* slate-900 */
-  --bg-secondary: #1e293b;  /* slate-800 */
-  --bg-hover: #1e293b;      /* slate-800 */
-  --bg-active: #0369a1;     /* bleu océan sombre */
-  
-  --text-primary: #f8fafc;  /* slate-50 */
-  --text-muted: #94a3b8;    /* slate-400 */
+  --bg-primary: #0f172a;
+  --bg-secondary: #1e293b;
+  --bg-hover: #1e293b;
+  --bg-active: #0369a1;
+
+  --text-primary: #f8fafc;
+  --text-muted: #94a3b8;
   --text-active: #ffffff;
-  
-  --border-color: #1e293b;  /* slate-800 */
+
+  --border-color: #1e293b;
 }
 
 [data-theme="dark"] .at-search-input:focus {
@@ -100,24 +106,24 @@
 }
 
 .at-countries-list::-webkit-scrollbar {
-  width: 8px; 
+  width: 8px;
 }
 
 .at-countries-list::-webkit-scrollbar-track {
-  background: transparent; 
+  background: transparent;
 }
 
 .at-countries-list::-webkit-scrollbar-thumb {
   background-color: var(--border-color, #cbd5e1);
-  border-radius: 10px; 
-  border: 2px solid var(--bg-primary, #ffffff); 
+  border-radius: 10px;
+  border: 2px solid var(--bg-primary, #ffffff);
 }
 
 .at-countries-list::-webkit-scrollbar-thumb:hover {
-  background-color: var(--text-muted, #94a3b8); 
+  background-color: var(--text-muted, #94a3b8);
 }
 
 .at-countries-list {
   scrollbar-width: thin;
-  scrollbar-color: var(--border-color, #cbd5e1) transparent; 
+  scrollbar-color: var(--border-color, #cbd5e1) transparent;
 }

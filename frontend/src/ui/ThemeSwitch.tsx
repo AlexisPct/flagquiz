@@ -13,7 +13,7 @@ export const ThemeSwitch: React.FC = () => {
 
     return (
         <button onClick={toggleTheme} className="theme-toggle-btn">
-            {theme === 'light' ? '🌙 Dark Mode' : '☀️ Light Mode'}
+            {theme === 'light' ? '🌙' : '☀️'}
         </button>
     );
 };

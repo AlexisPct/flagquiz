@@ -31,7 +31,7 @@ export const QuizQuestion: React.FC<QuizQuestionProps> = ({
   return (
     <div className="quiz-question-card">
       <div className="quiz-question-header">
-        <span className="quiz-badge">Question {question.currentIndex} / {question.totalQuestions}</span>
+        <span className="quiz-badge">Question {question.currentIndex + 1} / {question.totalQuestions}</span>
       </div>
 
       <h2 className="quiz-question-title">
