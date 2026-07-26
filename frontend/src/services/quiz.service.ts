@@ -1,6 +1,6 @@
 import type { Country } from "../types";
 
-const BASE_URL = 'http://localhost:5000/api/quiz';
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000';
 
 export interface QuizConfigPayload {
   type: string;
@@ -18,7 +18,7 @@ export const quizService = {
    * Initialise une nouvelle session de quiz auprès du backend Node.js
    */
   async startSession(config: QuizConfigPayload): Promise<QuizSessionResponse> {
-    const response = await fetch(`${BASE_URL}/session`, {
+    const response = await fetch(`${API_URL}/api/quiz/session`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(config),
@@ -29,7 +29,7 @@ export const quizService = {
   },
 
   async fetchNextQuestion(sessionId: string): Promise<any> {
-    const response = await fetch(`${BASE_URL}/session/${sessionId}`, {
+    const response = await fetch(`${API_URL}/api/quiz/session/${sessionId}`, {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
@@ -47,7 +47,7 @@ export const quizService = {
    * Soumet une réponse au backend pour validation
    */
   async submitAnswer(sessionId: string, questionId: string, answer: string): Promise<any> {
-    const response = await fetch(`${BASE_URL}/submit`, {
+    const response = await fetch(`${API_URL}/api/quiz/submit`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ sessionId, questionId, answer }),
@@ -61,7 +61,7 @@ export const quizService = {
    * Récupère la liste de tous les pays
    */
   async getCountries(): Promise<Country[]> {
-    const res = await fetch(`${BASE_URL}/countries`);
+    const res = await fetch(`${API_URL}/api/quiz/countries`);
     
     if (!res.ok) {
       throw new Error(`Impossible de récupérer la liste des pays (Status: ${res.status})`);
@@ -74,7 +74,7 @@ export const quizService = {
    * Récupère la liste complète des noms de pays triés pour l'autocomplétion
    */
   async getCountriesForAutocomplete(): Promise<string[]> {
-    const response = await fetch(`${BASE_URL}/countries/names`, {
+    const response = await fetch(`${API_URL}/api/quiz/countries/names`, {
       method: 'GET',
       headers: { 'Content-Type': 'application/json' },
     });
@@ -87,7 +87,7 @@ export const quizService = {
    * Récupère la liste complète des capitales triées pour l'autocomplétion
    */
   async getCapitalsForAutocomplete(): Promise<string[]> {
-    const response = await fetch(`${BASE_URL}/capitals`, {
+    const response = await fetch(`${API_URL}/api/quiz/capitals`, {
       method: 'GET',
       headers: { 'Content-Type': 'application/json' },
     });

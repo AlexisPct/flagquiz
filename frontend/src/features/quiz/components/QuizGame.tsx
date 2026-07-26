@@ -7,7 +7,7 @@ import { QuizSummary } from './QuizSummary';
 import { quizService } from '../../../services/quiz.service';
 import { QuizQuestion } from './QuizQuestion';
 
-const API_BASE_URL = 'http://localhost:5000/api/quiz';
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000';
 
 export const QuizGame: React.FC = () => {
     const [step, setStep] = useState<'config' | 'playing' | 'summary'>('config');
@@ -95,7 +95,7 @@ export const QuizGame: React.FC = () => {
         setIsSubmitting(true);
 
         try {
-            const response = await fetch(`${API_BASE_URL}/session/${sessionId}/submit`, {
+            const response = await fetch(`${API_URL}/api/quiz/session/${sessionId}/submit`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ answer }),
@@ -112,7 +112,7 @@ export const QuizGame: React.FC = () => {
     const handleTimeOut = async () => {
         if (!sessionId) return;
         try {
-            const response = await fetch(`${API_BASE_URL}/session/${sessionId}/submit`, {
+            const response = await fetch(`${API_URL}/api/quiz/session/${sessionId}/submit`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ answer: '' }), // Soumission vide = réponse fausse d'office
