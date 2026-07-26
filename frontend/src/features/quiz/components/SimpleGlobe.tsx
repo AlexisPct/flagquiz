@@ -20,7 +20,7 @@ export const SimpleGlobe: React.FC<SimpleGlobeProps> = ({ isRotating = true, siz
 
   // Chargement des données géographiques
   useEffect(() => {
-    fetch('/maps/world.json')
+    fetch('/maps/world-110m.json')
       .then((res) => res.json())
       .then((data) => {
         const { features } = topojson.feature(data, data.objects.countries) as any;

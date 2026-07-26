@@ -1,7 +1,8 @@
 import express, { Request, Response } from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
-import { initializeCountries } from './services/country.service';
+import countriesData from '../data/countries_all.json';
+import { setCountries } from './services/country.service';
 import quizRoutes from './routes/quiz.routes';
 
 dotenv.config();
@@ -9,7 +10,13 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-app.use(cors());
+setCountries(countriesData);
+
+app.use(cors({
+  origin: process.env.CLIENT_URL || 'http://localhost:5173',
+  credentials: true
+}));
+
 app.use(express.json());
 app.use('/api/quiz', quizRoutes);
 
@@ -17,12 +24,10 @@ app.get('/api/health', (req: Request, res: Response) => {
   res.json({ status: 'ok', message: 'Le serveur tourne sur WSL 2 !' });
 });
 
-const startServer = async () => {
-  await initializeCountries();
-
+if (!process.env.VERCEL) {
   app.listen(PORT, () => {
     console.log(`🚀 Serveur démarré sur http://localhost:${PORT}`);
   });
-};
+}
 
-startServer();
+export default app;

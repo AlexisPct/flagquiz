@@ -22,8 +22,8 @@ export const QuizGame: React.FC = () => {
     const [timeLeft, setTimeLeft] = useState<number>(15);
     const [finalScore, setFinalScore] = useState<number>(0);
 
-    const [inputValue, setInputValue] = useState<string>('');
-    const [suggestions, setSuggestions] = useState<string[]>([]);
+    const [, setInputValue] = useState<string>('');
+    const [, setSuggestions] = useState<string[]>([]);
 
     const [countriesList, setCountriesList] = useState<string[]>([]);
     const [capitalsList, setCapitalsList] = useState<string[]>([]);
