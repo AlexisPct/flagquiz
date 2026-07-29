@@ -42,11 +42,13 @@ filesToMerge.forEach((fileName) => {
     const cleaned = rawCountries
       .filter((item) => {
         return (
+          item.classification.dependency ===false &&
           item.names?.common &&
           item.capitals &&
           item.capitals.length > 0 &&
           item.flag?.url_png &&
           item.codes?.alpha_2 &&
+          item.codes?.alpha_3 &&
           item.codes?.ccn3 && 
           item.population && 
           item.area.kilometers
@@ -60,6 +62,7 @@ filesToMerge.forEach((fileName) => {
           capital: mainCapital.name,
           flagUrl: item.flag.url_svg,
           codeAlpha2: item.codes.alpha_2,
+          codeAlpha3: item.codes.alpha_3,
           codeCCN3: item.codes.ccn3,
           population: item.population,
           area: item.area.kilometers,
