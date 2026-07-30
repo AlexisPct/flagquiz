@@ -19,8 +19,7 @@
   overflow: hidden;
 }
 
-.at-globe-zone,
-.at-empty-profile {
+.at-globe-zone {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -33,14 +32,15 @@
     flex-direction: column-reverse;
   }
 
-  .at-globe-zone,
-  .at-empty-profile {
+  .at-globe-zone {
     width: 80vw;
     height: 50vh;
     max-height: 50vh;
   }
 }
 
-.at-empty-profile p {
-  display: none;
+@media (max-width: 480px) and (orientation: portrait) {
+  .at-globe-zone {
+    margin-top: 15vh;
+  }
 }

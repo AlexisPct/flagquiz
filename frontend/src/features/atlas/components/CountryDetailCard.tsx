@@ -10,11 +10,7 @@ export default function CountryDetailCard({ country, onClose }: CountryDetailCar
   if (!country) {
     return (
       <div className="country-card-empty">
-        <div className="empty-icon-wrapper">
-          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/></svg>
-        </div>
-        <h3>Aucun pays sélectionné</h3>
-        <p>Cliquez sur le globe pour explorer une destination.</p>
+        
       </div>
     );
   }
@@ -30,13 +26,7 @@ export default function CountryDetailCard({ country, onClose }: CountryDetailCar
       </button>
 
       <div className="card-content">
-        <div className="card-header">
-          <div className="header-text">
-            <span className="continent-badge">{country.continent}</span>
-            <h2 className="country-title">{country.name}</h2>
-          </div>
-        </div>
-
+        {/* 1. GRAND DRAPEAU EN HAUT */}
         <div className="flag-image-container">
           <img 
             src={country.flagUrl} 
@@ -46,8 +36,15 @@ export default function CountryDetailCard({ country, onClose }: CountryDetailCar
           />
         </div>
 
+        {/* 2. PAYS + CONTINENT SUR LA MÊME LIGNE */}
+        <div className="card-header">
+          <h2 className="country-title">{country.name}</h2>
+          <span className="continent-badge">{country.continent}</span>
+        </div>
+
         <hr className="card-divider" />
 
+        {/* 3. INFORMATIONS */}
         <div className="info-grid">
           <div className="info-box">
             <div className="info-text">
@@ -59,14 +56,14 @@ export default function CountryDetailCard({ country, onClose }: CountryDetailCar
           <div className="info-box">
             <div className="info-text">
               <span className="info-label">Population</span>
-              <p className="info-value">{country.population} hab.</p>
+              <p className="info-value">{country.population.toLocaleString('fr-FR')} hab.</p>
             </div>
           </div>
 
           <div className="info-box col-span-2">
             <div className="info-text">
               <span className="info-label">Superficie</span>
-              <p className="info-value">{country.area} km²</p>
+              <p className="info-value">{country.area.toLocaleString('fr-FR')} km²</p>
             </div>
           </div>
         </div>
