@@ -1,5 +1,4 @@
 import React from 'react';
-import { QuizVisual } from './QuizVisual';
 import type { ServerQuestion } from '../../../types';
 import { SimpleGlobe } from '../../globe/SimpleGlobe';
 import './QuizQuestion.css';
