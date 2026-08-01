@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Home.css';
-import { SimpleGlobe } from '../../quiz/components/SimpleGlobe';
+import { SimpleGlobe } from '../globe/SimpleGlobe';
 
 export const Home: React.FC = () => {
   const navigate = useNavigate();

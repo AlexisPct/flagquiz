@@ -4,7 +4,7 @@ import "./AtlasPage.css";
 import CountryDetailCard from './CountryDetailCard';
 import CountriesListAside from './CountriesListAside';
 import { quizService } from '../../../services/quiz.service';
-import { SimpleGlobe } from '../../quiz/components/SimpleGlobe';
+import { SimpleGlobe } from '../../globe/SimpleGlobe';
 
 export const AtlasPage: React.FC = () => {
     const [countries, setCountries] = useState<Country[]>([]);

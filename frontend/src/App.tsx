@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { Home } from './features/atlas/components/Home';
+import { Home } from './features/home/Home';
 import { QuizGame } from './features/quiz/components/QuizGame';
 import { AtlasPage } from './features/atlas/components/AtlasPage';
 import { Navbar } from './ui/NavBar';
