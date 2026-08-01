@@ -30,7 +30,11 @@ export const AtlasPage: React.FC = () => {
 
             <main className="at-main-content">
                 <div className="at-globe-zone">
-                    <SimpleGlobe size={400} selectedCountryId={selectedCountry?.codeCCN3} />
+                    <SimpleGlobe size={400} selectedCountryId={selectedCountry?.codeCCN3} onSelectCountry={(countryId) => {
+                        console.log("Pays sélectionné :", countryId);
+                        const countryClicked = countries.find(c => c.codeCCN3 === countryId)
+                        setSelectedCountry(countryClicked || null);
+                    }} />
                     {selectedCountry &&
                         <CountryDetailCard country={selectedCountry} onClose={() => setSelectedCountry(null)} />
                     }

@@ -6,9 +6,15 @@ interface SimpleGlobeProps {
   isRotating?: boolean;
   size: number;
   selectedCountryId?: string;
+  onSelectCountry?: (countryId: string) => void;
 }
 
-export const SimpleGlobe: React.FC<SimpleGlobeProps> = ({ isRotating = true, size, selectedCountryId }) => {
+export const SimpleGlobe: React.FC<SimpleGlobeProps> = ({ 
+  isRotating = true, 
+  size, 
+  selectedCountryId,
+  onSelectCountry 
+}) => {
   const mapGroupRef = useRef<SVGGElement | null>(null);
   const oceanRef = useRef<SVGCircleElement | null>(null);
   const markerGroupRef = useRef<SVGGElement | null>(null);
@@ -47,6 +53,14 @@ export const SimpleGlobe: React.FC<SimpleGlobeProps> = ({ isRotating = true, siz
         const currentId = String(d.id || d.properties?.id || '');
         const isSelected = selectedCountryId && currentId === String(selectedCountryId);
         return isSelected ? 'simple-globe-land selected-country' : 'simple-globe-land';
+      })
+      .style('cursor', 'pointer') 
+      .on('click', (event: MouseEvent, d: any) => {
+        event.stopPropagation();
+        const countryId = String(d.id || d.properties?.id || '');
+        if (countryId && onSelectCountry) {
+          onSelectCountry(countryId);
+        }
       });
 
     let animationFrameId: number;
@@ -142,7 +156,7 @@ export const SimpleGlobe: React.FC<SimpleGlobeProps> = ({ isRotating = true, siz
 
     renderFrame();
     return () => cancelAnimationFrame(animationFrameId);
-  }, [geoFeatures, microStates, size, isRotating, selectedCountryId, baseRadius]);
+  }, [geoFeatures, microStates, size, isRotating, selectedCountryId, baseRadius, onSelectCountry]);
 
   return (
     <div className="simple-globe-wrapper">
