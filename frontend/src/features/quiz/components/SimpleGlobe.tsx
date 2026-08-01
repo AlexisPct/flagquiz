@@ -4,47 +4,82 @@ import './SimpleGlobe.css';
 
 interface SimpleGlobeProps {
   isRotating?: boolean;
-  size: number;
   selectedCountryId?: string;
   onSelectCountry?: (countryId: string) => void;
+  autoResumeDelay?: number;
+  enableClick?: boolean;
+  enableDrag?: boolean;
+  enableZoom?: boolean;
 }
 
-export const SimpleGlobe: React.FC<SimpleGlobeProps> = ({ 
-  isRotating = true, 
-  size, 
+// Resolution interne fixe pour les calculs D3 et la viewBox SVG
+const INTERNAL_SIZE = 800;
+const BASE_RADIUS = INTERNAL_SIZE / 2 - 10;
+
+export const SimpleGlobe: React.FC<SimpleGlobeProps> = ({
+  isRotating = true,
   selectedCountryId,
-  onSelectCountry 
+  onSelectCountry,
+  autoResumeDelay = 3000,
+  enableClick = true,
+  enableDrag = true,
+  enableZoom = true,
 }) => {
+  const svgRef = useRef<SVGSVGElement | null>(null);
   const mapGroupRef = useRef<SVGGElement | null>(null);
   const oceanRef = useRef<SVGCircleElement | null>(null);
   const markerGroupRef = useRef<SVGGElement | null>(null);
 
   const currentRotateRef = useRef<[number, number, number]>([0, -15, 0]);
+  const currentScaleRef = useRef<number>(BASE_RADIUS);
+  
+  const isUserInteractingRef = useRef<boolean>(false);
+  const inactivityTimerRef = useRef<number | null>(null);
 
-  const baseRadius = size / 2 - 5;
-  const currentScaleRef = useRef<number>(baseRadius);
   const [geoFeatures, setGeoFeatures] = useState<any[]>([]);
   const [microStates, setMicroStates] = useState<any[]>([]);
 
-  // Chargement des données géographiques
+  const scheduleAutoResume = () => {
+    if (inactivityTimerRef.current) clearTimeout(inactivityTimerRef.current);
+    
+    inactivityTimerRef.current = window.setTimeout(() => {
+      isUserInteractingRef.current = false;
+    }, autoResumeDelay);
+  };
+
   useEffect(() => {
     Promise.all([
       d3.json('/maps/world-110m.geojson'),
       d3.json('./maps/micro-states.geojson')
-    ]).then(([data, dataMicroStates]: [any, any]) => {
-      setGeoFeatures(data.features);
-      setMicroStates(dataMicroStates.features);
-    })
+    ])
+      .then(([data, dataMicroStates]: [any, any]) => {
+        setGeoFeatures(data.features);
+        setMicroStates(dataMicroStates.features);
+      })
       .catch((err) => console.error("Erreur d'initialisation du globe :", err));
   }, []);
 
-  // Moteur d'animation ultra-fluide
   useEffect(() => {
-    if (!geoFeatures.length || !mapGroupRef.current || !oceanRef.current || !markerGroupRef.current) return;
+    if (selectedCountryId) {
+      if (inactivityTimerRef.current) clearTimeout(inactivityTimerRef.current);
+      isUserInteractingRef.current = false;
+    }
+  }, [selectedCountryId]);
 
-    const projection = d3.geoOrthographic().translate([size / 2, size / 2]).clipAngle(90);
+  useEffect(() => {
+    return () => {
+      if (inactivityTimerRef.current) clearTimeout(inactivityTimerRef.current);
+    };
+  }, []);
+
+  useEffect(() => {
+    if (!geoFeatures.length || !mapGroupRef.current || !oceanRef.current || !markerGroupRef.current || !svgRef.current) return;
+
+    const svgElement = d3.select(svgRef.current);
+    const projection = d3.geoOrthographic().translate([INTERNAL_SIZE / 2, INTERNAL_SIZE / 2]).clipAngle(90);
     const pathGenerator = d3.geoPath().projection(projection);
 
+    // 1. RENDER DES PAYS
     const paths = d3.select(mapGroupRef.current)
       .selectAll('path')
       .data(geoFeatures)
@@ -54,20 +89,91 @@ export const SimpleGlobe: React.FC<SimpleGlobeProps> = ({
         const isSelected = selectedCountryId && currentId === String(selectedCountryId);
         return isSelected ? 'simple-globe-land selected-country' : 'simple-globe-land';
       })
-      .style('cursor', 'pointer') 
-      .on('click', (event: MouseEvent, d: any) => {
-        event.stopPropagation();
-        const countryId = String(d.id || d.properties?.id || '');
-        if (countryId && onSelectCountry) {
-          onSelectCountry(countryId);
+      .style('cursor', enableClick ? 'pointer' : 'default');
+
+    // 2. GESTION DU DRAG & CLIC
+    let dragStartPos = { x: 0, y: 0 };
+    let isDragging = false;
+
+    const drag = d3.drag<SVGSVGElement, unknown>()
+      .on('start', (event) => {
+        if (!enableDrag && !enableClick) return;
+        if (inactivityTimerRef.current) clearTimeout(inactivityTimerRef.current);
+        dragStartPos = { x: event.x, y: event.y };
+        isDragging = false;
+        if (enableDrag) isUserInteractingRef.current = true;
+      })
+      .on('drag', (event) => {
+        if (!enableDrag) return;
+        const distSq = (event.x - dragStartPos.x) ** 2 + (event.y - dragStartPos.y) ** 2;
+        if (distSq > 9) {
+          isDragging = true;
+        }
+
+        if (isDragging) {
+          const sensitivity = 360 / (currentScaleRef.current * 2 * Math.PI);
+          let [lon, lat, roll] = currentRotateRef.current;
+
+          lon += event.dx * sensitivity;
+          lat -= event.dy * sensitivity;
+          lat = Math.max(-85, Math.min(85, lat));
+
+          currentRotateRef.current = [lon, lat, roll];
+        }
+      })
+      .on('end', (event) => {
+        if (!isDragging && enableClick) {
+          const target = event.sourceEvent.target;
+          const datum = d3.select(target).datum() as any;
+          if (datum) {
+            const countryId = String(datum.id || datum.properties?.id || '');
+            if (countryId && onSelectCountry) {
+              isUserInteractingRef.current = false;
+              onSelectCountry(countryId);
+            } else if (enableDrag) {
+              scheduleAutoResume();
+            }
+          } else if (enableDrag) {
+            scheduleAutoResume();
+          }
+        } else if (enableDrag) {
+          scheduleAutoResume();
         }
       });
 
+    if (enableDrag || enableClick) {
+      svgElement.call(drag);
+    } else {
+      svgElement.on('.drag', null);
+    }
+
+    // 3. ZOOM MOLETTE
+    const handleWheel = (event: WheelEvent) => {
+      if (!enableZoom) return;
+      event.preventDefault();
+
+      if (inactivityTimerRef.current) clearTimeout(inactivityTimerRef.current);
+      isUserInteractingRef.current = true;
+
+      const zoomFactor = event.deltaY < 0 ? 1.08 : 0.92;
+      const minScale = BASE_RADIUS;
+      const maxScale = BASE_RADIUS * 4.0;
+
+      currentScaleRef.current = Math.max(minScale, Math.min(maxScale, currentScaleRef.current * zoomFactor));
+      scheduleAutoResume();
+    };
+
+    const svgDom = svgRef.current;
+    if (enableZoom) {
+      svgDom.addEventListener('wheel', handleWheel, { passive: false });
+    }
+
+    // 4. ANIMATION FRAME
     let animationFrameId: number;
 
     const renderFrame = () => {
       let [lon, lat, roll] = currentRotateRef.current;
-      let targetScale = baseRadius;
+      let targetScale = currentScaleRef.current;
 
       const foundInMicro = selectedCountryId
         ? microStates.find((f: any) => String(f.id) === String(selectedCountryId) || String(f.properties?.id) === String(selectedCountryId))
@@ -80,8 +186,7 @@ export const SimpleGlobe: React.FC<SimpleGlobeProps> = ({
       const selectedFeature = foundInMicro || foundInWorld;
       const isMicroState = !!foundInMicro;
 
-      if (selectedFeature) {
-        // 1. Calcul des coordonnées cibles
+      if (selectedFeature && !isUserInteractingRef.current) {
         const [targetLon, targetLat] = d3.geoCentroid(selectedFeature);
         let diffLon = (-targetLon - lon) % 360;
         if (diffLon < -180) diffLon += 360;
@@ -89,47 +194,36 @@ export const SimpleGlobe: React.FC<SimpleGlobeProps> = ({
 
         const diffLat = -targetLat - lat;
 
-        // 2. Interpolation fluide de la position (Vitesse progressive)
         lon += diffLon * 0.06;
         lat += diffLat * 0.06;
 
-        // 3. LE SECRET DE LA FLUIDITÉ : Calcul du zoom basé sur la distance angulaire restante
         const bounds = d3.geoBounds(selectedFeature);
         const countryDistance = d3.geoDistance(bounds[0], bounds[1]);
 
-        // Facteur de zoom max selon la taille du pays
         let maxZoomFactor = 0.45 / countryDistance;
         maxZoomFactor = Math.max(1.3, Math.min(4.0, maxZoomFactor));
-        const finalZoomScale = baseRadius * maxZoomFactor;
+        const finalZoomScale = BASE_RADIUS * maxZoomFactor;
 
-        // On évalue la distance angulaire globale qui sépare la caméra du pays actuel (0 = alignement parfait)
         const angularError = Math.sqrt(diffLon * diffLon + diffLat * diffLat);
+        const trackingProgress = Math.max(0, 1 - angularError / 45);
 
-        // Plus l'erreur angulaire est grande (entre 0 et 180°), plus on force le dézoom vers baseRadius
-        const trackingProgress = Math.max(0, 1 - angularError / 45); // 45° de zone d'amortissement
+        targetScale = BASE_RADIUS + (finalZoomScale - BASE_RADIUS) * Math.pow(trackingProgress, 2);
+        currentScaleRef.current += (targetScale - currentScaleRef.current) * 0.07;
 
-        // La cible de zoom glisse dynamiquement entre l'échelle minimale et l'échelle maximale du pays
-        targetScale = baseRadius + (finalZoomScale - baseRadius) * Math.pow(trackingProgress, 2);
-
-      } else if (isRotating) {
-        // Mode veille sans pays sélectionné
+      } else if (isRotating && !isUserInteractingRef.current) {
         lon = (lon + 0.25) % 360;
-        lat = -15;
-        targetScale = baseRadius;
+        lat += (-15 - lat) * 0.05;
+        targetScale = BASE_RADIUS;
+        currentScaleRef.current += (targetScale - currentScaleRef.current) * 0.05;
       }
 
-      // 4. Amortissement constant du zoom (Lerp doux)
-      currentScaleRef.current += (targetScale - currentScaleRef.current) * 0.07;
-
-      // 5. Application des transformations géométriques
       projection.rotate([lon, lat, roll]);
       projection.scale(currentScaleRef.current);
 
-      d3.select(oceanRef.current).attr('r', baseRadius);
+      d3.select(oceanRef.current).attr('r', BASE_RADIUS);
       paths.attr('d', (d: any) => pathGenerator(d));
 
       const markerEl = d3.select(markerGroupRef.current);
-
       if (isMicroState && selectedFeature) {
         const centroid = d3.geoCentroid(selectedFeature);
         const centerGlobe: [number, number] = [-lon, -lat];
@@ -155,20 +249,33 @@ export const SimpleGlobe: React.FC<SimpleGlobeProps> = ({
     };
 
     renderFrame();
-    return () => cancelAnimationFrame(animationFrameId);
-  }, [geoFeatures, microStates, size, isRotating, selectedCountryId, baseRadius, onSelectCountry]);
+
+    return () => {
+      cancelAnimationFrame(animationFrameId);
+      if (enableZoom) {
+        svgDom.removeEventListener('wheel', handleWheel);
+      }
+    };
+  }, [geoFeatures, microStates, isRotating, selectedCountryId, onSelectCountry, autoResumeDelay, enableClick, enableDrag, enableZoom]);
 
   return (
     <div className="simple-globe-wrapper">
-      <svg viewBox={`0 0 ${size} ${size}`} width="100%" height="100%" className="simple-svg-globe">
+      <svg
+        ref={svgRef}
+        viewBox={`0 0 ${INTERNAL_SIZE} ${INTERNAL_SIZE}`}
+        width="100%"
+        height="100%"
+        className="simple-svg-globe"
+        style={{ touchAction: enableDrag ? 'none' : 'auto' }}
+      >
         <defs>
           <clipPath id="hublot-clip">
-            <circle cx={size / 2} cy={size / 2} r={baseRadius} />
+            <circle cx={INTERNAL_SIZE / 2} cy={INTERNAL_SIZE / 2} r={BASE_RADIUS} />
           </clipPath>
         </defs>
 
         <g clipPath="url(#hublot-clip)">
-          <circle ref={oceanRef} cx={size / 2} cy={size / 2} className="simple-globe-ocean" />
+          <circle ref={oceanRef} cx={INTERNAL_SIZE / 2} cy={INTERNAL_SIZE / 2} className="simple-globe-ocean" />
           <g ref={mapGroupRef} />
 
           <g ref={markerGroupRef} style={{ display: 'none', pointerEvents: 'none' }}>
@@ -180,7 +287,14 @@ export const SimpleGlobe: React.FC<SimpleGlobeProps> = ({
           </g>
         </g>
 
-        <circle cx={size / 2} cy={size / 2} r={baseRadius} className="hublot-ring" fill="none" style={{ pointerEvents: 'none' }} />
+        <circle
+          cx={INTERNAL_SIZE / 2}
+          cy={INTERNAL_SIZE / 2}
+          r={BASE_RADIUS}
+          className="hublot-ring"
+          fill="none"
+          style={{ pointerEvents: 'none' }}
+        />
       </svg>
     </div>
   );

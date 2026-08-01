@@ -34,7 +34,7 @@ export const Home: React.FC = () => {
       </div>
 
       <div className="home-globe">
-        <SimpleGlobe size={400} isRotating={true} />
+        <SimpleGlobe enableClick={false} enableDrag={false} enableZoom={false}/>
       </div>
     </div>
   );
