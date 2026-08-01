@@ -12,9 +12,10 @@ interface SimpleGlobeProps {
   enableZoom?: boolean;
 }
 
-// Resolution interne fixe pour les calculs D3 et la viewBox SVG
 const INTERNAL_SIZE = 800;
 const BASE_RADIUS = INTERNAL_SIZE / 2 - 10;
+const MIN_SCALE = BASE_RADIUS;
+const MAX_SCALE = BASE_RADIUS * 4.0;
 
 export const SimpleGlobe: React.FC<SimpleGlobeProps> = ({
   isRotating = true,
@@ -32,16 +33,16 @@ export const SimpleGlobe: React.FC<SimpleGlobeProps> = ({
 
   const currentRotateRef = useRef<[number, number, number]>([0, -15, 0]);
   const currentScaleRef = useRef<number>(BASE_RADIUS);
-  
   const isUserInteractingRef = useRef<boolean>(false);
   const inactivityTimerRef = useRef<number | null>(null);
 
-  const [geoFeatures, setGeoFeatures] = useState<any[]>([]);
-  const [microStates, setMicroStates] = useState<any[]>([]);
+  const pinchStartDistRef = useRef<number | null>(null);
+  const scaleAtPinchStartRef = useRef<number>(BASE_RADIUS);
+
+  const [geoData, setGeoData] = useState<{ world: any[]; micro: any[] }>({ world: [], micro: [] });
 
   const scheduleAutoResume = () => {
     if (inactivityTimerRef.current) clearTimeout(inactivityTimerRef.current);
-    
     inactivityTimerRef.current = window.setTimeout(() => {
       isUserInteractingRef.current = false;
     }, autoResumeDelay);
@@ -52,11 +53,10 @@ export const SimpleGlobe: React.FC<SimpleGlobeProps> = ({
       d3.json('/maps/world-110m.geojson'),
       d3.json('./maps/micro-states.geojson')
     ])
-      .then(([data, dataMicroStates]: [any, any]) => {
-        setGeoFeatures(data.features);
-        setMicroStates(dataMicroStates.features);
+      .then(([world, micro]: [any, any]) => {
+        setGeoData({ world: world.features, micro: micro.features });
       })
-      .catch((err) => console.error("Erreur d'initialisation du globe :", err));
+      .catch((err) => console.error("Erreur de chargement des cartes :", err));
   }, []);
 
   useEffect(() => {
@@ -67,124 +67,128 @@ export const SimpleGlobe: React.FC<SimpleGlobeProps> = ({
   }, [selectedCountryId]);
 
   useEffect(() => {
-    return () => {
-      if (inactivityTimerRef.current) clearTimeout(inactivityTimerRef.current);
-    };
-  }, []);
-
-  useEffect(() => {
-    if (!geoFeatures.length || !mapGroupRef.current || !oceanRef.current || !markerGroupRef.current || !svgRef.current) return;
+    if (!geoData.world.length || !svgRef.current) return;
 
     const svgElement = d3.select(svgRef.current);
     const projection = d3.geoOrthographic().translate([INTERNAL_SIZE / 2, INTERNAL_SIZE / 2]).clipAngle(90);
     const pathGenerator = d3.geoPath().projection(projection);
 
-    // 1. RENDER DES PAYS
     const paths = d3.select(mapGroupRef.current)
       .selectAll('path')
-      .data(geoFeatures)
+      .data(geoData.world)
       .join('path')
       .attr('class', (d: any) => {
-        const currentId = String(d.id || d.properties?.id || '');
-        const isSelected = selectedCountryId && currentId === String(selectedCountryId);
-        return isSelected ? 'simple-globe-land selected-country' : 'simple-globe-land';
+        const id = String(d.id || d.properties?.id || '');
+        return selectedCountryId && id === String(selectedCountryId) 
+          ? 'simple-globe-land selected-country' 
+          : 'simple-globe-land';
       })
       .style('cursor', enableClick ? 'pointer' : 'default');
 
-    // 2. GESTION DU DRAG & CLIC
     let dragStartPos = { x: 0, y: 0 };
     let isDragging = false;
 
     const drag = d3.drag<SVGSVGElement, unknown>()
       .on('start', (event) => {
         if (!enableDrag && !enableClick) return;
+        if (event.sourceEvent.touches?.length > 1) return;
+
         if (inactivityTimerRef.current) clearTimeout(inactivityTimerRef.current);
         dragStartPos = { x: event.x, y: event.y };
         isDragging = false;
         if (enableDrag) isUserInteractingRef.current = true;
       })
       .on('drag', (event) => {
-        if (!enableDrag) return;
-        const distSq = (event.x - dragStartPos.x) ** 2 + (event.y - dragStartPos.y) ** 2;
-        if (distSq > 9) {
+        if (!enableDrag || event.sourceEvent.touches?.length > 1) return;
+
+        if ((event.x - dragStartPos.x) ** 2 + (event.y - dragStartPos.y) ** 2 > 9) {
           isDragging = true;
         }
 
         if (isDragging) {
           const sensitivity = 360 / (currentScaleRef.current * 2 * Math.PI);
           let [lon, lat, roll] = currentRotateRef.current;
-
           lon += event.dx * sensitivity;
-          lat -= event.dy * sensitivity;
-          lat = Math.max(-85, Math.min(85, lat));
-
+          lat = Math.max(-85, Math.min(85, lat - event.dy * sensitivity));
           currentRotateRef.current = [lon, lat, roll];
         }
       })
       .on('end', (event) => {
+        if (event.sourceEvent.touches?.length > 0) return;
+
         if (!isDragging && enableClick) {
-          const target = event.sourceEvent.target;
-          const datum = d3.select(target).datum() as any;
-          if (datum) {
-            const countryId = String(datum.id || datum.properties?.id || '');
-            if (countryId && onSelectCountry) {
-              isUserInteractingRef.current = false;
-              onSelectCountry(countryId);
-            } else if (enableDrag) {
-              scheduleAutoResume();
-            }
-          } else if (enableDrag) {
-            scheduleAutoResume();
+          const datum = d3.select(event.sourceEvent.target).datum() as any;
+          const countryId = String(datum?.id || datum?.properties?.id || '');
+          if (countryId && onSelectCountry) {
+            isUserInteractingRef.current = false;
+            onSelectCountry(countryId);
+            return;
           }
-        } else if (enableDrag) {
-          scheduleAutoResume();
         }
+        if (enableDrag) scheduleAutoResume();
       });
 
-    if (enableDrag || enableClick) {
-      svgElement.call(drag);
-    } else {
-      svgElement.on('.drag', null);
-    }
+    if (enableDrag || enableClick) svgElement.call(drag);
+    else svgElement.on('.drag', null);
 
-    // 3. ZOOM MOLETTE
-    const handleWheel = (event: WheelEvent) => {
+    const clampScale = (scale: number) => Math.max(MIN_SCALE, Math.min(MAX_SCALE, scale));
+
+    const handleWheel = (e: WheelEvent) => {
       if (!enableZoom) return;
-      event.preventDefault();
-
+      e.preventDefault();
       if (inactivityTimerRef.current) clearTimeout(inactivityTimerRef.current);
       isUserInteractingRef.current = true;
 
-      const zoomFactor = event.deltaY < 0 ? 1.08 : 0.92;
-      const minScale = BASE_RADIUS;
-      const maxScale = BASE_RADIUS * 4.0;
-
-      currentScaleRef.current = Math.max(minScale, Math.min(maxScale, currentScaleRef.current * zoomFactor));
+      currentScaleRef.current = clampScale(currentScaleRef.current * (e.deltaY < 0 ? 1.08 : 0.92));
       scheduleAutoResume();
+    };
+
+    const getTouchDist = (e: TouchEvent) => 
+      Math.hypot(e.touches[0].clientX - e.touches[1].clientX, e.touches[0].clientY - e.touches[1].clientY);
+
+    const handleTouchStart = (e: TouchEvent) => {
+      if (enableZoom && e.touches.length === 2) {
+        e.preventDefault();
+        if (inactivityTimerRef.current) clearTimeout(inactivityTimerRef.current);
+        isUserInteractingRef.current = true;
+        pinchStartDistRef.current = getTouchDist(e);
+        scaleAtPinchStartRef.current = currentScaleRef.current;
+      }
+    };
+
+    const handleTouchMove = (e: TouchEvent) => {
+      if (enableZoom && e.touches.length === 2 && pinchStartDistRef.current) {
+        e.preventDefault();
+        currentScaleRef.current = clampScale(scaleAtPinchStartRef.current * (getTouchDist(e) / pinchStartDistRef.current));
+      }
+    };
+
+    const handleTouchEnd = (e: TouchEvent) => {
+      if (e.touches.length < 2 && pinchStartDistRef.current !== null) {
+        pinchStartDistRef.current = null;
+        if (enableDrag) scheduleAutoResume();
+      }
     };
 
     const svgDom = svgRef.current;
     if (enableZoom) {
       svgDom.addEventListener('wheel', handleWheel, { passive: false });
+      svgDom.addEventListener('touchstart', handleTouchStart, { passive: false });
+      svgDom.addEventListener('touchmove', handleTouchMove, { passive: false });
+      svgDom.addEventListener('touchend', handleTouchEnd);
     }
 
-    // 4. ANIMATION FRAME
     let animationFrameId: number;
 
     const renderFrame = () => {
       let [lon, lat, roll] = currentRotateRef.current;
-      let targetScale = currentScaleRef.current;
 
-      const foundInMicro = selectedCountryId
-        ? microStates.find((f: any) => String(f.id) === String(selectedCountryId) || String(f.properties?.id) === String(selectedCountryId))
+      const selectedFeature = selectedCountryId
+        ? geoData.micro.find((f: any) => String(f.id || f.properties?.id) === String(selectedCountryId)) ||
+          geoData.world.find((f: any) => String(f.id || f.properties?.id) === String(selectedCountryId))
         : null;
 
-      const foundInWorld = selectedCountryId && !foundInMicro
-        ? geoFeatures.find((f: any) => String(f.id) === String(selectedCountryId) || String(f.properties?.id) === String(selectedCountryId))
-        : null;
-
-      const selectedFeature = foundInMicro || foundInWorld;
-      const isMicroState = !!foundInMicro;
+      const isMicroState = selectedFeature && geoData.micro.includes(selectedFeature);
 
       if (selectedFeature && !isUserInteractingRef.current) {
         const [targetLon, targetLat] = d3.geoCentroid(selectedFeature);
@@ -192,29 +196,21 @@ export const SimpleGlobe: React.FC<SimpleGlobeProps> = ({
         if (diffLon < -180) diffLon += 360;
         if (diffLon > 180) diffLon -= 360;
 
-        const diffLat = -targetLat - lat;
-
         lon += diffLon * 0.06;
-        lat += diffLat * 0.06;
+        lat += (-targetLat - lat) * 0.06;
 
         const bounds = d3.geoBounds(selectedFeature);
-        const countryDistance = d3.geoDistance(bounds[0], bounds[1]);
+        const distance = d3.geoDistance(bounds[0], bounds[1]);
+        const finalZoomScale = BASE_RADIUS * Math.max(1.3, Math.min(4.0, 0.45 / distance));
 
-        let maxZoomFactor = 0.45 / countryDistance;
-        maxZoomFactor = Math.max(1.3, Math.min(4.0, maxZoomFactor));
-        const finalZoomScale = BASE_RADIUS * maxZoomFactor;
-
-        const angularError = Math.sqrt(diffLon * diffLon + diffLat * diffLat);
-        const trackingProgress = Math.max(0, 1 - angularError / 45);
-
-        targetScale = BASE_RADIUS + (finalZoomScale - BASE_RADIUS) * Math.pow(trackingProgress, 2);
+        const trackingProgress = Math.max(0, 1 - Math.hypot(diffLon, -targetLat - lat) / 45);
+        const targetScale = BASE_RADIUS + (finalZoomScale - BASE_RADIUS) * (trackingProgress ** 2);
         currentScaleRef.current += (targetScale - currentScaleRef.current) * 0.07;
 
       } else if (isRotating && !isUserInteractingRef.current) {
         lon = (lon + 0.25) % 360;
         lat += (-15 - lat) * 0.05;
-        targetScale = BASE_RADIUS;
-        currentScaleRef.current += (targetScale - currentScaleRef.current) * 0.05;
+        currentScaleRef.current += (BASE_RADIUS - currentScaleRef.current) * 0.05;
       }
 
       projection.rotate([lon, lat, roll]);
@@ -226,17 +222,11 @@ export const SimpleGlobe: React.FC<SimpleGlobeProps> = ({
       const markerEl = d3.select(markerGroupRef.current);
       if (isMicroState && selectedFeature) {
         const centroid = d3.geoCentroid(selectedFeature);
-        const centerGlobe: [number, number] = [-lon, -lat];
-        const distance = d3.geoDistance(centroid, centerGlobe);
+        const isVisible = d3.geoDistance(centroid, [-lon, -lat]) <= Math.PI / 2;
+        const coords = isVisible ? projection(centroid) : null;
 
-        if (distance <= Math.PI / 2) {
-          const coords = projection(centroid);
-          if (coords) {
-            markerEl.attr('transform', `translate(${coords[0]}, ${coords[1]})`)
-                    .style('display', 'block');
-          } else {
-            markerEl.style('display', 'none');
-          }
+        if (coords) {
+          markerEl.attr('transform', `translate(${coords[0]}, ${coords[1]})`).style('display', 'block');
         } else {
           markerEl.style('display', 'none');
         }
@@ -254,9 +244,12 @@ export const SimpleGlobe: React.FC<SimpleGlobeProps> = ({
       cancelAnimationFrame(animationFrameId);
       if (enableZoom) {
         svgDom.removeEventListener('wheel', handleWheel);
+        svgDom.removeEventListener('touchstart', handleTouchStart);
+        svgDom.removeEventListener('touchmove', handleTouchMove);
+        svgDom.removeEventListener('touchend', handleTouchEnd);
       }
     };
-  }, [geoFeatures, microStates, isRotating, selectedCountryId, onSelectCountry, autoResumeDelay, enableClick, enableDrag, enableZoom]);
+  }, [geoData, isRotating, selectedCountryId, onSelectCountry, autoResumeDelay, enableClick, enableDrag, enableZoom]);
 
   return (
     <div className="simple-globe-wrapper">
@@ -266,7 +259,7 @@ export const SimpleGlobe: React.FC<SimpleGlobeProps> = ({
         width="100%"
         height="100%"
         className="simple-svg-globe"
-        style={{ touchAction: enableDrag ? 'none' : 'auto' }}
+        style={{ touchAction: 'none' }}
       >
         <defs>
           <clipPath id="hublot-clip">
