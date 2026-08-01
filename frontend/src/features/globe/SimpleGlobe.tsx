@@ -15,7 +15,7 @@ interface SimpleGlobeProps {
 const INTERNAL_SIZE = 800;
 const BASE_RADIUS = INTERNAL_SIZE / 2 - 10;
 const MIN_SCALE = BASE_RADIUS;
-const MAX_SCALE = BASE_RADIUS * 4.0;
+const MAX_SCALE = BASE_RADIUS * 6.5;
 
 export const SimpleGlobe: React.FC<SimpleGlobeProps> = ({
   isRotating = true,
@@ -201,7 +201,7 @@ export const SimpleGlobe: React.FC<SimpleGlobeProps> = ({
 
         const bounds = d3.geoBounds(selectedFeature);
         const distance = d3.geoDistance(bounds[0], bounds[1]);
-        const finalZoomScale = BASE_RADIUS * Math.max(1.3, Math.min(4.0, 0.45 / distance));
+        const finalZoomScale = BASE_RADIUS * Math.max(1.8, Math.min(6.0, 0.75 / distance));
 
         const trackingProgress = Math.max(0, 1 - Math.hypot(diffLon, -targetLat - lat) / 45);
         const targetScale = BASE_RADIUS + (finalZoomScale - BASE_RADIUS) * (trackingProgress ** 2);

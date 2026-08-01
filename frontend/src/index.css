@@ -47,33 +47,11 @@ body {
   margin: 0;
 }
 
-/* Conteneur de l'application (Effet de verre flottant) */
-.quiz-container {
-  max-width: 560px;
-  margin: 60px auto;
-  padding: 40px;
-  background: var(--bg-surface);
-  backdrop-filter: blur(var(--blur-amount));
-  -webkit-backdrop-filter: blur(var(--blur-amount));
-  border: 1px solid var(--border-surface);
-  border-radius: 24px;
-  box-shadow: var(--shadow-futuristic);
-  transition: all 0.4s ease;
-}
-
-/* Typographie & Headers */
-.quiz-title {
-  font-size: 28px;
-  font-weight: 800;
-  letter-spacing: -0.5px;
-  margin-bottom: 8px;
-  text-align: center;
-}
-.quiz-subtitle {
-  color: var(--text-muted);
-  font-size: 15px;
-  text-align: center;
-  margin-bottom: 32px;
+.app-layout {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Zone Image de l'indice */
@@ -92,48 +70,6 @@ body {
   border-radius: 8px;
   /* Léger effet de lueur futuriste sous l'image */
   filter: drop-shadow(0 4px 12px var(--accent-glow)); 
-}
-
-/* Grille des réponses QCM */
-.quiz-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 12px;
-  margin-top: 24px;
-}
-
-/* Boutons de choix (Design Néo-Minimaliste) */
-.quiz-btn-option {
-  background: var(--btn-bg);
-  border: 1px solid var(--btn-border);
-  color: var(--text-main);
-  padding: 18px 24px;
-  border-radius: 14px;
-  font-size: 16px;
-  font-weight: 500;
-  text-align: left;
-  cursor: pointer;
-  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.quiz-btn-option:hover:not(:disabled) {
-  background: var(--btn-hover);
-  border-color: var(--text-muted);
-  transform: translateX(4px); /* Micro-glissement futuriste au survol */
-}
-
-/* États dynamiques de correction (Success / Error) */
-.quiz-btn-option.correct {
-  background: rgba(16, 185, 129, 0.15) !important;
-  border-color: var(--color-success) !important;
-  color: var(--color-success) !important;
-  font-weight: 600;
-}
-
-.quiz-btn-option.wrong {
-  background: rgba(239, 68, 68, 0.15) !important;
-  border-color: var(--color-error) !important;
-  color: var(--color-error) !important;
 }
 
 /* Inputs & Formulaires de configuration */

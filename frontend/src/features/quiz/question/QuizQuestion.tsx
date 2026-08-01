@@ -1,6 +1,8 @@
 import React from 'react';
 import { QuizVisual } from './QuizVisual';
 import type { ServerQuestion } from '../../../types';
+import { SimpleGlobe } from '../../globe/SimpleGlobe';
+import './QuizQuestion.css';
 
 interface QuizQuestionProps {
   question: ServerQuestion;
@@ -15,7 +17,7 @@ export const QuizQuestion: React.FC<QuizQuestionProps> = ({
       case 'capital':
         return (
           <>
-            Quelle est la capitale de ce pays : 
+            Quelle est la capitale de ce pays :
             <span className="quiz-highlight-target"> {question.countryName}</span> ?
           </>
         );
@@ -30,19 +32,34 @@ export const QuizQuestion: React.FC<QuizQuestionProps> = ({
 
   return (
     <div className="quiz-question-card">
-      <div className="quiz-question-header">
-        <span className="quiz-badge">Question {question.currentIndex + 1} / {question.totalQuestions}</span>
+      <div className="quiz-question-title">
+        <span className="quiz-question-badge">{question.currentIndex + 1} / {question.totalQuestions}</span>
+        <h3>{renderQuestionTitle()}</h3>
       </div>
 
-      <h2 className="quiz-question-title">
-        {renderQuestionTitle()}
-      </h2>
-
       <div className="quiz-visual-wrapper">
-        <QuizVisual 
+        {/* <QuizVisual
           type={question.type}
           visualUrl={question.questionVisual || null}
-        />
+        /> */}
+
+        {question.type === 'flag' && (
+          <div className="flag-image-container">
+            <img
+              src={question.questionVisual}
+              alt={'Drapeau'}
+              className="country-flag-large"
+              loading="lazy"
+            />
+          </div>
+
+        )}
+
+        {question.type === 'shape' && (
+          <div className="quiz-question-globe">
+            <SimpleGlobe selectedCountryId={question.countryCodeCCN3} enableClick={false} enableDrag={false} enableZoom={false} />
+          </div>
+        )}
       </div>
     </div>
   );

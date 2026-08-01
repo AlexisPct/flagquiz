@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import type { QuizConfigType, ServerQuestion, SubmitResponse } from '../../../types';
-import { QuizAnswersQCM } from './QuizAnswersQCM';
-import { QuizAnswersAutocompleteInput } from './QuizAnswersAutocompleteInput';
-import { QuizConfig } from './QuizConfig';
-import { QuizSummary } from './QuizSummary';
-import { quizService } from '../../../services/quiz.service';
-import { QuizQuestion } from './QuizQuestion';
+import type { QuizConfigType, ServerQuestion, SubmitResponse } from '../../types';
+import { QuizAnswersQCM } from './answers/QuizAnswersQCM';
+import { QuizAnswersAutocompleteInput } from './answers/QuizAnswersAutocompleteInput';
+import { QuizConfig } from './config/QuizConfig';
+import { QuizSummary } from './summary/QuizSummary';
+import { quizService } from '../../services/quiz.service';
+import { QuizQuestion } from './question/QuizQuestion';
+import './QuizGame.css';
 
 const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000';
 

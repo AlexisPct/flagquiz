@@ -32,7 +32,8 @@ export interface ServerQuestion {
   currentIndex: number;
   totalQuestions: number;
   type: QuizType;
-  countryName?: string;     
+  countryName?: string;
+  countryCodeCCN3?: string;
   questionVisual?: string;
   options: string[];
 }

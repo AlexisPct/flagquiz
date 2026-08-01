@@ -1,0 +1,12 @@
+.quiz-container {
+  max-width: 560px;
+  display: flex;
+  padding: 20px 30px;
+  background: var(--bg-surface);
+  backdrop-filter: blur(var(--blur-amount));
+  -webkit-backdrop-filter: blur(var(--blur-amount));
+  border: 1px solid var(--border-surface);
+  border-radius: 24px;
+  box-shadow: var(--shadow-futuristic);
+  transition: all 0.4s ease;
+}

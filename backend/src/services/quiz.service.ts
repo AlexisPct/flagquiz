@@ -14,7 +14,7 @@ export const generateQuizSession = async (
   const validCountries = allCountries.filter(c => {
     if (type === 'capital') return c.name && c.capital;
     if (type === 'flag') return c.name && c.codeAlpha2;
-    if (type === 'shape') return c.name && c.codeAlpha2;
+    if (type === 'shape') return c.name && c.codeAlpha2 && c.codeCCN3;
     return false;
   });
 
@@ -43,6 +43,7 @@ export const generateQuizSession = async (
     return {
       countryName: country.name,
       countryCode: country.codeAlpha2,
+      countryCodeCCN3: country.codeCCN3,
       options,
       correctAnswer,
       visualHint: visualHint || undefined

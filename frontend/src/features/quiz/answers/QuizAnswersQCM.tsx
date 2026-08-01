@@ -1,4 +1,5 @@
 import React from 'react';
+import './QuizAnswersQCM.css';
 
 interface QuizAnswersQCMProps {
   options: string[];
