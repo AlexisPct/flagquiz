@@ -17,6 +17,10 @@ const BASE_RADIUS = INTERNAL_SIZE / 2 - 10;
 const MIN_SCALE = BASE_RADIUS;
 const MAX_SCALE = BASE_RADIUS * 6.5;
 
+const FRICTION = 0.94; 
+const VELOCITY_MULTIPLIER = 1.8; 
+const DRAG_SENSITIVITY = 0.6;
+
 export const SimpleGlobe: React.FC<SimpleGlobeProps> = ({
   isRotating = true,
   selectedCountryId,
@@ -35,6 +39,9 @@ export const SimpleGlobe: React.FC<SimpleGlobeProps> = ({
   const currentScaleRef = useRef<number>(BASE_RADIUS);
   const isUserInteractingRef = useRef<boolean>(false);
   const inactivityTimerRef = useRef<number | null>(null);
+
+  const velocityRef = useRef<[number, number]>([0, 0]);
+  const lastDragPosRef = useRef<{ x: number; y: number; time: number }>({ x: 0, y: 0, time: 0 });
 
   const pinchStartDistRef = useRef<number | null>(null);
   const scaleAtPinchStartRef = useRef<number>(BASE_RADIUS);
@@ -63,6 +70,7 @@ export const SimpleGlobe: React.FC<SimpleGlobeProps> = ({
     if (selectedCountryId) {
       if (inactivityTimerRef.current) clearTimeout(inactivityTimerRef.current);
       isUserInteractingRef.current = false;
+      velocityRef.current = [0, 0];
     }
   }, [selectedCountryId]);
 
@@ -96,21 +104,35 @@ export const SimpleGlobe: React.FC<SimpleGlobeProps> = ({
         if (inactivityTimerRef.current) clearTimeout(inactivityTimerRef.current);
         dragStartPos = { x: event.x, y: event.y };
         isDragging = false;
+
+        velocityRef.current = [0, 0];
+        lastDragPosRef.current = { x: event.x, y: event.y, time: performance.now() };
+
         if (enableDrag) isUserInteractingRef.current = true;
       })
       .on('drag', (event) => {
         if (!enableDrag || event.sourceEvent.touches?.length > 1) return;
+
+        const now = performance.now();
+        const dt = Math.max(1, now - lastDragPosRef.current.time);
 
         if ((event.x - dragStartPos.x) ** 2 + (event.y - dragStartPos.y) ** 2 > 9) {
           isDragging = true;
         }
 
         if (isDragging) {
-          const sensitivity = 360 / (currentScaleRef.current * 2 * Math.PI);
+          const sensitivity = (360 / (currentScaleRef.current * 2 * Math.PI)) * DRAG_SENSITIVITY;
           let [lon, lat, roll] = currentRotateRef.current;
+
           lon += event.dx * sensitivity;
           lat = Math.max(-85, Math.min(85, lat - event.dy * sensitivity));
           currentRotateRef.current = [lon, lat, roll];
+
+          const vx = (event.dx / dt) * sensitivity * 16.6 * VELOCITY_MULTIPLIER;
+          const vy = (event.dy / dt) * sensitivity * 16.6 * VELOCITY_MULTIPLIER;
+          velocityRef.current = [vx, vy];
+
+          lastDragPosRef.current = { x: event.x, y: event.y, time: now };
         }
       })
       .on('end', (event) => {
@@ -121,6 +143,7 @@ export const SimpleGlobe: React.FC<SimpleGlobeProps> = ({
           const countryId = String(datum?.id || datum?.properties?.id || '');
           if (countryId && onSelectCountry) {
             isUserInteractingRef.current = false;
+            velocityRef.current = [0, 0];
             onSelectCountry(countryId);
             return;
           }
@@ -151,6 +174,7 @@ export const SimpleGlobe: React.FC<SimpleGlobeProps> = ({
         e.preventDefault();
         if (inactivityTimerRef.current) clearTimeout(inactivityTimerRef.current);
         isUserInteractingRef.current = true;
+        velocityRef.current = [0, 0];
         pinchStartDistRef.current = getTouchDist(e);
         scaleAtPinchStartRef.current = currentScaleRef.current;
       }
@@ -207,10 +231,19 @@ export const SimpleGlobe: React.FC<SimpleGlobeProps> = ({
         const targetScale = BASE_RADIUS + (finalZoomScale - BASE_RADIUS) * (trackingProgress ** 2);
         currentScaleRef.current += (targetScale - currentScaleRef.current) * 0.07;
 
-      } else if (isRotating && !isUserInteractingRef.current) {
-        lon = (lon + 0.25) % 360;
-        lat += (-15 - lat) * 0.05;
-        currentScaleRef.current += (BASE_RADIUS - currentScaleRef.current) * 0.05;
+      } else {
+        const [vx, vy] = velocityRef.current;
+
+        if (Math.abs(vx) > 0.01 || Math.abs(vy) > 0.01) {
+          lon += vx;
+          lat = Math.max(-85, Math.min(85, lat - vy));
+
+          velocityRef.current = [vx * FRICTION, vy * FRICTION];
+        } else if (isRotating && !isUserInteractingRef.current) {
+          lon = (lon + 0.25) % 360;
+          lat += (-15 - lat) * 0.05;
+          currentScaleRef.current += (BASE_RADIUS - currentScaleRef.current) * 0.05;
+        }
       }
 
       projection.rotate([lon, lat, roll]);
