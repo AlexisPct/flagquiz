@@ -1,3 +1,5 @@
+import mongoose, { Document } from "mongoose";
+
 export interface Country {
   name: string;
   capital: string;
@@ -33,4 +35,35 @@ export interface CreateQuizInput {
   type: QuizType;
   count?: number;
   hasTimer?: boolean;
+}
+
+export interface IUser extends Document {
+  deviceToken: string;
+  username: string;
+  stats: {
+    gamesPlayed: number;
+    totalCorrect: number;
+    totalQuestions: number;
+    bestScore: number;
+    bestStreak: number;
+  };
+  createdAt: Date;
+  lastActiveAt: Date;
+}
+
+export interface IAnswer {
+  countryCode: string;   
+  countryName: string;   
+  userAnswer?: string;   
+  isCorrect: boolean;
+}
+
+export interface IGame extends Document {
+  userId: mongoose.Types.ObjectId;
+  username: string;
+  mode: QuizType;
+  score: number;
+  maxStreak: number;
+  answers: IAnswer[];
+  createdAt: Date;
 }
