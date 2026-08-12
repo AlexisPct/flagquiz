@@ -46,8 +46,8 @@ export const getCurrentQuestion: RequestHandler = (req, res, next) => {
       currentIndex: session.currentIndex,
       totalQuestions: session.questions.length,
       type: session.type,
-      countryCodeCCN3: session.type === 'shape' ? question.countryCodeCCN3 : undefined,
-      countryName: session.type === 'capital' ? question.countryName : undefined,
+      countryCodeCCN3: question.countryCodeCCN3,
+      countryName: question.countryName,
       questionVisual: session.type !== 'capital' ? question.visualHint : undefined, 
       options: question.options
     });

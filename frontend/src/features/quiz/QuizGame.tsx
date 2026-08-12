@@ -5,6 +5,7 @@ import { QuizAnswersAutocompleteInput } from './answers/QuizAnswersAutocompleteI
 import { QuizConfig } from './config/QuizConfig';
 import { QuizSummary } from './summary/QuizSummary';
 import { quizService } from '../../services/quiz.service';
+import { type AnswerPayload } from '../../services/quiz.service';
 import { QuizQuestion } from './question/QuizQuestion';
 import './QuizGame.css';
 
@@ -17,6 +18,7 @@ export const QuizGame: React.FC = () => {
 
     const [currentQuestion, setCurrentQuestion] = useState<ServerQuestion | null>(null);
     const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
+    const [answersHistory, setAnswersHistory] = useState<AnswerPayload[]>([]);
     const [feedback, setFeedback] = useState<SubmitResponse | null>(null);
     const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
 
@@ -103,11 +105,27 @@ export const QuizGame: React.FC = () => {
             });
             const data: SubmitResponse = await response.json();
             setFeedback(data);
+
+             if (currentQuestion) {
+                console.log(currentQuestion.countryName)
+                setAnswersHistory((prev) => [
+                    ...prev,
+                    {
+                        countryCode: currentQuestion.countryCodeCCN3 || '',
+                        countryName: currentQuestion.countryName || '',
+                        userAnswer: answer,
+                        isCorrect: data.isCorrect,
+                        responseTimeMs: 0,
+                    }
+                ]);
+            }
         } catch (error) {
             console.error("Erreur lors de l'envoi de la réponse:", error);
         } finally {
             setIsSubmitting(false);
         }
+
+       
     };
 
     const handleTimeOut = async () => {
@@ -120,6 +138,19 @@ export const QuizGame: React.FC = () => {
             });
             const data: SubmitResponse = await response.json();
             setFeedback(data);
+
+            if (currentQuestion) {
+                setAnswersHistory((prev) => [
+                    ...prev,
+                    {
+                        countryCode: currentQuestion.countryCodeCCN3 || '',
+                        countryName: currentQuestion.countryName || '',
+                        userAnswer: 'TIMEOUT',
+                        isCorrect: false,
+                        responseTimeMs: 15000,
+                    }
+                ]);
+            }
         } catch (error) {
             console.error("Erreur lors de la gestion du timeout:", error);
         }
@@ -130,6 +161,7 @@ export const QuizGame: React.FC = () => {
         setCurrentQuestion(null);
         setFeedback(null);
         setSelectedAnswer(null);
+        setAnswersHistory([]);
         setStep('config');
     };
 
@@ -195,6 +227,8 @@ export const QuizGame: React.FC = () => {
                 {step === 'summary' && (
                     <QuizSummary
                         score={finalScore}
+                        mode={config.type}
+                        answers={answersHistory}
                         totalQuestions={config.count}
                         onRestart={resetGame}
                     />

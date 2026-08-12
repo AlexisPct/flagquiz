@@ -34,12 +34,16 @@ export const saveGame = async (req: Request, res: Response): Promise<void> => {
 
 export const getLeaderboard = async (req: Request, res: Response): Promise<void> => {
   try {
-    const rawMode = (req.query.mode as string) || 'flags';
+    const mode = (req.query.mode as QuizType) || 'flag';
     const limit = parseInt(req.query.limit as string) || 10;
 
-    const topGames = await gameService.getLeaderboardByMode(rawMode as QuizType, limit);
-    res.json(topGames);
+    const leaderboard = await gameService.getLeaderboardByMode(mode as QuizType, limit);
+    res.json(leaderboard);
   } catch (error: any) {
-    res.status(500).json({ error: error.message });
+    res.status(500).json({
+      success: false,
+      error: error.message || 'Erreur lors de la récupération du classement',
+      leaderboard: [],
+    });
   }
 };

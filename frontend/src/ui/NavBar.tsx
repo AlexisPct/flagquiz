@@ -1,12 +1,17 @@
 import './NavBar.css';
 import { ThemeSwitch } from '../ui/ThemeSwitch';
 import { HomeButton } from '../ui/HomeButton';
+import { LeaderboardButton } from '../ui/LeaderboardButton';
 
 export function Navbar() {
     return (
         <nav className="navbar">
             <div className="navbar-item">
                 <HomeButton />
+            </div>
+            <div className="navbar-divider" />
+            <div className="navbar-item">
+                <LeaderboardButton />
             </div>
             <div className="navbar-divider" />
             <div className="navbar-item">
