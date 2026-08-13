@@ -1,4 +1,4 @@
-import type { Country, QuizType } from "../types";
+import type { Country, QuizType, SubmitResponse } from "../types";
 import { getOrCreateDeviceToken, getStoredUsername } from '../utils/userSession';
 
 const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000';
@@ -84,14 +84,17 @@ export const quizService = {
   /**
    * Soumet une réponse au backend pour validation
    */
-  async submitAnswer(sessionId: string, questionId: string, answer: string): Promise<any> {
-    const response = await fetch(`${API_URL}/api/quiz/submit`, {
+  async submitAnswer(sessionId: string, answer: string): Promise<SubmitResponse> {
+    const response = await fetch(`${API_URL}/api/quiz/session/${sessionId}/submit`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ sessionId, questionId, answer }),
+      body: JSON.stringify({ answer }),
     });
 
-    if (!response.ok) throw new Error(`Erreur submitAnswer: ${response.status}`);
+    if (!response.ok) {
+      throw new Error("Erreur lors de la soumission de la réponse");
+    }
+
     return response.json();
   },
 

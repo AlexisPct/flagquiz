@@ -4,12 +4,10 @@ import { QuizAnswersQCM } from './answers/QuizAnswersQCM';
 import { QuizAnswersAutocompleteInput } from './answers/QuizAnswersAutocompleteInput';
 import { QuizConfig } from './config/QuizConfig';
 import { QuizSummary } from './summary/QuizSummary';
-import { quizService } from '../../services/quiz.service';
-import { type AnswerPayload } from '../../services/quiz.service';
+import { quizService, type AnswerPayload } from '../../services/quiz.service';
 import { QuizQuestion } from './question/QuizQuestion';
+import { ProgressBar } from './progressbar/ProgressBar';
 import './QuizGame.css';
-
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000';
 
 export const QuizGame: React.FC = () => {
     const [step, setStep] = useState<'config' | 'playing' | 'summary'>('config');
@@ -30,7 +28,6 @@ export const QuizGame: React.FC = () => {
 
     const [countriesList, setCountriesList] = useState<string[]>([]);
     const [capitalsList, setCapitalsList] = useState<string[]>([]);
-
 
     useEffect(() => {
         Promise.all([
@@ -74,7 +71,7 @@ export const QuizGame: React.FC = () => {
 
     const fetchNextQuestion = async (id: string) => {
         try {
-            const question = await quizService.fetchNextQuestion(id)
+            const question = await quizService.fetchNextQuestion(id);
 
             if (question.isOver) {
                 setFinalScore(question.score);
@@ -85,58 +82,17 @@ export const QuizGame: React.FC = () => {
             setCurrentQuestion(question);
             setSelectedAnswer(null);
             setFeedback(null);
-            setTimeLeft(15); 
+            setTimeLeft(15);
         } catch (error) {
             console.error("Erreur lors de la récupération de la question:", error);
         }
     };
 
-    const handleAnswerClick = async (answer: string) => {
-        if (feedback || !sessionId || isSubmitting) return;
-
-        setSelectedAnswer(answer);
-        setIsSubmitting(true);
-
-        try {
-            const response = await fetch(`${API_URL}/api/quiz/session/${sessionId}/submit`, {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ answer }),
-            });
-            const data: SubmitResponse = await response.json();
-            setFeedback(data);
-
-             if (currentQuestion) {
-                console.log(currentQuestion.countryName)
-                setAnswersHistory((prev) => [
-                    ...prev,
-                    {
-                        countryCode: currentQuestion.countryCodeCCN3 || '',
-                        countryName: currentQuestion.countryName || '',
-                        userAnswer: answer,
-                        isCorrect: data.isCorrect,
-                        responseTimeMs: 0,
-                    }
-                ]);
-            }
-        } catch (error) {
-            console.error("Erreur lors de l'envoi de la réponse:", error);
-        } finally {
-            setIsSubmitting(false);
-        }
-
-       
-    };
-
-    const handleTimeOut = async () => {
+    const submitAnswer = async (answer: string, isTimeout = false) => {
         if (!sessionId) return;
+
         try {
-            const response = await fetch(`${API_URL}/api/quiz/session/${sessionId}/submit`, {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ answer: '' }), // Soumission vide = réponse fausse d'office
-            });
-            const data: SubmitResponse = await response.json();
+            const data = await quizService.submitAnswer(sessionId, isTimeout ? '' : answer);
             setFeedback(data);
 
             if (currentQuestion) {
@@ -145,15 +101,31 @@ export const QuizGame: React.FC = () => {
                     {
                         countryCode: currentQuestion.countryCodeCCN3 || '',
                         countryName: currentQuestion.countryName || '',
-                        userAnswer: 'TIMEOUT',
-                        isCorrect: false,
-                        responseTimeMs: 15000,
+                        userAnswer: isTimeout ? 'TIMEOUT' : answer,
+                        isCorrect: data.isCorrect,
+                        responseTimeMs: isTimeout ? 15000 : 0,
                     }
                 ]);
             }
         } catch (error) {
-            console.error("Erreur lors de la gestion du timeout:", error);
+            console.error("Erreur lors de l'envoi de la réponse:", error);
         }
+    };
+
+    const handleAnswerClick = async (answer: string) => {
+        if (feedback || !sessionId || isSubmitting) return;
+
+        setSelectedAnswer(answer);
+        setIsSubmitting(true);
+        try {
+            await submitAnswer(answer);
+        } finally {
+            setIsSubmitting(false);
+        }
+    };
+
+    const handleTimeOut = async () => {
+        await submitAnswer('', true);
     };
 
     const resetGame = () => {
@@ -166,75 +138,74 @@ export const QuizGame: React.FC = () => {
     };
 
     return (
-        <>
-            <div className="quiz-container">
-                {/* ÉCRAN 1 : Configuration initiale */}
-                {step === 'config' && (
-                    <QuizConfig
-                        config={config}
-                        onConfigChange={setConfig}
-                        onStartQuiz={startQuiz}
-                    />
-                )}
+        <div className="quiz-container">
+            {/* ÉCRAN 1 : Configuration initiale */}
+            {step === 'config' && (
+                <QuizConfig
+                    config={config}
+                    onConfigChange={setConfig}
+                    onStartQuiz={startQuiz}
+                />
+            )}
 
-                {/* ÉCRAN 2 : EN TRAIN DE JOUER */}
-                {step === 'playing' && currentQuestion && (
-                    <div className="quiz-playing-layout">
-                        <QuizQuestion
-                            question={currentQuestion}
-                        />
-
-                        {config.difficulty === 'standard' ? (
-                            <QuizAnswersQCM
-                                options={currentQuestion.options}
-                                selectedAnswer={selectedAnswer}
-                                feedback={feedback}
-                                isSubmitting={isSubmitting}
-                                onAnswerSubmit={(answer) => {
-                                    setSelectedAnswer(answer);
-                                    handleAnswerClick(answer);
-                                }}
-                            />
-                        ) : (
-                            <QuizAnswersAutocompleteInput
-                                questionId={currentQuestion.currentIndex}
-                                autocompleteList={currentAutocompleteList}
-                                feedback={feedback}
-                                isSubmitting={isSubmitting}
-                                onAnswerSubmit={(answer) => {
-                                    setSelectedAnswer(answer);
-                                    handleAnswerClick(answer);
-                                }}
-                            />
-                        )}
-
-
-                        {feedback && (
-                            <div style={{ marginTop: '32px' }}>
-                                <button className="quiz-btn-primary" onClick={() => {
-                                    setInputValue('');
-                                    setSuggestions([]);
-                                    fetchNextQuestion(sessionId!)
-                                }}>
-                                    {feedback.isOver ? 'Découvrir mon score 🏁' : 'Continuer'}
-                                </button>
-                            </div>
-                        )}
-                    </div>
-                )}
-
-                {/*ÉCRAN 3 : Fin de partie / Résumé*/}
-                {step === 'summary' && (
-                    <QuizSummary
-                        score={finalScore}
-                        mode={config.type}
-                        answers={answersHistory}
+            {/* ÉCRAN 2 : EN TRAIN DE JOUER */}
+            {step === 'playing' && currentQuestion && (
+                <div className="quiz-playing-layout">
+                    <ProgressBar
                         totalQuestions={config.count}
-                        onRestart={resetGame}
+                        currentIndex={currentQuestion.currentIndex}
+                        answersHistory={answersHistory}
                     />
-                )}
+                    <QuizQuestion question={currentQuestion} />
 
-            </div>
-        </>
+                    {config.difficulty === 'standard' ? (
+                        <QuizAnswersQCM
+                            options={currentQuestion.options}
+                            selectedAnswer={selectedAnswer}
+                            feedback={feedback}
+                            isSubmitting={isSubmitting}
+                            onAnswerSubmit={(answer) => {
+                                setSelectedAnswer(answer);
+                                handleAnswerClick(answer);
+                            }}
+                        />
+                    ) : (
+                        <QuizAnswersAutocompleteInput
+                            questionId={currentQuestion.currentIndex}
+                            autocompleteList={currentAutocompleteList}
+                            feedback={feedback}
+                            isSubmitting={isSubmitting}
+                            onAnswerSubmit={(answer) => {
+                                setSelectedAnswer(answer);
+                                handleAnswerClick(answer);
+                            }}
+                        />
+                    )}
+
+                    {feedback && (
+                        <div style={{ marginTop: '32px' }}>
+                            <button className="quiz-btn-primary" onClick={() => {
+                                setInputValue('');
+                                setSuggestions([]);
+                                fetchNextQuestion(sessionId!);
+                            }}>
+                                {feedback.isOver ? 'Découvrir mon score 🏁' : 'Continuer'}
+                            </button>
+                        </div>
+                    )}
+                </div>
+            )}
+
+            {/* ÉCRAN 3 : Fin de partie / Résumé */}
+            {step === 'summary' && (
+                <QuizSummary
+                    score={finalScore}
+                    mode={config.type}
+                    answers={answersHistory}
+                    totalQuestions={config.count}
+                    onRestart={resetGame}
+                />
+            )}
+        </div>
     );
 };
