@@ -4,14 +4,14 @@ export interface Country {
   name: string;
   capital: string;
   flagUrl: string;
-  codeAlpha2: string; 
+  codeAlpha2: string;
   codeCCN3: string;
   region: string;
   population: number;
   area: number;
 }
 
-export type QuizType = 'capital' | 'flag' | 'shape';
+export type QuizType = "capital" | "flag" | "shape";
 
 export interface QuizQuestion {
   countryName: string;
@@ -52,9 +52,9 @@ export interface IUser extends Document {
 }
 
 export interface IAnswer {
-  countryCode: string;   
-  countryName: string;   
-  userAnswer?: string;   
+  countryCode: string;
+  countryName: string;
+  userAnswer?: string;
   isCorrect: boolean;
 }
 

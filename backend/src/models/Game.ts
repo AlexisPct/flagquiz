@@ -1,5 +1,5 @@
-import mongoose, { Schema } from 'mongoose';
-import { IAnswer, IGame } from '../types';
+import mongoose, { Schema } from "mongoose";
+import { IAnswer, IGame } from "../types";
 
 const AnswerSchema = new Schema<IAnswer>({
   countryCode: { type: String, required: true },
@@ -9,7 +9,12 @@ const AnswerSchema = new Schema<IAnswer>({
 });
 
 const GameSchema = new Schema<IGame>({
-  userId: { type: Schema.Types.ObjectId, ref: 'User', required: true, index: true },
+  userId: {
+    type: Schema.Types.ObjectId,
+    ref: "User",
+    required: true,
+    index: true,
+  },
   username: { type: String, required: true },
   mode: { type: String, required: true },
   score: { type: Number, required: true },
@@ -20,4 +25,4 @@ const GameSchema = new Schema<IGame>({
 
 GameSchema.index({ mode: 1, score: -1, createdAt: 1 });
 
-export const Game = mongoose.model<IGame>('Game', GameSchema);
+export const Game = mongoose.model<IGame>("Game", GameSchema);

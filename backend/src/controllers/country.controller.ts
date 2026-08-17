@@ -1,5 +1,5 @@
-import { RequestHandler } from 'express';
-import * as countryService from '../services/country.service';
+import { RequestHandler } from "express";
+import * as countryService from "../services/country.service";
 
 /**
  * GET /api/quiz/countries
@@ -20,7 +20,7 @@ export const getCountries: RequestHandler = async (req, res, next) => {
  */
 export const getCountriesNames: RequestHandler = async (req, res, next) => {
   try {
-    const countries = await countryService.getCountries().map(c => c.name)
+    const countries = await countryService.getCountries().map((c) => c.name);
     res.status(200).json(countries);
   } catch (error) {
     next(error);
@@ -33,7 +33,7 @@ export const getCountriesNames: RequestHandler = async (req, res, next) => {
  */
 export const getCapitals: RequestHandler = async (req, res, next) => {
   try {
-    const capitals = await countryService.getCountries().map(c => c.capital)
+    const capitals = await countryService.getCountries().map((c) => c.capital);
     res.status(200).json(capitals);
   } catch (error) {
     next(error);
@@ -44,18 +44,22 @@ export const getCapitals: RequestHandler = async (req, res, next) => {
  * GET /api/quiz/countries/:code
  * Récupère les détails complets d'un pays spécifique via son code ISO (ex: /api/quiz/countries/fr).
  */
-export const getCountryByCode: RequestHandler<{ code: string }> = async (req, res, next) => {
+export const getCountryByCode: RequestHandler<{ code: string }> = async (
+  req,
+  res,
+  next,
+) => {
   try {
     const { code } = req.params;
 
     const countries = await countryService.getCountries();
     const country = countries.find(
-      (c) => c.codeAlpha2.toLowerCase() === code.toLowerCase()
+      (c) => c.codeAlpha2.toLowerCase() === code.toLowerCase(),
     );
 
     if (!country) {
       res.status(404).json({
-        status: 'error',
+        status: "error",
         message: `Le pays avec le code '${code}' n'existe pas dans notre base de données.`,
       });
       return;

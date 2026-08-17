@@ -1,7 +1,10 @@
-import { User } from '../models/User';
-import { IUser } from '../types';
+import { User } from "../models/User";
+import { IUser } from "../types";
 
-export const findOrCreateUser = async (deviceToken: string, username: string): Promise<IUser> => {
+export const findOrCreateUser = async (
+  deviceToken: string,
+  username: string,
+): Promise<IUser> => {
   let user = await User.findOne({ deviceToken });
 
   if (!user) {
@@ -15,7 +18,9 @@ export const findOrCreateUser = async (deviceToken: string, username: string): P
   return user;
 };
 
-export const getUserByDeviceToken = async (deviceToken: string): Promise<IUser | null> => {
+export const getUserByDeviceToken = async (
+  deviceToken: string,
+): Promise<IUser | null> => {
   return await User.findOne({ deviceToken });
 };
 
@@ -24,7 +29,7 @@ export const updateUserStats = async (
   score: number,
   maxStreak: number,
   correctCount: number,
-  totalQuestionsCount: number
+  totalQuestionsCount: number,
 ): Promise<IUser> => {
   user.stats.gamesPlayed += 1;
   user.stats.totalCorrect += correctCount;
@@ -43,7 +48,7 @@ export const updateUserStats = async (
 
 export const getAllUsers = async (limit: number = 20): Promise<IUser[]> => {
   return await User.find()
-    .sort({ 'stats.bestScore': -1 })
+    .sort({ "stats.bestScore": -1 })
     .limit(limit)
-    .select('username deviceToken stats createdAt lastActiveAt');
+    .select("username deviceToken stats createdAt lastActiveAt");
 };

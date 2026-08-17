@@ -1,6 +1,6 @@
-import { Game } from '../models/Game';
-import { IAnswer, IGame, IUser, QuizType } from '../types';
-import * as userService from './user.service';
+import { Game } from "../models/Game";
+import { IAnswer, IGame, IUser, QuizType } from "../types";
+import * as userService from "./user.service";
 
 interface CreateGameInput {
   user: IUser;
@@ -10,7 +10,9 @@ interface CreateGameInput {
   answers: IAnswer[];
 }
 
-export const saveGameResult = async (input: CreateGameInput): Promise<IGame> => {
+export const saveGameResult = async (
+  input: CreateGameInput,
+): Promise<IGame> => {
   const { user, mode, score, maxStreak, answers } = input;
 
   const game = await Game.create({
@@ -30,17 +32,20 @@ export const saveGameResult = async (input: CreateGameInput): Promise<IGame> => 
     score,
     maxStreak,
     correctCount,
-    totalQuestionsCount
+    totalQuestionsCount,
   );
 
   return game;
 };
 
-export const getLeaderboardByMode = async (mode: QuizType, limit: number = 10): Promise<IGame[]> => {
-  const leaderboard =  await Game.find({ mode: mode as any })
+export const getLeaderboardByMode = async (
+  mode: QuizType,
+  limit: number = 10,
+): Promise<IGame[]> => {
+  const leaderboard = await Game.find({ mode: mode as any })
     .sort({ score: -1, createdAt: 1 })
     .limit(limit)
-    .select('username score maxStreak createdAt');
+    .select("username score maxStreak createdAt");
 
-    return leaderboard ?? [];
+  return leaderboard ?? [];
 };

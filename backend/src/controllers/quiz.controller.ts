@@ -1,6 +1,6 @@
-import { RequestHandler } from 'express';
-import * as quizService from '../services/quiz.service';
-import { CreateQuizInput } from '../types';
+import { RequestHandler } from "express";
+import * as quizService from "../services/quiz.service";
+import { CreateQuizInput } from "../types";
 
 export const createSession: RequestHandler = async (req, res, next) => {
   try {
@@ -8,17 +8,25 @@ export const createSession: RequestHandler = async (req, res, next) => {
 
     const count = parseInt(req.body.count, 10) || 10;
 
-    if (!type || !['capital', 'flag', 'shape'].includes(type)) {
-      res.status(400).json({ message: "Le type de quiz doit être 'capital', 'flag' ou 'shape'." });
+    if (!type || !["capital", "flag", "shape"].includes(type)) {
+      res
+        .status(400)
+        .json({
+          message: "Le type de quiz doit être 'capital', 'flag' ou 'shape'.",
+        });
       return;
     }
 
-    const session = await quizService.generateQuizSession(type, count, hasTimer);
+    const session = await quizService.generateQuizSession(
+      type,
+      count,
+      hasTimer,
+    );
 
     res.status(201).json({
       sessionId: session.id,
       totalQuestions: session.questions.length,
-      hasTimer: session.hasTimer
+      hasTimer: session.hasTimer,
     });
   } catch (error) {
     next(error);
@@ -48,8 +56,9 @@ export const getCurrentQuestion: RequestHandler = (req, res, next) => {
       type: session.type,
       countryCodeCCN3: question.countryCodeCCN3,
       countryName: question.countryName,
-      questionVisual: session.type !== 'capital' ? question.visualHint : undefined, 
-      options: question.options
+      questionVisual:
+        session.type !== "capital" ? question.visualHint : undefined,
+      options: question.options,
     });
   } catch (error) {
     next(error);

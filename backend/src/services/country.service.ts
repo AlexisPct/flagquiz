@@ -1,4 +1,4 @@
-import { Country } from '../types';
+import { Country } from "../types";
 
 let countries: Country[] = [];
 

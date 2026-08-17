@@ -1,5 +1,5 @@
-import mongoose, { Schema } from 'mongoose';
-import { IUser } from '../types';
+import mongoose, { Schema } from "mongoose";
+import { IUser } from "../types";
 
 const UserSchema = new Schema<IUser>({
   deviceToken: { type: String, required: true, unique: true, index: true },
@@ -15,4 +15,4 @@ const UserSchema = new Schema<IUser>({
   lastActiveAt: { type: Date, default: Date.now },
 });
 
-export const User = mongoose.model<IUser>('User', UserSchema);
+export const User = mongoose.model<IUser>("User", UserSchema);

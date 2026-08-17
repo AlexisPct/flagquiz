@@ -1,12 +1,15 @@
-import { Request, Response } from 'express';
-import * as userService from '../services/user.service';
+import { Request, Response } from "express";
+import * as userService from "../services/user.service";
 
-export const registerOrUpdateUser = async (req: Request, res: Response): Promise<void> => {
+export const registerOrUpdateUser = async (
+  req: Request,
+  res: Response,
+): Promise<void> => {
   try {
     const { deviceToken, username } = req.body;
 
     if (!deviceToken || !username) {
-      res.status(400).json({ error: 'deviceToken et username sont requis' });
+      res.status(400).json({ error: "deviceToken et username sont requis" });
       return;
     }
 
@@ -17,19 +20,22 @@ export const registerOrUpdateUser = async (req: Request, res: Response): Promise
   }
 };
 
-export const getUserProfile = async (req: Request, res: Response): Promise<void> => {
+export const getUserProfile = async (
+  req: Request,
+  res: Response,
+): Promise<void> => {
   try {
     const deviceToken = req.params.deviceToken as string;
 
     if (!deviceToken) {
-      res.status(400).json({ error: 'deviceToken manquant' });
+      res.status(400).json({ error: "deviceToken manquant" });
       return;
     }
 
     const user = await userService.getUserByDeviceToken(deviceToken);
 
     if (!user) {
-      res.status(404).json({ error: 'Utilisateur non trouvé' });
+      res.status(404).json({ error: "Utilisateur non trouvé" });
       return;
     }
 
@@ -44,7 +50,7 @@ export const getUsers = async (req: Request, res: Response): Promise<void> => {
     const limit = parseInt(req.query.limit as string) || 20;
 
     const users = await userService.getAllUsers(limit);
-    
+
     res.json({
       success: true,
       count: users.length,
