@@ -1,0 +1,89 @@
+.quiz-input-wrapper {
+  margin-top: 40px;
+  position: relative;
+}
+
+.quiz-autocomplete-input {
+  width: 100%;
+  padding: 20px 0px;
+  background: transparent !important;
+  border: none;
+  border-bottom: 2px solid var(--border-surface);
+  color: var(--text-main);
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  box-sizing: border-box;
+  outline: none;
+  border-radius: 0;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.quiz-autocomplete-input:focus {
+  border-bottom-color: var(--accent);
+  letter-spacing: 2px;
+  filter: drop-shadow(0 2px 4px var(--accent-glow)); 
+}
+
+.quiz-autocomplete-input::placeholder {
+  color: var(--text-muted);
+  font-weight: 300;
+  opacity: 0.5;
+  letter-spacing: 0px;
+  transition: transform 0.3s ease;
+}
+.quiz-autocomplete-input:focus::placeholder {
+  transform: translateX(8px);
+  opacity: 0.2;
+}
+
+.quiz-autocomplete-input.correct {
+  border-bottom-color: var(--color-success) !important;
+  color: var(--color-success) !important;
+  font-weight: 500;
+  filter: drop-shadow(0 4px 8px rgba(16, 185, 129, 0.3));
+}
+
+.quiz-autocomplete-input.wrong {
+  border-bottom-color: var(--color-error) !important;
+  color: var(--color-error) !important;
+  font-weight: 500;
+  filter: drop-shadow(0 4px 8px rgba(239, 68, 68, 0.3));
+}
+
+.quiz-suggestions-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  max-height: 200px;
+  overflow-y: auto;
+  margin: 4px 0 0 0;
+  padding: 8px;
+  list-style: none;
+  /* Effet givré flottant */
+  background: var(--bg-surface);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--border-surface);
+  border-radius: 0 0 16px 16px;
+  box-shadow: var(--shadow-futuristic);
+  z-index: 10;
+  box-sizing: border-box;
+}
+
+.quiz-suggestion-item {
+  padding: 14px 16px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--text-main);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.quiz-suggestion-item:hover {
+  background: var(--btn-hover);
+  padding-left: 22px;
+  color: var(--accent);
+}

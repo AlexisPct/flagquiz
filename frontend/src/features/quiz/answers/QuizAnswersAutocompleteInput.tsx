@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import './QuizAnswersAutocompleteInput.css';
 
 interface QuizAnswersAutocompleteInputProps {
     questionId: number,
