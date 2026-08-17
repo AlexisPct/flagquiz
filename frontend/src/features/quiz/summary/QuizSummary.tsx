@@ -1,9 +1,15 @@
-import React, { useState } from 'react';
-import './QuizSummary.css';
-import { quizService } from '../../../services/quiz.service';
-import type { AnswerPayload, SaveGameResponse } from '../../../services/quiz.service';
-import { getStoredUsername, setStoredUsername } from '../../../utils/userSession';
-import type { QuizType } from '../../../types';
+import React, { useState } from "react";
+import "./QuizSummary.css";
+import { quizService } from "../../../services/quiz.service";
+import type {
+  AnswerPayload,
+  SaveGameResponse,
+} from "../../../services/quiz.service";
+import {
+  getStoredUsername,
+  setStoredUsername,
+} from "../../../utils/userSession";
+import type { QuizType } from "../../../types";
 
 interface QuizSummaryProps {
   score: number;
@@ -18,14 +24,17 @@ export const QuizSummary: React.FC<QuizSummaryProps> = ({
   mode,
   answers,
   totalQuestions,
-  onRestart
+  onRestart,
 }) => {
   const percentage = Math.round((score / totalQuestions) * 100);
 
   const getFeedbackMessage = () => {
-    if (percentage === 100) return "Parfait ! Tu as une vue satellite de la Terre. 🌍";
-    if (percentage >= 75) return "Excellent niveau ! L'Atlas n'a presque plus de secrets pour toi. ✨";
-    if (percentage >= 50) return "Pas mal ! Encore un peu d'entraînement pour maîtriser les frontières.";
+    if (percentage === 100)
+      return "Parfait ! Tu as une vue satellite de la Terre. 🌍";
+    if (percentage >= 75)
+      return "Excellent niveau ! L'Atlas n'a presque plus de secrets pour toi. ✨";
+    if (percentage >= 50)
+      return "Pas mal ! Encore un peu d'entraînement pour maîtriser les frontières.";
     return "L'exploration ne fait que commencer ! Réessaye pour t'améliorer. 🧭";
   };
 
@@ -68,14 +77,14 @@ export const QuizSummary: React.FC<QuizSummaryProps> = ({
 
       setSaveResult(data);
     } catch (err: any) {
-      setError(err.message || 'Impossible de sauvegarder le score.');
+      setError(err.message || "Impossible de sauvegarder le score.");
     } finally {
       setIsSaving(false);
     }
   };
 
   return (
-    <div className="quiz-summary-view" style={{ textAlign: 'center' }}>
+    <div className="quiz-summary-view" style={{ textAlign: "center" }}>
       <h2 className="quiz-title">Session Terminée</h2>
       <p className="quiz-subtitle">Découvre tes performances d'exploration</p>
 
@@ -119,7 +128,7 @@ export const QuizSummary: React.FC<QuizSummaryProps> = ({
                 <span className="spinner" /> Sauvegarde...
               </span>
             ) : (
-              'Enregistrer mon score'
+              "Enregistrer mon score"
             )}
           </button>
         </form>
@@ -133,17 +142,25 @@ export const QuizSummary: React.FC<QuizSummaryProps> = ({
           <div className="stats-grid">
             <div className="stat-item">
               <span className="stat-label">Parties jouées</span>
-              <span className="stat-value">{saveResult.userStats.gamesPlayed}</span>
+              <span className="stat-value">
+                {saveResult.userStats.gamesPlayed}
+              </span>
             </div>
             <div className="stat-item">
               <span className="stat-label">Meilleur score</span>
-              <span className="stat-value highlight">{saveResult.userStats.bestScore} pts</span>
+              <span className="stat-value highlight">
+                {saveResult.userStats.bestScore} pts
+              </span>
             </div>
           </div>
         </div>
       )}
 
-      <button onClick={onRestart} className="quiz-btn-primary" style={{ marginTop: '32px' }}>
+      <button
+        onClick={onRestart}
+        className="quiz-btn-primary"
+        style={{ marginTop: "32px" }}
+      >
         Nouvelle Partie
       </button>
     </div>

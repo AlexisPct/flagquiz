@@ -8,7 +8,10 @@
   min-width: 300px;
   flex-shrink: 0;
   height: 100%;
-  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease,
+    color 0.3s ease;
 }
 
 @media (orientation: portrait) {
@@ -60,7 +63,9 @@
   padding: 10px 12px;
   border-radius: 6px;
   cursor: pointer;
-  transition: background-color 0.2s ease, color 0.2s ease;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
 }
 
 .at-country-item:hover {

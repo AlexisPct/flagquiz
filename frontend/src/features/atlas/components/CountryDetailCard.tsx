@@ -1,24 +1,23 @@
-import type { Country } from '../../../types'; 
-import './CountryDetailCard.css'; 
+import type { Country } from "../../../types";
+import "./CountryDetailCard.css";
 
 interface CountryDetailCardProps {
   country: Country | null;
   onClose: () => void;
 }
 
-export default function CountryDetailCard({ country, onClose }: CountryDetailCardProps) {
+export default function CountryDetailCard({
+  country,
+  onClose,
+}: CountryDetailCardProps) {
   if (!country) {
-    return (
-      <div className="country-card-empty">
-        
-      </div>
-    );
+    return <div className="country-card-empty"></div>;
   }
 
   return (
     <div className="country-detail-card">
-      <button 
-        className="card-close-button" 
+      <button
+        className="card-close-button"
         onClick={onClose}
         aria-label="Fermer les détails"
       >
@@ -28,9 +27,9 @@ export default function CountryDetailCard({ country, onClose }: CountryDetailCar
       <div className="card-content">
         {/* 1. GRAND DRAPEAU EN HAUT */}
         <div className="flag-image-container">
-          <img 
-            src={country.flagUrl} 
-            alt={`Drapeau officiel - ${country.name}`} 
+          <img
+            src={country.flagUrl}
+            alt={`Drapeau officiel - ${country.name}`}
             className="country-flag-large"
             loading="lazy"
           />
@@ -56,14 +55,18 @@ export default function CountryDetailCard({ country, onClose }: CountryDetailCar
           <div className="info-box">
             <div className="info-text">
               <span className="info-label">Population</span>
-              <p className="info-value">{country.population.toLocaleString('fr-FR')} hab.</p>
+              <p className="info-value">
+                {country.population.toLocaleString("fr-FR")} hab.
+              </p>
             </div>
           </div>
 
           <div className="info-box col-span-2">
             <div className="info-text">
               <span className="info-label">Superficie</span>
-              <p className="info-value">{country.area.toLocaleString('fr-FR')} km²</p>
+              <p className="info-value">
+                {country.area.toLocaleString("fr-FR")} km²
+              </p>
             </div>
           </div>
         </div>

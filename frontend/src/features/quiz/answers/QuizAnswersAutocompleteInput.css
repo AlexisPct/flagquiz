@@ -22,7 +22,7 @@
 .quiz-autocomplete-input:focus {
   border-bottom-color: var(--accent);
   letter-spacing: 2px;
-  filter: drop-shadow(0 2px 4px var(--accent-glow)); 
+  filter: drop-shadow(0 2px 4px var(--accent-glow));
 }
 
 .quiz-autocomplete-input::placeholder {

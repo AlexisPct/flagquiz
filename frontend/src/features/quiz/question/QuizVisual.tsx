@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 interface QuizVisualProps {
   type: string;
@@ -10,15 +10,15 @@ export const QuizVisual: React.FC<QuizVisualProps> = ({ type, visualUrl }) => {
 
   return (
     <div className="quiz-visual-box">
-      {type === 'shape' ? (
-        <div 
-          className="quiz-shape-mask" 
-          style={{ '--shape-url': `url(${visualUrl})` } as React.CSSProperties}
+      {type === "shape" ? (
+        <div
+          className="quiz-shape-mask"
+          style={{ "--shape-url": `url(${visualUrl})` } as React.CSSProperties}
         />
       ) : (
-        <img 
-          src={visualUrl} 
-          alt="Indice visuel du quiz" 
+        <img
+          src={visualUrl}
+          alt="Indice visuel du quiz"
           className="quiz-normal-img"
         />
       )}

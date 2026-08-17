@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 
-type DifficultyMode = 'standard' | 'expert';
+type DifficultyMode = "standard" | "expert";
 
 interface QuizConfigProps {
   config: { type: string; count: number; difficulty: DifficultyMode };
@@ -11,16 +11,16 @@ interface QuizConfigProps {
 export const QuizConfig: React.FC<QuizConfigProps> = ({
   config,
   onConfigChange,
-  onStartQuiz
+  onStartQuiz,
 }) => {
   return (
     <div className="quiz-config-view">
       <p className="quiz-subtitle">Configure ton défi géographique</p>
-      
+
       <div className="quiz-form-group">
         <label>TYPE DE JEU</label>
-        <select 
-          value={config.type} 
+        <select
+          value={config.type}
           onChange={(e) => onConfigChange({ ...config, type: e.target.value })}
           className="quiz-select"
         >
@@ -33,17 +33,19 @@ export const QuizConfig: React.FC<QuizConfigProps> = ({
       <div className="quiz-form-group">
         <label>DIFFICULTÉ</label>
         <div className="difficulty-segmented-control">
-          <button 
+          <button
             type="button"
-            className={`difficulty-btn ${config.difficulty === 'standard' ? 'active' : ''}`}
-            onClick={() => onConfigChange({ ...config, difficulty: 'standard' })}
+            className={`difficulty-btn ${config.difficulty === "standard" ? "active" : ""}`}
+            onClick={() =>
+              onConfigChange({ ...config, difficulty: "standard" })
+            }
           >
             Standard (QCM)
           </button>
-          <button 
+          <button
             type="button"
-            className={`difficulty-btn ${config.difficulty === 'expert' ? 'active' : ''}`}
-            onClick={() => onConfigChange({ ...config, difficulty: 'expert' })}
+            className={`difficulty-btn ${config.difficulty === "expert" ? "active" : ""}`}
+            onClick={() => onConfigChange({ ...config, difficulty: "expert" })}
           >
             Expert (Saisie)
           </button>
@@ -52,17 +54,26 @@ export const QuizConfig: React.FC<QuizConfigProps> = ({
 
       <div className="quiz-form-group">
         <label>NOMBRE DE QUESTIONS</label>
-        <input 
-          type="number" 
-          min="5" 
-          max="30" 
-          value={config.count} 
-          onChange={(e) => onConfigChange({ ...config, count: parseInt(e.target.value, 10) || 10 })}
+        <input
+          type="number"
+          min="5"
+          max="30"
+          value={config.count}
+          onChange={(e) =>
+            onConfigChange({
+              ...config,
+              count: parseInt(e.target.value, 10) || 10,
+            })
+          }
           className="quiz-input"
         />
       </div>
 
-      <button onClick={onStartQuiz} className="quiz-btn-primary" style={{ marginTop: '24px' }}>
+      <button
+        onClick={onStartQuiz}
+        className="quiz-btn-primary"
+        style={{ marginTop: "24px" }}
+      >
         Démarrer le Quiz
       </button>
     </div>

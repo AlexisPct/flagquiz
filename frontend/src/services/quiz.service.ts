@@ -1,12 +1,15 @@
 import type { Country, QuizType, SubmitResponse } from "../types";
-import { getOrCreateDeviceToken, getStoredUsername } from '../utils/userSession';
+import {
+  getOrCreateDeviceToken,
+  getStoredUsername,
+} from "../utils/userSession";
 
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5000";
 
 export interface QuizConfigPayload {
   type: string;
   count: number;
-  difficulty: 'standard' | 'expert';
+  difficulty: "standard" | "expert";
 }
 
 export interface QuizSessionResponse {
@@ -57,25 +60,28 @@ export const quizService = {
    */
   async startSession(config: QuizConfigPayload): Promise<QuizSessionResponse> {
     const response = await fetch(`${API_URL}/api/quiz/session`, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
       body: JSON.stringify(config),
     });
 
-    if (!response.ok) throw new Error(`Erreur startSession: ${response.status}`);
+    if (!response.ok)
+      throw new Error(`Erreur startSession: ${response.status}`);
     return response.json();
   },
 
   async fetchNextQuestion(sessionId: string): Promise<any> {
     const response = await fetch(`${API_URL}/api/quiz/session/${sessionId}`, {
-      method: 'GET',
+      method: "GET",
       headers: {
-        'Content-Type': 'application/json',
+        "Content-Type": "application/json",
       },
     });
 
     if (!response.ok) {
-      throw new Error(`Impossible de récupérer la question suivante (Status: ${response.status})`);
+      throw new Error(
+        `Impossible de récupérer la question suivante (Status: ${response.status})`,
+      );
     }
 
     return response.json();
@@ -84,12 +90,18 @@ export const quizService = {
   /**
    * Soumet une réponse au backend pour validation
    */
-  async submitAnswer(sessionId: string, answer: string): Promise<SubmitResponse> {
-    const response = await fetch(`${API_URL}/api/quiz/session/${sessionId}/submit`, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ answer }),
-    });
+  async submitAnswer(
+    sessionId: string,
+    answer: string,
+  ): Promise<SubmitResponse> {
+    const response = await fetch(
+      `${API_URL}/api/quiz/session/${sessionId}/submit`,
+      {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ answer }),
+      },
+    );
 
     if (!response.ok) {
       throw new Error("Erreur lors de la soumission de la réponse");
@@ -103,9 +115,9 @@ export const quizService = {
     const username = payload.customUsername || getStoredUsername();
 
     const response = await fetch(`${API_URL}/api/games/save-game`, {
-      method: 'POST',
+      method: "POST",
       headers: {
-        'Content-Type': 'application/json',
+        "Content-Type": "application/json",
       },
       body: JSON.stringify({
         deviceToken,
@@ -119,23 +131,32 @@ export const quizService = {
 
     if (!response.ok) {
       const errorData = await response.json().catch(() => ({}));
-      throw new Error(errorData.error || 'Erreur lors de la sauvegarde de la partie.');
+      throw new Error(
+        errorData.error || "Erreur lors de la sauvegarde de la partie.",
+      );
     }
 
     return response.json();
   },
 
   async fetchLeaderboard(
-    mode: QuizType, limit: number
+    mode: QuizType,
+    limit: number,
   ): Promise<LeaderboardResponse[]> {
-    const response = await fetch(`${API_URL}/api/games/leaderboard?mode=${mode}&limit=${limit}`);
+    const response = await fetch(
+      `${API_URL}/api/games/leaderboard?mode=${mode}&limit=${limit}`,
+    );
 
     if (!response.ok) {
-      throw new Error('Impossible de récupérer le classement.');
+      throw new Error("Impossible de récupérer le classement.");
     }
 
     const data = await response.json();
-    return Array.isArray(data.leaderboard) ? data.leaderboard : (Array.isArray(data) ? data : []);
+    return Array.isArray(data.leaderboard)
+      ? data.leaderboard
+      : Array.isArray(data)
+        ? data
+        : [];
   },
 
   /**
@@ -145,7 +166,9 @@ export const quizService = {
     const res = await fetch(`${API_URL}/api/quiz/countries`);
 
     if (!res.ok) {
-      throw new Error(`Impossible de récupérer la liste des pays (Status: ${res.status})`);
+      throw new Error(
+        `Impossible de récupérer la liste des pays (Status: ${res.status})`,
+      );
     }
 
     return res.json();
@@ -156,21 +179,22 @@ export const quizService = {
    */
   async getCountriesForAutocomplete(): Promise<string[]> {
     const response = await fetch(`${API_URL}/api/quiz/countries/names`, {
-      method: 'GET',
-      headers: { 'Content-Type': 'application/json' },
+      method: "GET",
+      headers: { "Content-Type": "application/json" },
     });
 
-    if (!response.ok) throw new Error(`Erreur getCountries: ${response.status}`);
+    if (!response.ok)
+      throw new Error(`Erreur getCountries: ${response.status}`);
     return response.json();
   },
 
   /**
-  * Récupère la liste complète des capitales triées pour l'autocomplétion
-  */
+   * Récupère la liste complète des capitales triées pour l'autocomplétion
+   */
   async getCapitalsForAutocomplete(): Promise<string[]> {
     const response = await fetch(`${API_URL}/api/quiz/capitals`, {
-      method: 'GET',
-      headers: { 'Content-Type': 'application/json' },
+      method: "GET",
+      headers: { "Content-Type": "application/json" },
     });
 
     if (!response.ok) throw new Error(`Erreur getCapitals: ${response.status}`);

@@ -1,20 +1,20 @@
 .leaderboard-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: var(--bg-surface);
-    border: 1px solid var(--border-surface);
-    color: var(--text-main);
-    padding: 8px 16px;
-    margin: 4px;
-    border-radius: 99px;
-    cursor: pointer;
-    font-size: 14px;
-    font-weight: 500;
-    transition: all 0.2s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-surface);
+  color: var(--text-main);
+  padding: 8px 16px;
+  margin: 4px;
+  border-radius: 99px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.2s ease;
 }
 
 .leaderboard-btn:hover {
-    transform: translateY(-1px);
-    box-shadow: var(--shadow-futuristic);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-futuristic);
 }

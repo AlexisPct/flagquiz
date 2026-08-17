@@ -1,7 +1,7 @@
-import { v4 as uuidv4 } from 'uuid';
+import { v4 as uuidv4 } from "uuid";
 
-const TOKEN_KEY = 'geoquiz_device_token';
-const USERNAME_KEY = 'geoquiz_username';
+const TOKEN_KEY = "geoquiz_device_token";
+const USERNAME_KEY = "geoquiz_username";
 
 export const getOrCreateDeviceToken = (): string => {
   let token = localStorage.getItem(TOKEN_KEY);
@@ -13,7 +13,7 @@ export const getOrCreateDeviceToken = (): string => {
 };
 
 export const getStoredUsername = (): string => {
-  return localStorage.getItem(USERNAME_KEY) || 'Explorateur Anonyme';
+  return localStorage.getItem(USERNAME_KEY) || "Explorateur Anonyme";
 };
 
 export const setStoredUsername = (username: string): void => {

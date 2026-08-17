@@ -2,7 +2,7 @@ export interface Country {
   name: string;
   capital: string;
   flagUrl: string;
-  codeAlpha2: string; 
+  codeAlpha2: string;
   codeCCN3: string;
   region: string;
   population: number;
@@ -10,8 +10,8 @@ export interface Country {
   continent: string;
 }
 
-export type QuizType = 'capital' | 'flag' | 'shape';
-export type DifficultyMode = 'standard' | 'expert';
+export type QuizType = "capital" | "flag" | "shape";
+export type DifficultyMode = "standard" | "expert";
 
 export interface QuizConfig {
   type: QuizType;

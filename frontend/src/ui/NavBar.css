@@ -12,7 +12,9 @@
   background-color: #ffffff;
   border: 1px solid #e2e8f0;
   border-radius: 99px;
-  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.08), 0 8px 10px -6px rgba(0, 0, 0, 0.01);
+  box-shadow:
+    0 10px 25px -5px rgba(0, 0, 0, 0.08),
+    0 8px 10px -6px rgba(0, 0, 0, 0.01);
   transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
   z-index: 1000;
   box-sizing: border-box;
@@ -20,7 +22,9 @@
 
 .navbar:hover {
   transform: translateY(-2px);
-  box-shadow: 0 14px 30px -5px rgba(0, 0, 0, 0.12), 0 10px 12px -6px rgba(0, 0, 0, 0.03);
+  box-shadow:
+    0 14px 30px -5px rgba(0, 0, 0, 0.12),
+    0 10px 12px -6px rgba(0, 0, 0, 0.03);
   border-color: #cbd5e1;
 }
 
@@ -37,7 +41,7 @@
   margin: 0 2px;
 }
 
-.navbar button, 
+.navbar button,
 .navbar a {
   display: flex;
   align-items: center;
@@ -52,7 +56,7 @@
   transition: all 0.2s ease;
 }
 
-.navbar button:hover, 
+.navbar button:hover,
 .navbar a:hover {
   background-color: #f1f5f9;
   color: #0f172a;
@@ -72,12 +76,12 @@
   background-color: #334155;
 }
 
-[data-theme="dark"] .navbar button, 
+[data-theme="dark"] .navbar button,
 [data-theme="dark"] .navbar a {
   color: #94a3b8;
 }
 
-[data-theme="dark"] .navbar button:hover, 
+[data-theme="dark"] .navbar button:hover,
 [data-theme="dark"] .navbar a:hover {
   background-color: #1e293b;
   color: #f8fafc;
@@ -91,7 +95,7 @@
     padding: 0 6px;
   }
 
-  .navbar button, 
+  .navbar button,
   .navbar a {
     width: 30px;
     height: 30px;

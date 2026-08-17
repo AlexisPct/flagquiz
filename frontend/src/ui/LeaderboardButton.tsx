@@ -1,13 +1,17 @@
-import React from 'react';
-import './LeaderboardButton.css';
-import { useNavigate } from 'react-router-dom';
+import React from "react";
+import "./LeaderboardButton.css";
+import { useNavigate } from "react-router-dom";
 
 export const LeaderboardButton: React.FC = () => {
-    const navigate = useNavigate();
+  const navigate = useNavigate();
 
-    return (
-        <button onClick={() => navigate('/leaderboard')} className="leaderboard-btn" title="Leaderboard">
-            🎖️
-        </button>
-    );
+  return (
+    <button
+      onClick={() => navigate("/leaderboard")}
+      className="leaderboard-btn"
+      title="Leaderboard"
+    >
+      🎖️
+    </button>
+  );
 };

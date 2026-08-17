@@ -1,5 +1,5 @@
-import React from 'react';
-import './QuizAnswersQCM.css';
+import React from "react";
+import "./QuizAnswersQCM.css";
 
 interface QuizAnswersQCMProps {
   options: string[];
@@ -14,7 +14,7 @@ export const QuizAnswersQCM: React.FC<QuizAnswersQCMProps> = ({
   selectedAnswer,
   feedback,
   isSubmitting,
-  onAnswerSubmit
+  onAnswerSubmit,
 }) => {
   return (
     <div className="quiz-grid">
@@ -22,7 +22,8 @@ export const QuizAnswersQCM: React.FC<QuizAnswersQCMProps> = ({
         let btnClass = "quiz-btn-option";
         if (feedback) {
           if (option === feedback.correctAnswer) btnClass += " correct";
-          else if (option === selectedAnswer && !feedback.isCorrect) btnClass += " wrong";
+          else if (option === selectedAnswer && !feedback.isCorrect)
+            btnClass += " wrong";
         }
         return (
           <button

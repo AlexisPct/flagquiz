@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import { type Country } from '../../../types/index';
-import './CountriesListAside.css';
+import React, { useState } from "react";
+import { type Country } from "../../../types/index";
+import "./CountriesListAside.css";
 
 interface CountriesListAsideProps {
   countries: Country[];
@@ -13,10 +13,10 @@ const CountriesListAside: React.FC<CountriesListAsideProps> = ({
   selectedCountry,
   onSelectCountry,
 }) => {
-  const [searchQuery, setSearchQuery] = useState('');
+  const [searchQuery, setSearchQuery] = useState("");
 
   const filteredCountries = countries.filter((country) =>
-    country.name.toLowerCase().includes(searchQuery.toLowerCase())
+    country.name.toLowerCase().includes(searchQuery.toLowerCase()),
   );
 
   return (
@@ -36,7 +36,7 @@ const CountriesListAside: React.FC<CountriesListAsideProps> = ({
           <li
             key={country.codeAlpha2}
             className={`at-country-item ${
-              selectedCountry?.codeAlpha2 === country.codeAlpha2 ? 'active' : ''
+              selectedCountry?.codeAlpha2 === country.codeAlpha2 ? "active" : ""
             }`}
             onClick={() => onSelectCountry(country)}
           >

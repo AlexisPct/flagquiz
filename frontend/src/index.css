@@ -7,16 +7,16 @@
   --text-muted: #64748b;
   --accent: #2563eb;
   --accent-glow: rgba(37, 99, 235, 0.15);
-  
+
   /* Boutons options */
   --btn-bg: #ffffff;
   --btn-border: #e2e8f0;
   --btn-hover: #f1f5f9;
-  
+
   /* États de correction */
   --color-success: #10b981;
   --color-error: #ef4444;
-  
+
   --shadow-futuristic: 0 8px 32px 0 rgba(148, 163, 184, 0.08);
   --blur-amount: 12px;
 }
@@ -30,11 +30,11 @@
   --text-muted: #9ca3af;
   --accent: #3b82f6;
   --accent-glow: rgba(59, 130, 246, 0.25);
-  
+
   --btn-bg: rgba(31, 41, 55, 0.5);
   --btn-border: rgba(255, 255, 255, 0.05);
   --btn-hover: rgba(55, 65, 81, 0.6);
-  
+
   --shadow-futuristic: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
 }
 
@@ -42,8 +42,12 @@
 body {
   background-color: var(--bg-app);
   color: var(--text-main);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  transition: background-color 0.4s ease, color 0.4s ease;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial,
+    sans-serif;
+  transition:
+    background-color 0.4s ease,
+    color 0.4s ease;
   margin: 0;
 }
 
@@ -69,7 +73,7 @@ body {
   object-fit: contain;
   border-radius: 8px;
   /* Léger effet de lueur futuriste sous l'image */
-  filter: drop-shadow(0 4px 12px var(--accent-glow)); 
+  filter: drop-shadow(0 4px 12px var(--accent-glow));
 }
 
 /* Inputs & Formulaires de configuration */
@@ -83,7 +87,8 @@ body {
   margin-bottom: 8px;
   color: var(--text-muted);
 }
-.quiz-select, .quiz-input {
+.quiz-select,
+.quiz-input {
   width: 100%;
   padding: 14px;
   background: var(--btn-bg);
@@ -95,7 +100,8 @@ body {
   outline: none;
   transition: border-color 0.2s;
 }
-.quiz-select:focus, .quiz-input:focus {
+.quiz-select:focus,
+.quiz-input:focus {
   border-color: var(--accent);
   box-shadow: 0 0 0 3px var(--accent-glow);
 }
@@ -128,19 +134,27 @@ body {
   padding: 24px;
   border-radius: 20px;
   border: 1px solid var(--border-surface);
-  background: radial-gradient(circle, rgba(0, 0, 0, 0.02) 0%, rgba(0, 0, 0, 0) 70%);
+  background: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 0.02) 0%,
+    rgba(0, 0, 0, 0) 70%
+  );
   transition: all 0.3s ease;
 }
 
 [data-theme="dark"] .quiz-visual-box {
-  background: radial-gradient(circle, rgba(37, 99, 235, 0.15) 0%, rgba(3, 7, 18, 0) 75%);
+  background: radial-gradient(
+    circle,
+    rgba(37, 99, 235, 0.15) 0%,
+    rgba(3, 7, 18, 0) 75%
+  );
 }
 
 /* 🚀 LA SILHOUETTE EN TANT QUE MASQUE DYNAMIQUE */
 .quiz-shape-mask {
   width: 160px;
   height: 160px;
-  
+
   /* On utilise l'URL de l'image comme un masque (pochoir) */
   mask-image: var(--shape-url);
   mask-size: contain;
@@ -151,21 +165,21 @@ body {
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-position: center;
 
-  transition: background-color 0.4s ease, filter 0.4s ease;
+  transition:
+    background-color 0.4s ease,
+    filter 0.4s ease;
 
   /* ☀️ MODE LIGHT : La silhouette est peinte en gris très foncé/noir */
-  background-color: #2ce679; 
+  background-color: #2ce679;
   filter: drop-shadow(0 4px 10px rgba(15, 23, 42, 0.15));
 }
 
 /* 🌌 MODE DARK : La silhouette devient blanche et s'illumine */
 [data-theme="dark"] .quiz-shape-mask {
   background-color: #1c86e9; /* Peint la forme en blanc pur */
-  filter: drop-shadow(0 0 10px rgba(37, 99, 235, 0.8)) 
-          drop-shadow(0 0 20px rgba(37, 99, 235, 0.4));
+  filter: drop-shadow(0 0 10px rgba(37, 99, 235, 0.8))
+    drop-shadow(0 0 20px rgba(37, 99, 235, 0.4));
 }
-
-
 
 /* Le conteneur du bouton segmenté */
 .difficulty-segmented-control {
