@@ -1,4 +1,4 @@
-name: Monorepo CI
+name: flagquiz CI
 
 on:
   push:
@@ -11,7 +11,7 @@ jobs:
   # JOB 1 : Validation du FRONTEND
   # ------------------------------------------------------
   frontend-check:
-    name: Frontend (Typecheck, Test & Build)
+    name: Frontend (Lint, Typecheck, Test & Build)
     runs-on: ubuntu-latest
 
     steps:
@@ -26,7 +26,15 @@ jobs:
           cache-dependency-path: frontend/package-lock.json
 
       - name: Install Frontend Dependencies
-        run: npm install
+        run: npm install --no-audit
+        working-directory: ./frontend
+
+      - name: Lint Frontend (ESLint)
+        run: npm run lint --if-present
+        working-directory: ./frontend
+
+      - name: Check Formatting Frontend (Prettier)
+        run: npm run format:check --if-present
         working-directory: ./frontend
 
       - name: Type-check Frontend
@@ -47,7 +55,7 @@ jobs:
   # JOB 2 : Validation du BACKEND
   # ------------------------------------------------------
   backend-check:
-    name: Backend (Typecheck & Test)
+    name: Backend (Lint, Typecheck & Test)
     runs-on: ubuntu-latest
 
     steps:
@@ -62,7 +70,15 @@ jobs:
           cache-dependency-path: backend/package-lock.json
 
       - name: Install Backend Dependencies
-        run: npm ci
+        run: npm install --no-audit
+        working-directory: ./backend
+
+      - name: Lint Backend (ESLint)
+        run: npm run lint --if-present
+        working-directory: ./backend
+
+      - name: Check Formatting Backend (Prettier)
+        run: npm run format:check --if-present
         working-directory: ./backend
 
       - name: Type-check Backend
